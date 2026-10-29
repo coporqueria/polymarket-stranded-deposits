@@ -1,0 +1,4872 @@
+{
+ "checked_at_block": 96359964,
+ "checked_at": "2026-10-29T03:42:05Z",
+ "note": "Read from Polygon block 96359964 (2026-10-29T03:42:05Z). Wallets rescued after that time are still listed.",
+ "factory": "0x00000000000Fb5C9ADea0298D729A0CB3823Cc07",
+ "fix": "deployLegacy(owners, ids) with ids[i] = bytes32(owners[i]); then check eth_getCode(wallet) != 0x",
+ "wallets": [
+  {
+   "wallet": "0x872805305484dc07b72c23bb611aa02e6bfc7285",
+   "balance": 1016.850367,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8596297"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T08:52:53.399429Z",
+   "first_deposit_at": "2026-06-12T09:07:49Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xb7e709ec4f6048a3e72bdd0f954e156d51df3c04bca5291dc9452ec2e7e5c8e1"
+  },
+  {
+   "wallet": "0x1157ad1622c0549d6cf27ba327f5589ab4641f46",
+   "balance": 1000.68,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8827588"
+   ],
+   "owner": "0x5568765deb05192655792450c14e69a593ea0732",
+   "account_created": "2026-06-21T11:05:21.03382Z",
+   "first_deposit_at": "2026-10-24T20:34:35Z",
+   "stuck_since": "2026-10-24T20:34:35Z",
+   "first_deposit_tx": "0xc8b83baf372709da930ec27a2eee75d19bbe4e0f5e916a165f956a2694234d7a"
+  },
+  {
+   "wallet": "0x86fb529562097141e5c5f62f472f39a20964b80f",
+   "balance": 656.456738,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8319608"
+   ],
+   "owner": null,
+   "account_created": "2026-05-26T21:37:07.383622Z",
+   "first_deposit_at": "2026-07-03T03:05:41Z",
+   "stuck_since": "2026-07-03T03:05:41Z",
+   "first_deposit_tx": "0x46d8128e2d3a202010136342991732e6eb551c6ff1d3700f632b328aaf0e51f4"
+  },
+  {
+   "wallet": "0x64a3d3ca3f5097a38b6319129c62494d107bf61d",
+   "balance": 612.908014,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8505808"
+   ],
+   "owner": null,
+   "account_created": "2026-06-08T12:16:17.09666Z",
+   "first_deposit_at": "2026-06-10T15:51:43Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xa94663d75fa94635811a99e94ea81b7ee15b7605f3f4256d7637f09697029d7d"
+  },
+  {
+   "wallet": "0xb9773c2a28d8de62850a0c9d8b371c673a4f5a1e",
+   "balance": 601.41,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8574554"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T16:23:27.967734Z",
+   "first_deposit_at": "2026-06-11T16:27:12Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xfe9b4623092b657f1f13746db50efbea43684f452f135e585237efe1ebf3f845"
+  },
+  {
+   "wallet": "0xfc8feb411791ab592733eb437b9c00c7ecc64a42",
+   "balance": 553.35,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8161945"
+   ],
+   "owner": null,
+   "account_created": "2026-05-17T11:57:56.020178Z",
+   "first_deposit_at": "2026-05-17T12:05:37Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x32f917d705ca6a46702a12c3ef43c0d48f050bb9ed330bf2dd50730aef438da1"
+  },
+  {
+   "wallet": "0xfdcb853878412037d2c6bc3aa9562b39eb1103b0",
+   "balance": 492.769,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8959801"
+   ],
+   "owner": null,
+   "account_created": "2026-06-29T08:40:20.10222Z",
+   "first_deposit_at": "2026-07-03T08:13:29Z",
+   "stuck_since": "2026-07-03T08:13:29Z",
+   "first_deposit_tx": "0x336484b65eb7939640010f261795eb75a8324d3e2e033aff31aa21a7b02b3129"
+  },
+  {
+   "wallet": "0xfc94a5f99655220e3c865cb8d63fcd9ad6a16bbc",
+   "balance": 366.959413,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8216168"
+   ],
+   "owner": null,
+   "account_created": "2026-05-20T05:28:49.302428Z",
+   "first_deposit_at": "2026-05-24T08:46:54Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x7476d8c2e6264a3ba5d9f5b81d8f633babc10eed821cb58ab3209be59a283e1f"
+  },
+  {
+   "wallet": "0x13e091be738afa0d93e2055a451d57f42d33840b",
+   "balance": 288.76,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8535456"
+   ],
+   "owner": null,
+   "account_created": "2026-06-09T19:14:29.80223Z",
+   "first_deposit_at": "2026-06-09T19:25:18Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x942094a0eab34b46c81eb79b97580257c056af2ea0b064b50720292502692298"
+  },
+  {
+   "wallet": "0x961613453a0393df01637989ffd60e2913cc2d61",
+   "balance": 259.01,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8596662"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T09:17:35.947135Z",
+   "first_deposit_at": "2026-09-10T17:05:06Z",
+   "stuck_since": "2026-09-10T17:05:06Z",
+   "first_deposit_tx": "0x5d7569680054a81fa5b08cdf3ddb058c6b05c59e653d44fac33495727eb9365a"
+  },
+  {
+   "wallet": "0x4be3a54f404b783317f4215baf557cf587ab0fd1",
+   "balance": 225.235763,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7873615"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T18:16:30.70251Z",
+   "first_deposit_at": "2026-05-04T18:20:46Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xbeed6510715aaedfedee06dca47804ded7e2d4a35106a926efe7af97ff8e3199"
+  },
+  {
+   "wallet": "0xcf71d8db8862aed70fec5521726bb79787b49908",
+   "balance": 225.064468,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7884958"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T07:35:26.582305Z",
+   "first_deposit_at": "2026-05-05T07:38:30Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x3d1802eba961b047e1654750bd037797c3bfcf028d2da3ced33f7478f1d84c19"
+  },
+  {
+   "wallet": "0x6b85fdae098fc581ebdd5fc5545ee66b50742e45",
+   "balance": 224.31,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8595021"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T07:29:25.564781Z",
+   "first_deposit_at": "2026-06-12T07:44:51Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x7adf03453ed3a467feb06354ad4abfe9b3533007bb7936f1272e62f06861f202"
+  },
+  {
+   "wallet": "0x96fd2ec976a3f1e38e49d65190a750154a548baf",
+   "balance": 224.26,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8342850"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T18:10:06.457055Z",
+   "first_deposit_at": "2026-05-28T18:37:51Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x4b529e69133b259589cd0143b74bc7a23ddbebe3d50e1fb17f5453570cab661c"
+  },
+  {
+   "wallet": "0x16fb36dce8a135044c30c7b67142478c407d740f",
+   "balance": 224.17,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8343796"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T19:33:03.897043Z",
+   "first_deposit_at": "2026-05-28T20:14:39Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x6e8cfb9c7d0083dc791a95e4c02e6adaf3b5e9c717055b16a2d747e56c56a827"
+  },
+  {
+   "wallet": "0x0d31cbd3baaee2ce79a6a51bf154ebe1d469d052",
+   "balance": 222.89,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8585875"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T22:59:12.700913Z",
+   "first_deposit_at": "2026-06-11T23:10:31Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xaab06a2ca42516bf9d56ce199eae4d2b3fb546a9a02930046f7d1d9ba4999d06"
+  },
+  {
+   "wallet": "0xff4c96fbed62b64bb282008b1761f41ddcfbc795",
+   "balance": 222.38,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8578150"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T18:22:45.06574Z",
+   "first_deposit_at": "2026-06-11T18:25:34Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x4bdb36565c6fe2ddb3e241ef9cf8e6392f6c38bc3c5eb05ef0fd02d3c56ea707"
+  },
+  {
+   "wallet": "0x384da8d46747f53db0522cdd46b5a4cb2f062668",
+   "balance": 209.168255,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8345178"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T21:38:17.968874Z",
+   "first_deposit_at": "2026-05-29T02:43:14Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x9064612e21dbe8143ee995ae5ddc189c6b8e970c90c81aa93c72aef60e555559"
+  },
+  {
+   "wallet": "0x179845696dda3dada56fc2c46599f7b1bb780fff",
+   "balance": 199.21472,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8353127"
+   ],
+   "owner": null,
+   "account_created": "2026-05-29T12:46:19.491582Z",
+   "first_deposit_at": "2026-05-29T12:55:18Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xaf78ec89360f2cb7b2d8593c2c186bcb0d156cffbc287031ffe42b257f851c4f"
+  },
+  {
+   "wallet": "0xb81a761f62fa75ff5b1b9b97dd18820c8e7a2687",
+   "balance": 199.203353,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8350195"
+   ],
+   "owner": null,
+   "account_created": "2026-05-29T07:03:24.656546Z",
+   "first_deposit_at": "2026-05-29T07:10:12Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x2c3bab9a715c44aa71bc6be4b6167ac4c61e6cfd0852a1d78411c6efb397b314"
+  },
+  {
+   "wallet": "0x0046eaa5b0333947e6ec57b47ab1218bdab0aeff",
+   "balance": 196.29,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8584650"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T21:50:11.622523Z",
+   "first_deposit_at": "2026-06-11T21:56:21Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x618b3baca7ac90326e4193e0ce544a6e82bbc9d20970646e5711938db7943843"
+  },
+  {
+   "wallet": "0x46f5440b10f5279efa030da99cd91751aac35f35",
+   "balance": 192.4,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8340209"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T14:46:38.626867Z",
+   "first_deposit_at": "2026-05-28T15:02:23Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xf91c29f61ccc7f5847231db1d4311ba7d4163c48ad6b06493b7035b66a369d75"
+  },
+  {
+   "wallet": "0xed0e58659718f41e70fec3c56401137881d2e7cc",
+   "balance": 192.37,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8581974"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T20:01:18.261232Z",
+   "first_deposit_at": "2026-06-11T20:03:58Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x429c875f9f10c37e83c2d88f76ec325ba4623e7eaea243bec7104332cbab2747"
+  },
+  {
+   "wallet": "0xce4e464755a10c0adb3a47185bb0903e4c2634f2",
+   "balance": 169.03,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8457181"
+   ],
+   "owner": null,
+   "account_created": "2026-06-05T06:04:51.418807Z",
+   "first_deposit_at": "2026-06-05T06:26:22Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x3ee235f203084a4635c39154c91e7df5555dcb373e6ff97ff29391a7b2fd3c97"
+  },
+  {
+   "wallet": "0x26a919088a40409c968a74765d1f042e31d8b9f2",
+   "balance": 163.6935,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7891294"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T14:33:38.111787Z",
+   "first_deposit_at": "2026-05-05T14:41:16Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xdfe0c9ad11e68e99b9496ba17605dfc281df195e0ef35165e6d03d616bdd0aeb"
+  },
+  {
+   "wallet": "0x84e434008a7f2b497422b36111e7c50efb3a4f62",
+   "balance": 162.898307,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7871869"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T16:40:05.340406Z",
+   "first_deposit_at": "2026-05-04T16:44:42Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x76e01e7f212392e6aa537247d5fe7d14aa8401fbd1dbe8c6f2808a38082f27bc"
+  },
+  {
+   "wallet": "0x6545127773ef08dffde3fce3810cb01149704c2e",
+   "balance": 152.056734,
+   "token": "pUSD",
+   "polymarket_user_ids": [],
+   "owner": "0x648afc09ab95dfa69abab86f38a4a3406bae7b45",
+   "account_created": null,
+   "first_deposit_at": "2026-08-28T03:22:46Z",
+   "stuck_since": "2026-08-28T03:22:46Z",
+   "first_deposit_tx": "0xe6c43485544edceb58497c648937cc8db25b4d798535a529f36aafe55eee8bde"
+  },
+  {
+   "wallet": "0xa1e8751b2810b94dc59dba43a8ad9786289e09ba",
+   "balance": 140.0,
+   "token": "USDC",
+   "polymarket_user_ids": [],
+   "owner": "0x7384c05eb0902a7720c8021eb3010f6a38d3e8b8",
+   "account_created": null,
+   "first_deposit_at": "2026-09-05T15:10:24Z",
+   "stuck_since": "2026-09-05T15:10:24Z",
+   "first_deposit_tx": "0x755f95e06da988460d2ef80c19448e4ad76bf90ddcc7486f9807f71039459440"
+  },
+  {
+   "wallet": "0xbf5877994ffc7c5cc31cf2d81ca2c20672776ee7",
+   "balance": 122.63,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8600996"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T13:49:29.092065Z",
+   "first_deposit_at": "2026-06-12T14:03:49Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x5eb4ccdda15024057f6c276a228ddddc7b838162591cd02f528013a6100cc606"
+  },
+  {
+   "wallet": "0x62b18d9a37d1bbd42b0845a99d17e8c1ee412b4e",
+   "balance": 119.49,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8599410"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T12:23:23.838563Z",
+   "first_deposit_at": "2026-06-12T12:34:01Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xc5d1016c2b34225381b1a94a181e9717075f5b96c7651d99082f6288655e6e29"
+  },
+  {
+   "wallet": "0x63e2f4b55e39cc7d59ee7d511b26b06d8e50a99b",
+   "balance": 113.05,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8343347"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T18:55:54.514826Z",
+   "first_deposit_at": "2026-05-28T18:58:49Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x00f5f53ec3ba01aebaf18ef3059abdca55ada5bde0e1e33164353b90b9b13bf2"
+  },
+  {
+   "wallet": "0x2ed6f8c0f5e903ffe290e26cc808e198915caed6",
+   "balance": 113.01,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8352148"
+   ],
+   "owner": null,
+   "account_created": "2026-05-29T10:54:26.423704Z",
+   "first_deposit_at": "2026-05-29T10:56:58Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xd82262f99a17bd29cddeeb357c96937c692b408ea4d5774f513ff6dabe2d16b8"
+  },
+  {
+   "wallet": "0x55dca28f287ac0c843e514085c7895565022cf95",
+   "balance": 112.400773,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7867665"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T15:26:12.054829Z",
+   "first_deposit_at": "2026-05-04T15:28:48Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x6d6feb81bb6506f4c746d865d62c54f899a45796a87cf64132282f9c83ba4894"
+  },
+  {
+   "wallet": "0x7b45d89607d6993e5a14b9f122860a48924743fd",
+   "balance": 112.282576,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7882193"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T04:04:06.126534Z",
+   "first_deposit_at": "2026-05-05T04:07:06Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xca106c58b3061d5c3665976a195c52ec861fe92c34c8362082a85d6b71809172"
+  },
+  {
+   "wallet": "0x94d9da20909bb7199a7a118a5a9c80f7ca0f317a",
+   "balance": 111.67,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8338463"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T12:28:19.343117Z",
+   "first_deposit_at": "2026-05-28T12:36:40Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xeac94ee433d84c0572da3397bb7af0e308466e723bb7bb9d9cb8fd56fd6ca839"
+  },
+  {
+   "wallet": "0x1f5dc9d03be06ce1ce364c9d9161dcbb410a2d69",
+   "balance": 109.984446,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7868156"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T15:46:12.008946Z",
+   "first_deposit_at": "2026-05-04T15:50:30Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xe1543a39ec525defb54547af3f90f1a1d99a710923c5bcf97da09c505748151d"
+  },
+  {
+   "wallet": "0x14459a60267943533502699228a8b2be42d3e9af",
+   "balance": 109.476363,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8584104"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T21:24:49.154601Z",
+   "first_deposit_at": "2026-06-12T01:20:10Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x80a32304ea9f7694e7e0805124020d229e6ab03d3168270307929da7a57c5e4e"
+  },
+  {
+   "wallet": "0x73d7d071da5e7052cda2bb07b4ae23a35484215b",
+   "balance": 107.405561,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7870749"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T16:11:33.633288Z",
+   "first_deposit_at": "2026-05-04T16:18:20Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xc0bc4594fb0b53dbb3339224527447af332184c1c197a7c75e8584fb7ff97585"
+  },
+  {
+   "wallet": "0x16a4ff8d4e709b693e7ca7adfb48a00a1c3f0f28",
+   "balance": 107.355212,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7887703"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T10:41:28.907839Z",
+   "first_deposit_at": "2026-05-05T10:44:10Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x88ebe547585ecc81bcb5625d302d6bdb89b63e4f5cf6860b05d807ff9fdb6c21"
+  },
+  {
+   "wallet": "0x55594c2415adb26e1dfbd1549b142fec7458258a",
+   "balance": 100.606576,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8573724"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T15:51:31.747933Z",
+   "first_deposit_at": "2026-06-11T16:12:54Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x2c7f0b0a28120a066a40af8333c6ffc03e2501cef31d07c5010aafd2eab98713"
+  },
+  {
+   "wallet": "0x3bd3af0572200d3afbee6b897e0351cc9a152071",
+   "balance": 100.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8564194"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T06:57:31.150522Z",
+   "first_deposit_at": "2026-06-12T01:31:49Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x66ec8edefbe6081e2b93fae6bc8241bdad4f1f2c6a5e3c47fb46e486779f9059"
+  },
+  {
+   "wallet": "0x2914e77f15664340588d58e084be2bcf0185d3c7",
+   "balance": 99.966063,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7872664"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T17:23:29.272998Z",
+   "first_deposit_at": "2026-05-04T17:29:48Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x1273e6fd424f7fc3c8a80ded24fd7371bcf3cb62d27e40f1889c394351ed715a"
+  },
+  {
+   "wallet": "0x8a4286a8bd3cf636b55930b1dc83521697254f1b",
+   "balance": 99.687365,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7886057"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T08:49:46.516112Z",
+   "first_deposit_at": "2026-05-05T08:53:18Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x71ed79f37d74578473c242a412ad16260df0b2f2e67b4312433f249f911aa645"
+  },
+  {
+   "wallet": "0x036db8fb826f52af8da1b4bc2606ad9c87bb606a",
+   "balance": 99.637767,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7889797"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T13:03:40.61403Z",
+   "first_deposit_at": "2026-05-05T14:03:06Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x3fd4771304438b54059c204685463e589c39543d378e01b12d4d60f83bb48948"
+  },
+  {
+   "wallet": "0xc33210c087b565f56ae44ef847dc79ffd875718c",
+   "balance": 99.4,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7879346"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T00:21:15.54987Z",
+   "first_deposit_at": "2026-05-05T00:55:28Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xced4d558c28e529e44852c36efa9a80067966dded206a818d52a20423940a3e0"
+  },
+  {
+   "wallet": "0x93e86be7c50e8da70800e83e5615b2e8b68372b1",
+   "balance": 99.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7875433"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T19:55:19.358152Z",
+   "first_deposit_at": "2026-05-04T20:08:42Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x3e90b6e177e9fd6dafa8c0e00ad42d434d79ae332790dfc63afb6b940f50c03a"
+  },
+  {
+   "wallet": "0x698f968dd17334d57d3faa8e6cfdb87b2aae41ab",
+   "balance": 98.998173,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8573901"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T15:58:35.975517Z",
+   "first_deposit_at": "2026-06-11T16:08:25Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xc7aed4fa2996f0f33fc99dc76834f694ecbfe3d41b859d83f630cbc2719bff64"
+  },
+  {
+   "wallet": "0x9f7a1e237bbbeb69514e60b199547bc4803fe643",
+   "balance": 98.318327,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8583964"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T21:19:08.766758Z",
+   "first_deposit_at": "2026-06-11T21:23:33Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xd0310f905bb7752886de5592a48b8d3d0f963295f4a945adf976fdaa9c5011aa"
+  },
+  {
+   "wallet": "0x44b6a9b97013381919e1e016933d7506f31e2be9",
+   "balance": 98.03392,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8938720"
+   ],
+   "owner": null,
+   "account_created": "2026-06-27T20:56:01.149083Z",
+   "first_deposit_at": "2026-07-01T20:20:40Z",
+   "stuck_since": "2026-07-01T20:20:40Z",
+   "first_deposit_tx": "0x8349bd12416b368890074dac2daa1919f026dfeb1e0983b214ef6173d385572e"
+  },
+  {
+   "wallet": "0x3f9391995c8517255a4c67311699e88dc8ea44cb",
+   "balance": 96.12029,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7880547"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T01:53:26.034335Z",
+   "first_deposit_at": "2026-05-05T01:56:28Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x68028e61b367de6003e526086a76465caadff61b75a739d87e31fbc3a35060b8"
+  },
+  {
+   "wallet": "0x8e47b910219458be4f92a937b165cb339eda797e",
+   "balance": 96.02,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8339961"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T14:28:23.245192Z",
+   "first_deposit_at": "2026-05-28T14:58:04Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x64de989e048c8c4aa06585060b94e9f471fd70656befaaef8e2bb38ecbecfc72"
+  },
+  {
+   "wallet": "0x1806d51bd11a321e5504b0f483424611bdd5e7a2",
+   "balance": 96.02,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8353629"
+   ],
+   "owner": null,
+   "account_created": "2026-05-29T13:36:40.456108Z",
+   "first_deposit_at": "2026-05-29T14:22:11Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x4b3735a5b418731da8ebe7da7bc1c41fd873293c6670a0c3b2d84f856fe8e108"
+  },
+  {
+   "wallet": "0x1b800d70159917c785fc07bb7ba8cb544c6a94b8",
+   "balance": 96.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8344210"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T20:06:22.791659Z",
+   "first_deposit_at": "2026-05-28T20:16:01Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xdfa2f8009a2290243d95d45d38546793f6421c769c95cafa9b3d2e7ad68a5ba9"
+  },
+  {
+   "wallet": "0x9038974ce444545005c4ec2eee4f93c173b363d4",
+   "balance": 95.992622,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7871955"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T16:44:07.333612Z",
+   "first_deposit_at": "2026-05-04T16:52:28Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xf5c12df3aebf36b257289adb3c826e42e6a38e4d4f6173c10781850f8ff6a411"
+  },
+  {
+   "wallet": "0x854b01a8e5a5529ad7c7ec837b0c00074bad7885",
+   "balance": 94.4475,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7862790"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T13:55:01.495273Z",
+   "first_deposit_at": "2026-10-21T13:00:38Z",
+   "stuck_since": "2026-10-21T13:00:38Z",
+   "first_deposit_tx": "0x3beb0ca5df90e9182515e69d19099ac36c4f0a61464b7390acfdea843bb228ca"
+  },
+  {
+   "wallet": "0x635012d9ef517e73879f44023b5dd6dfae8f5a1a",
+   "balance": 94.01,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8244415"
+   ],
+   "owner": null,
+   "account_created": "2026-05-21T14:57:05.67874Z",
+   "first_deposit_at": "2026-10-15T03:00:50Z",
+   "stuck_since": "2026-10-15T03:00:50Z",
+   "first_deposit_tx": "0x5ae488284225ddfd24fdd67c48e4e4256c80539701f3a285fb67c4d41e991e8a"
+  },
+  {
+   "wallet": "0x82cd753733bc2af465d51756a935feaabc2b09f0",
+   "balance": 91.430304,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8341156"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T15:57:23.079699Z",
+   "first_deposit_at": "2026-05-28T20:29:00Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x8cc27813552137b024f18e39b7df4c99ab78affeb9e8df954b89e17474809872"
+  },
+  {
+   "wallet": "0xf3d656b9d8ed8eb589d9c3bccadfcef3f9f4eb29",
+   "balance": 81.335904,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7862990"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T14:01:22.99836Z",
+   "first_deposit_at": "2026-05-04T14:04:42Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xdfb388aafad42515f3d5cc056f3fffb6433203e20e2707913eff01355a572dd1"
+  },
+  {
+   "wallet": "0xc3e961c42ae4bf4ddad46b79bde1a706faa5a029",
+   "balance": 71.170124,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8342372"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T17:31:21.791284Z",
+   "first_deposit_at": "2026-05-28T17:48:45Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x09460809aee2cfb00dc7e8d991bb6a2f206518515c54d8e5b405b37f060bcd5d"
+  },
+  {
+   "wallet": "0x7f2e6a81b28d168e8b9e942e7805e2245deb0e2f",
+   "balance": 70.408022,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7861355"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T13:33:53.703067Z",
+   "first_deposit_at": "2026-05-04T13:40:26Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x6fb01b1f78fdbb9e7229d07619758ae2fbb4351441b552cacccfc7e0fad69e38"
+  },
+  {
+   "wallet": "0xd25c979597f81be8e6fe5d8e95a544086f8cdacf",
+   "balance": 64.827702,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7875931"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T20:23:19.156339Z",
+   "first_deposit_at": "2026-05-04T20:33:42Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x4e1928cf4c21cb48765fdf0035cc8c483f082f1a6d4e590acde0380004ac6522"
+  },
+  {
+   "wallet": "0x5ed6407e731d1a49b09adc6ef4aa993ef21b372c",
+   "balance": 63.57,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7878882"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T23:43:43.131162Z",
+   "first_deposit_at": "2026-10-16T01:19:55Z",
+   "stuck_since": "2026-10-16T01:19:55Z",
+   "first_deposit_tx": "0x0c17415b3873a989f4b0983f99456c7aa1d90fa9036558ccd63b9f77abd5d46c"
+  },
+  {
+   "wallet": "0xe70702633e8ad5898eb940c5243cf1a2a1fa91b2",
+   "balance": 63.35,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7864038"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T14:36:55.922945Z",
+   "first_deposit_at": "2026-10-27T15:38:50Z",
+   "stuck_since": "2026-10-27T15:38:50Z",
+   "first_deposit_tx": "0x75795ab39e40520ca72b5160849c3c5c1403c6c88e09a7eaeb19f235a3925f6c"
+  },
+  {
+   "wallet": "0xf8ef209d04d0d01535695e1de10b9afa04c62551",
+   "balance": 61.72,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8643970"
+   ],
+   "owner": null,
+   "account_created": "2026-06-14T08:47:01.658685Z",
+   "first_deposit_at": "2026-10-16T02:53:39Z",
+   "stuck_since": "2026-10-16T02:53:39Z",
+   "first_deposit_tx": "0xc46720fee165498cde83890789a4a2f463c671246493400073ce42a37423f083"
+  },
+  {
+   "wallet": "0x57cb6c0c36ad80bcd5ff6ba6d57b0ce2b14d9372",
+   "balance": 61.71,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8198520"
+   ],
+   "owner": null,
+   "account_created": "2026-05-19T09:22:18.239432Z",
+   "first_deposit_at": "2026-10-15T14:46:53Z",
+   "stuck_since": "2026-10-15T14:46:53Z",
+   "first_deposit_tx": "0x10a08a2050b8d4c421365dbfe7a48d9bf612258808f47494e8fabf91e2845a3f"
+  },
+  {
+   "wallet": "0x2c6fa3f48bb4d1075684d37bf1ef6731d4ec4b81",
+   "balance": 59.73,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8348042"
+   ],
+   "owner": null,
+   "account_created": "2026-05-29T02:46:53.038429Z",
+   "first_deposit_at": "2026-05-29T02:56:27Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x91e083ddc732549d0dd8409df4ff05ab86b2a23a0eddeaa85442d7005b682a05"
+  },
+  {
+   "wallet": "0x89c55f9bfa6fadd84cdca82ef0ddfccd46c23d0c",
+   "balance": 59.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8327264"
+   ],
+   "owner": null,
+   "account_created": "2026-05-27T16:37:31.755523Z",
+   "first_deposit_at": "2026-05-28T22:58:09Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x2ca2879c9f59d7fbdfa821e2407cd8cc4a40a8aa6228a15093ade7bf70cbffa2"
+  },
+  {
+   "wallet": "0xc9d1f525e4a2a9675064e73c5270a8b8e7941ccc",
+   "balance": 57.59,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8601519"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T14:16:15.200192Z",
+   "first_deposit_at": "2026-06-12T14:39:42Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x223f1b6a5ecc8d4603cc16c11ae25a4e2c939824bd18c7d1392232babbf630c2"
+  },
+  {
+   "wallet": "0x74c8c4f073613a66eaa465af8fefd1abf67ddc0c",
+   "balance": 57.505498,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7891955"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T15:10:42.644154Z",
+   "first_deposit_at": "2026-05-05T15:14:28Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x4dab93caca01eea99fca82fe9ad31722d570deecd9c7008dc6b8fa838d98e331"
+  },
+  {
+   "wallet": "0xd498d02296e7988cb6384943150f271be96aa092",
+   "balance": 57.46,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8166817"
+   ],
+   "owner": null,
+   "account_created": "2026-05-17T16:38:49.084379Z",
+   "first_deposit_at": "2026-10-26T21:58:20Z",
+   "stuck_since": "2026-10-26T21:58:20Z",
+   "first_deposit_tx": "0x8f3cff1455c7e7e06f599f37f61ec92f771d1a4d60b5eb8582d32333efddd569"
+  },
+  {
+   "wallet": "0xad148c67d6855bcecc783320fea275c884f2d4f2",
+   "balance": 55.989995,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7895139"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T18:06:30.302926Z",
+   "first_deposit_at": "2026-05-05T18:27:34Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xf03361c03277a6e4d3ff83f64026eb8d64555818ad1ce98793c07c900d0786c1"
+  },
+  {
+   "wallet": "0xda887dd15b5bf8fbb0ce5de4e2e1d473088282b7",
+   "balance": 55.986717,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7891548"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T14:46:44.984859Z",
+   "first_deposit_at": "2026-05-05T14:52:32Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x14bc55145bae3f44626f0a42c8e80a87ce48a710f211ab52ceb8e5a8179b43f6"
+  },
+  {
+   "wallet": "0xbf7a181ee63e68fb1e221e5061a9fa9c4b1ec515",
+   "balance": 55.944205,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7877331"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T21:52:13.496199Z",
+   "first_deposit_at": "2026-05-04T21:57:48Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x906312491135bb6b68e26e7a1a56556e995f1e6c28a58f6e8547f6bdcfa24b7e"
+  },
+  {
+   "wallet": "0x46b400848efc0424493d9667c4cbb539468923ce",
+   "balance": 55.550178,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7885115"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T07:46:42.646126Z",
+   "first_deposit_at": "2026-05-05T08:31:36Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x2b8e5bc533b33a2557ef1b2c9ce7e1c13ac43fb3a5f838f4357c76fea68c4b48"
+  },
+  {
+   "wallet": "0x05b0feab846bd41df2b4ba0aabcddeb80d90d6af",
+   "balance": 55.5,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8351835"
+   ],
+   "owner": null,
+   "account_created": "2026-05-29T10:15:02.614858Z",
+   "first_deposit_at": "2026-05-29T10:24:22Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x8ff52920b7298dc1de51f08846f7b26f7ec5f5778240d2e9c5b76dc302c30537"
+  },
+  {
+   "wallet": "0x60688f72c0a6675802ed845ed6f020185d18a13a",
+   "balance": 55.251913,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8003801"
+   ],
+   "owner": null,
+   "account_created": "2026-05-10T13:00:37.70858Z",
+   "first_deposit_at": "2026-05-10T13:09:54Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x1b9e622e68479eb7d7ddc7b8b28bf7377fa30969dfc00836be683e5ab0ac11bd"
+  },
+  {
+   "wallet": "0x6eba6d25d78c8b4c7c8a9e798a6769b0a2884bac",
+   "balance": 54.668689,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7871655"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T16:28:32.763285Z",
+   "first_deposit_at": "2026-05-04T16:35:30Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xb04d642b9029b37583fb8dafcd94f22ae461fe5b74d70712c937fedd6ef75a01"
+  },
+  {
+   "wallet": "0x3a09833e5da5f3219943bff946d2caa2d284b8c9",
+   "balance": 54.593887,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8365117"
+   ],
+   "owner": null,
+   "account_created": "2026-05-30T10:53:12.150535Z",
+   "first_deposit_at": "2026-05-30T11:12:55Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x32027ec7398f860170acddcfdb1a30405e092ac6226724aca10b8521c279c715"
+  },
+  {
+   "wallet": "0x7d01e14e16ca9dff7cdefe270a7617a2753ca600",
+   "balance": 54.27,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8580102"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T19:11:26.349593Z",
+   "first_deposit_at": "2026-06-11T19:16:03Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xe41e75d8df7d1a6efa54555045bb63070a1f8af7d2fae3686cffb78188438a72"
+  },
+  {
+   "wallet": "0x5f765999d5e7bad49d13b6d03c91a8bd35cbd2a6",
+   "balance": 52.325772,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8591589"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T03:55:51.406976Z",
+   "first_deposit_at": "2026-06-12T03:58:28Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x46b290c5640f75208e0b97de5b0c8664567512e6c7bf5b65766ef3dcfe8de0f6"
+  },
+  {
+   "wallet": "0xc6c21aa70cb4411d6345f96fad672599c14cfe78",
+   "balance": 51.71,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8349469"
+   ],
+   "owner": null,
+   "account_created": "2026-05-29T05:29:15.064137Z",
+   "first_deposit_at": "2026-05-29T05:32:26Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x8ac1c358ee6ec976ca40a1c9ab5ccbb8273764c989c6d5deee92d75c69dc9bf8"
+  },
+  {
+   "wallet": "0x3099163ecb91fba6fea1082b63cdd0e9b6c0121e",
+   "balance": 51.362992,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7863602"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T14:30:22.135442Z",
+   "first_deposit_at": "2026-05-04T14:47:40Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x110269bbcea7d35d68803b8848b25a7fc3df404e8020a9ec0708d0db1f798cb6"
+  },
+  {
+   "wallet": "0xc64e0173aba536183d68325e39022853d76d2ab5",
+   "balance": 50.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8938295"
+   ],
+   "owner": null,
+   "account_created": "2026-06-27T20:17:00.725588Z",
+   "first_deposit_at": "2026-06-28T18:06:58Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x596531535bc2a2a86a11fc52a4c8b1dd0f304cf5d19f957ef54a58839a15867b"
+  },
+  {
+   "wallet": "0xbd623b7bc82583eefa957135f3aa361e7eae240c",
+   "balance": 49.872985,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7875330"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T19:50:42.2882Z",
+   "first_deposit_at": "2026-10-21T16:23:38Z",
+   "stuck_since": "2026-10-21T16:23:38Z",
+   "first_deposit_tx": "0xddf0cd349b021287651e9632e5c3886a0d0eb0bb0159c20b1b02791e57a6c7e0"
+  },
+  {
+   "wallet": "0xa2d1594731ca1fed5732c39fddbd74f3359a3a03",
+   "balance": 49.267346,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7878645"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T23:25:28.347422Z",
+   "first_deposit_at": "2026-05-05T00:54:58Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x1139c8af5c113ae06f53a73c890c87e2323d32fc2fc671e1586afc8a93ab4920"
+  },
+  {
+   "wallet": "0xb81aa60b2d06d037078ca9fad5f1d1d2f3da1372",
+   "balance": 47.81,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8539857"
+   ],
+   "owner": null,
+   "account_created": "2026-06-10T00:47:17.742514Z",
+   "first_deposit_at": "2026-10-25T19:55:11Z",
+   "stuck_since": "2026-10-25T19:55:11Z",
+   "first_deposit_tx": "0x96eb3a82d2a1c4873e63b33f48e039b725c1fa8699e60fd162712aa08c85c042"
+  },
+  {
+   "wallet": "0x82064346c0685ebf2a7fc67741cced65d26084c6",
+   "balance": 47.79,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8582981"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T20:37:12.252723Z",
+   "first_deposit_at": "2026-06-11T20:39:34Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xcde133762e0fef24c83046505e81d55679e2939d8aad0d45277eee376935c9e6"
+  },
+  {
+   "wallet": "0xc221c84287f76399ec965ca9ebdb505c5bf5b47d",
+   "balance": 47.78977,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8595452"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T07:57:42.434322Z",
+   "first_deposit_at": "2026-06-12T08:25:34Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xa95d7240fe28923b181c6a64919ec924c2bb67b9612c52eca0b36c65a59fb358"
+  },
+  {
+   "wallet": "0x07704fe1873d6fff24c1fa2dfeaa03e2bc81483f",
+   "balance": 44.671276,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7885306"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T07:58:53.012444Z",
+   "first_deposit_at": "2026-05-05T08:15:42Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xd0fd3052d9f3ca50818f3373616c7babeb7decd72b0fabeaeea2443354cbb368"
+  },
+  {
+   "wallet": "0xf2325bf487e4eb078777171e8f18acd22ac54692",
+   "balance": 41.640673,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7895533"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T18:29:52.033709Z",
+   "first_deposit_at": "2026-05-05T18:47:58Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xb7d28e0388a784007c9babf268833faedb39f4ee8cc21d4751fd40926a5ca37c"
+  },
+  {
+   "wallet": "0x127f6ff800c041ad41705e03c5d5cbe3f9e888a1",
+   "balance": 40.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8352437"
+   ],
+   "owner": null,
+   "account_created": "2026-05-29T11:31:03.751832Z",
+   "first_deposit_at": "2026-06-05T14:37:16Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xf9c12358d02743aef0f9e5f6b6d87d731e26f3c0c46ee17bf745b5f1e4ac2c67"
+  },
+  {
+   "wallet": "0x5e5d19b08881c245978eeec780b041bbf6f33fef",
+   "balance": 39.034825,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7883985"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T06:23:59.995655Z",
+   "first_deposit_at": "2026-05-05T06:27:18Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x9642e0086911f6d4092296a44480c88a5b484d5088d117e5854b4706fd9b778a"
+  },
+  {
+   "wallet": "0x3f5f6a784d0c191b63cccf88f32b996194774876",
+   "balance": 39.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7955769"
+   ],
+   "owner": null,
+   "account_created": "2026-05-08T12:46:05.256831Z",
+   "first_deposit_at": "2026-05-08T12:58:20Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x494bae47412a7d560f6dbad468cddc6ccee3fcaee99b6858db534f313db11586"
+  },
+  {
+   "wallet": "0x5ab34a831570b5bda03e81a3766649e170ca224e",
+   "balance": 38.38,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8583273"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T20:49:06.720166Z",
+   "first_deposit_at": "2026-06-11T21:01:40Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x4bc84a8f734c7f937382ffeda429655c17ca77c16d0ece7e7b3d389b2daf1adf"
+  },
+  {
+   "wallet": "0x45d72f9eef72e986efef7091e556b532f40c0a8d",
+   "balance": 36.565772,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8505258"
+   ],
+   "owner": null,
+   "account_created": "2026-06-08T11:10:33.273233Z",
+   "first_deposit_at": "2026-06-08T11:33:54Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xa4af32292c9dfa578dd83f17c04278811ffd0dc764866ae97586358be3d82eec"
+  },
+  {
+   "wallet": "0xe3d7ff5fc0732e01ec60cbd98989e9b62bf9281e",
+   "balance": 36.48901,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7896775"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T19:36:44.027054Z",
+   "first_deposit_at": "2026-05-05T19:43:46Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xd902aa03d4734d5a862c4d5ed92e9fca5d8ea60730bae1249fe7cf70df0b045e"
+  },
+  {
+   "wallet": "0xa15a5cbb1f6e80cbb73c24aff5059cc148182997",
+   "balance": 36.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7894072"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T17:10:10.960157Z",
+   "first_deposit_at": "2026-05-05T17:12:56Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x2849227d497b32fa2516d4a80f21895784ca577ab4b087d6a9dd2877420db78d"
+  },
+  {
+   "wallet": "0xb1867071d4762ea5aa6fc3ed870e8a3d1fc0b44b",
+   "balance": 34.72,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8861907"
+   ],
+   "owner": null,
+   "account_created": "2026-06-23T03:24:04.561367Z",
+   "first_deposit_at": "2026-06-26T04:24:08Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xfadbaa38984f30918d66cd36d98e0e334ab7e3219c3a1dd3f4186c50fb3f1bd3"
+  },
+  {
+   "wallet": "0x09b764c294efff489292e89432822ba9cd6c7a46",
+   "balance": 34.05934,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7888478"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T11:37:22.474358Z",
+   "first_deposit_at": "2026-05-05T11:54:44Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x1776693b8ad3a2bc9f95a6b84007bdde2d0abbe50b91a7af81f930f902e7977d"
+  },
+  {
+   "wallet": "0x9be2a54452943be7d04c68a5fffc21e80f9ed11c",
+   "balance": 34.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7883071"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T05:13:04.024181Z",
+   "first_deposit_at": "2026-05-05T06:11:52Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x19582cd5d0447f22f617a976f4f1495dc5d4fa47e9da0f1ece21739ab1f0805f"
+  },
+  {
+   "wallet": "0x6a03cbf8a0fd2051dc750fd754bd6697317406d8",
+   "balance": 33.92,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8340678"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T15:22:38.942906Z",
+   "first_deposit_at": "2026-05-28T15:34:13Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x119622ec54a6a68a6f1060324467a9bbc4e2b5eeca874ba27c3e90b9ac738be1"
+  },
+  {
+   "wallet": "0x95a3ae999e47b83e86ef74e0bbdddff5c6af19a9",
+   "balance": 33.807137,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8347301"
+   ],
+   "owner": null,
+   "account_created": "2026-05-29T01:26:55.084335Z",
+   "first_deposit_at": "2026-05-29T01:38:13Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x6734fc953f27af1dca1cb59e7b1a9e6cf8d5e34027710444b94c684701330967"
+  },
+  {
+   "wallet": "0xac4f39423f3d68806c108a46d84f5b91c14bb613",
+   "balance": 33.66,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8332053"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T00:42:15.99393Z",
+   "first_deposit_at": "2026-05-28T13:09:41Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x7a5dd8fec904a610f4454d4d3a6080047167276acbad1a31cfdd2fa49ace2b86"
+  },
+  {
+   "wallet": "0xecbaa071304ca7de7bee3a6760fb628e383e3a39",
+   "balance": 33.06,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8585477"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T22:36:45.945657Z",
+   "first_deposit_at": "2026-06-11T22:39:21Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xaa938fd07e3c29b2aa9586394ab1419c2f6d45238fb54277f3f6e48c4c326417"
+  },
+  {
+   "wallet": "0x0e784c73788320a88b8def869dd37e4988d6e05f",
+   "balance": 32.834376,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8859167"
+   ],
+   "owner": null,
+   "account_created": "2026-06-22T23:48:23.516023Z",
+   "first_deposit_at": "2026-10-26T19:15:00Z",
+   "stuck_since": "2026-10-26T19:15:00Z",
+   "first_deposit_tx": "0xcf0a5eb1cd571923bb6c34a6c347a514c0d894cd48c72cc6b02d39d9a349aa30"
+  },
+  {
+   "wallet": "0x50c68f43598e80936b686978c39e46175ca705ab",
+   "balance": 32.578141,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7890056"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T13:21:25.924145Z",
+   "first_deposit_at": "2026-05-05T13:39:12Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xa77472028e35cb57c26ad8f6dd74954b20dcda9e238a5647d86244da25fde26f"
+  },
+  {
+   "wallet": "0x36059d19e2530640cdea9738ee4d7512118eb31a",
+   "balance": 32.574327,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7895192"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T18:09:22.918695Z",
+   "first_deposit_at": "2026-05-05T18:17:54Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x5fa16ae68088f4e9a967a1753b65ac0d328d7d50774d60bfca6e20c6ba93d179"
+  },
+  {
+   "wallet": "0xda1d5df341d0e3b87b4edc3487a62d9d4fdf9c3d",
+   "balance": 32.547693,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7884333"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T06:50:00.330843Z",
+   "first_deposit_at": "2026-05-05T07:03:54Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xfad0ac386cff797c37dc33812488c52c0ec989a9a5ecc18dacc728857a8d86f9"
+  },
+  {
+   "wallet": "0xe027b00d0853a8044b9813a8eecc433c9349cc83",
+   "balance": 32.376057,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7896078"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T18:58:15.635869Z",
+   "first_deposit_at": "2026-05-05T19:05:50Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xaa56e822d9f1e109d832288b77ecbbc1d11065e490f113b0369dfc3587c946ac"
+  },
+  {
+   "wallet": "0x1b4670b6d2061d167365cfb500ce42b3a8908541",
+   "balance": 32.326228,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7871876"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T16:40:33.957165Z",
+   "first_deposit_at": "2026-05-04T16:43:20Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xdb537c7128ea921b1859ffbbc8f3ab5433a75c82515bd5c3e2648c0dc4652bad"
+  },
+  {
+   "wallet": "0x6c78800b738c95d96c90ae1a4e451b22674173f1",
+   "balance": 29.935042,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8353537"
+   ],
+   "owner": null,
+   "account_created": "2026-05-29T13:27:46.787148Z",
+   "first_deposit_at": "2026-05-29T13:33:29Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x93f466b6d2f53d4c1b3c645c1acf4285988e548b0aee9ba04f3f0755c1174022"
+  },
+  {
+   "wallet": "0xa1917e2a16396d9ac9aa0b7e1668cb263f65313a",
+   "balance": 29.73917,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7880120"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T01:22:44.6414Z",
+   "first_deposit_at": "2026-05-05T01:35:40Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x971ad67843103ccb70f9d47777b615fb033e824e79364a703e530703ee480c70"
+  },
+  {
+   "wallet": "0x8ab8271b26a49b47b060e1e5e7cbbd5ad71f839e",
+   "balance": 27.17,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8577297"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T17:58:55.543988Z",
+   "first_deposit_at": "2026-06-11T18:46:37Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x847412f621d138e5bfea11327fd47eaea9f22f7c2392883e47d253981b2e389f"
+  },
+  {
+   "wallet": "0x81416d6c2173646a725c7ecfcf3f452fbdfea5f6",
+   "balance": 27.157903,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8586901"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T23:57:28.9064Z",
+   "first_deposit_at": "2026-06-12T00:22:46Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x9446a12f9b263922de83e6a4e73371065facf7c1ce9e7524ef2a10b26187e12a"
+  },
+  {
+   "wallet": "0x24f952ae0bc0bf1dc29310b5105b6255b137f026",
+   "balance": 26.9,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8575641"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T17:01:59.494021Z",
+   "first_deposit_at": "2026-06-11T19:01:18Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xa35c3935caeed94e893f00bcb28b0508929d657c02dabbac41ed983387cc9378"
+  },
+  {
+   "wallet": "0x89a2b50f76f368dd6f26befb5c8f4b13a3ac2392",
+   "balance": 26.779339,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7892658"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T15:50:50.320633Z",
+   "first_deposit_at": "2026-05-05T16:03:50Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x6f391e3179dd124ef728edf99adda2557d52a3682bcc3a7aa88aa618bbf6dc63"
+  },
+  {
+   "wallet": "0x6b673837a459248abfd782ce678cdb265d1f8c8b",
+   "balance": 26.551771,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7879795"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T00:57:10.164092Z",
+   "first_deposit_at": "2026-05-05T01:05:52Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x239318dde82c06abfe8f05331b5c57f3b338e26d390765a8ed854f8782d08cb5"
+  },
+  {
+   "wallet": "0x3a4132591db35b01c4ada20b31998056f92422b8",
+   "balance": 25.609087,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7892988"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T16:09:15.006359Z",
+   "first_deposit_at": "2026-05-05T18:52:14Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x896522d9591e79b309e9cc8dd31a59e688c5b58da9f5a6216ff9fb30ab2baacb"
+  },
+  {
+   "wallet": "0xd9c85cd120d8d35e67bb99853f3ebf885f12a85f",
+   "balance": 25.55963,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7874468"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T19:01:55.731552Z",
+   "first_deposit_at": "2026-05-04T19:14:32Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xc9be366f6251e7f0dad41cf6cc60a4ead6d59da3fe60897528b6c654e255ba89"
+  },
+  {
+   "wallet": "0x6966adb241c0d644dfa8c345791cb0990067f3d7",
+   "balance": 25.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [],
+   "owner": "0xc8b82670f33fc7a90303f2f52d7d5ebaa6b2f681",
+   "account_created": null,
+   "first_deposit_at": "2026-06-16T08:03:39Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xe77ac7c9a5cf0bea4be06efc389098e5e49a0cbaf935700dbc0623ad38acf241"
+  },
+  {
+   "wallet": "0x21b6ee48fe4f6639973e73e9dbe694d909eb7023",
+   "balance": 24.88,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8031926"
+   ],
+   "owner": null,
+   "account_created": "2026-05-11T18:42:54.866485Z",
+   "first_deposit_at": "2026-05-11T19:30:06Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x73624addb50d9e0cd74cb99f307e01fd95546b9c16398340ff7816696d69c18d"
+  },
+  {
+   "wallet": "0x103399109f4b99523cd34cb9ef4988bffa997460",
+   "balance": 24.833895,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7892217"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T15:25:47.927373Z",
+   "first_deposit_at": "2026-05-05T15:44:32Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xcf10a2a31b5b8683e4be43f28d258563289941ccedbe82497fc4c00ddc3237a6"
+  },
+  {
+   "wallet": "0x5cfab3c6ed206d90e5612d68b98003125be73c78",
+   "balance": 24.192448,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7883521"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T05:49:08.36465Z",
+   "first_deposit_at": "2026-05-05T06:02:32Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xfadd0f2a93734556e63085efa1f5f3cc7858f3bee0ad3ecfe5bf7c8d5da58d3f"
+  },
+  {
+   "wallet": "0x3ca803a3062cc4052fdda063dca4d05c5bdaa3a9",
+   "balance": 24.19,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8597490"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T10:13:04.785959Z",
+   "first_deposit_at": "2026-06-12T10:20:58Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x7e3e7e125e24a2f82a0561e2b55a3b3342cb22119214d5ae63145ad830e56684"
+  },
+  {
+   "wallet": "0x9d50757991d309f09bf8141fe58a1e7f96286b35",
+   "balance": 24.19,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8594154"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T06:33:56.940926Z",
+   "first_deposit_at": "2026-06-12T13:39:40Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xe8d24d35c443de63b4f4d32af3fbdd15914fd5273b593188506bfda2d1c342b3"
+  },
+  {
+   "wallet": "0x437aa83aa56b79e4bbc4cb6e8004d623fff32da6",
+   "balance": 23.82,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8537715"
+   ],
+   "owner": null,
+   "account_created": "2026-06-09T21:46:39.934074Z",
+   "first_deposit_at": "2026-10-25T23:07:39Z",
+   "stuck_since": "2026-10-25T23:07:39Z",
+   "first_deposit_tx": "0x24ebfd1cc228ccd5909a0039c6dd166ee7ddfcaa06595bd7ae71b97f2a2126d5"
+  },
+  {
+   "wallet": "0x442ab4050fb6f1920b04d8af40ffa64d5482092b",
+   "balance": 23.69,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8550673"
+   ],
+   "owner": null,
+   "account_created": "2026-06-10T15:55:36.73586Z",
+   "first_deposit_at": "2026-06-10T16:11:57Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x47849470bd60f32a3f0a308ccda06bb6f48b9c17b705886c9acd8b9700cceaf9"
+  },
+  {
+   "wallet": "0xdfc515b603d29aa2969dd648a60cf12192111f2e",
+   "balance": 23.02118,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7884603"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T07:08:30.654793Z",
+   "first_deposit_at": "2026-05-05T07:17:36Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x7d2e04f3f3e2abcf0298e95aaace11dc38b4b93ee933ea86dc44b7952909d167"
+  },
+  {
+   "wallet": "0x45784036e7b556dff9ef831afb2655d27d89fe4b",
+   "balance": 22.726469,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7862986"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T14:01:10.210441Z",
+   "first_deposit_at": "2026-05-04T14:05:02Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xcff7a206a5b979c3863c1853aa07be8ff8d378f02f9babcdc8b52b731ae1f9c6"
+  },
+  {
+   "wallet": "0xf99b37731e97610a057117e680abf3d78309f95a",
+   "balance": 22.702519,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7893670"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T16:47:18.870412Z",
+   "first_deposit_at": "2026-05-05T16:56:46Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x96052ad12d1e1f9c3a88f54477aafbe1fca275ef623540acc1067bac55e47309"
+  },
+  {
+   "wallet": "0x7896f18d55857ab1f173000afd867a535daebe6f",
+   "balance": 22.139537,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7873356"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T18:01:08.450231Z",
+   "first_deposit_at": "2026-05-04T18:35:32Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xf883f0082c3c38511587a9923b678990f9efa3ab5da32568526aa6ebbdf4c1fb"
+  },
+  {
+   "wallet": "0xc7fe314feddf382e5a5b649cdcb9bb0958dec5ae",
+   "balance": 22.120243,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7885866"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T08:37:40.656132Z",
+   "first_deposit_at": "2026-05-05T08:47:02Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xde523114ea8d50ae445d7509646346f213532552f60e3b66a7752d2cc46e66bf"
+  },
+  {
+   "wallet": "0xb7c01427d42d1a084ff85743f0e72a896b1e41ae",
+   "balance": 22.04,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8344393"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T20:23:54.249727Z",
+   "first_deposit_at": "2026-05-28T20:32:05Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xef9b8a12be71ccb0dab9b892a30e0482ab9a79f4a08551363f98e5f7c04b026f"
+  },
+  {
+   "wallet": "0x1fd147a54fb85ea11da3caab5416e5b223d388df",
+   "balance": 21.89,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8579847"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T19:04:54.251037Z",
+   "first_deposit_at": "2026-06-11T19:09:10Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x28bdbebf9860a158d0ca869b52b8619a41e0cadd0307ce6ccd812ec6e9719596"
+  },
+  {
+   "wallet": "0x090ea86ba28d7f7640dd214e67ea2a9b3d8f166e",
+   "balance": 21.77,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8576372"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T17:26:45.278391Z",
+   "first_deposit_at": "2026-06-11T17:29:22Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xeda47ff73b9211ce973616be27a8e10149e9a72aa0fa47feb7446ac67bd70afc"
+  },
+  {
+   "wallet": "0xdc2a25b5622b2b0e2b2e38f387345727b53b9918",
+   "balance": 21.77,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8576143"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T17:19:10.011702Z",
+   "first_deposit_at": "2026-06-11T17:31:43Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xdc20523d911948b8752f358321565c76441ecce977c8f617223557a6a4f33890"
+  },
+  {
+   "wallet": "0x5563fe8b9c821ffb0946c58a465ab0e63c2ba227",
+   "balance": 21.631533,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8199989"
+   ],
+   "owner": null,
+   "account_created": "2026-05-19T11:26:10.383082Z",
+   "first_deposit_at": "2026-05-28T14:56:12Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x3df55ac66415134c8109ff9cdb9f60fe620b87f10ed31d5820667bb764aaaec2"
+  },
+  {
+   "wallet": "0x7b0f94e92965fa8fb4f8c6da3412734adc733651",
+   "balance": 21.62508,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7890161"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T13:27:17.767582Z",
+   "first_deposit_at": "2026-05-05T13:44:38Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x3749d4fbfe67b955a56a0c8edc156fa435bced2430d41efad68c125f09fb4997"
+  },
+  {
+   "wallet": "0x010c5fb70e745fea86ff4e9d0ef8af4d4a550cdd",
+   "balance": 21.268747,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8945180"
+   ],
+   "owner": null,
+   "account_created": "2026-06-28T08:45:08.239018Z",
+   "first_deposit_at": "2026-06-30T07:31:37Z",
+   "stuck_since": "2026-06-30T07:31:37Z",
+   "first_deposit_tx": "0xd2c31c412433ee0ac1e3503063883850ecf84d42f5745e1c5782db4ee83a112b"
+  },
+  {
+   "wallet": "0x6ca6f737eb68445b1e409c2b2f407251b3ebc36e",
+   "balance": 21.266048,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7885279"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T07:57:26.530251Z",
+   "first_deposit_at": "2026-05-05T08:00:28Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xf8713858f13dbca39334aae72e0fa02fdd5cb50a273370947c7c27c641acc330"
+  },
+  {
+   "wallet": "0x9b3a4952baa0ce11676c2ac386d0832a8fa8635e",
+   "balance": 21.23,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8595187"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T07:41:24.186079Z",
+   "first_deposit_at": "2026-06-12T14:02:34Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x039706688ffdd6e4d750d52f0450add17e690aeb5fe86de662d9aeea0e31d314"
+  },
+  {
+   "wallet": "0x9cf65fc2f5e94c3df2994408dec6c2d47aad97e8",
+   "balance": 21.117675,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7888170"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T11:14:53.478011Z",
+   "first_deposit_at": "2026-05-05T11:18:32Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xc7deef2b12f7b671f13976080d270bf05b3c3784bfa510dcfa5b3aaff4142043"
+  },
+  {
+   "wallet": "0xd9010ec2164a15d107fb5363be336dda9b4ffb3e",
+   "balance": 21.005499,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7872838"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T17:32:05.059362Z",
+   "first_deposit_at": "2026-05-04T17:41:04Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x4913fe0e6cf948e6fc58d98f43441ea3c0c227817be4fb31c4e8a00b3d724bd4"
+  },
+  {
+   "wallet": "0xd3a7af26b0a9840fd58a57fee1afeff723f85621",
+   "balance": 20.813638,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7882709"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T04:42:09.078676Z",
+   "first_deposit_at": "2026-05-05T04:44:46Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x4a2b491e4880a12d006e56da53f64f2c7121b0f62a5df8394669b750d96df249"
+  },
+  {
+   "wallet": "0xb042fb86cd9d0ed5b2c5cca550495cbd1b553a72",
+   "balance": 20.79578,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7879833"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T01:01:12.153808Z",
+   "first_deposit_at": "2026-05-05T02:33:48Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x932fab1151c71af29e665b1cc56c1abf83d4d8c02416930dceea7e773260cfbc"
+  },
+  {
+   "wallet": "0x60cd023c980c07ef559f8f4170383ecacc394dc8",
+   "balance": 20.351424,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8174021"
+   ],
+   "owner": null,
+   "account_created": "2026-05-18T01:01:36.353065Z",
+   "first_deposit_at": "2026-05-20T02:36:03Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x323c1e4fab40ee29499f94b03b6da1621beb2949b2f115b6ce59fbb05f91cc26"
+  },
+  {
+   "wallet": "0x529011b46c9a1650c2a8184c78cc206dec327edf",
+   "balance": 20.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8340885"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T15:37:59.282272Z",
+   "first_deposit_at": "2026-05-28T15:47:52Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xfc0a474e6156b9536c5d8ba0da304635b38ef2cfdc4470b9465687f85f85da8d"
+  },
+  {
+   "wallet": "0xc9c8bea8924526625e63583e5db1e260526f664d",
+   "balance": 19.988837,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7895399"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T18:22:13.801386Z",
+   "first_deposit_at": "2026-05-05T18:54:20Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x8b2431e7533170c005f170899a1cebbfbb7c932de99c0b9ef9938e977989c787"
+  },
+  {
+   "wallet": "0x7b1ba17d0eb3d847dad3ef0d50a5d52a36ca9861",
+   "balance": 19.979954,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7886787"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T09:38:48.769195Z",
+   "first_deposit_at": "2026-10-27T08:27:21Z",
+   "stuck_since": "2026-10-27T08:27:21Z",
+   "first_deposit_tx": "0x49fa2a4478b983c1750ff293ede9b84f78d209dbffe8bc7c346fb34c3e258404"
+  },
+  {
+   "wallet": "0xfeeece89d9e5e35389733312a64a54d9bfdec3df",
+   "balance": 19.923941,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8594359"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T06:46:28.095272Z",
+   "first_deposit_at": "2026-06-12T06:48:25Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x4648161133ff20562dc64c9aa5fd9e4a3af9f877acaea8407df7ec15e462d85a"
+  },
+  {
+   "wallet": "0x340ed99d347733e9e9f057b591a5dc86d73fa5cb",
+   "balance": 19.880807,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8341423"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T16:19:21.965363Z",
+   "first_deposit_at": "2026-05-28T17:55:14Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x1fce0b68aca4c1b9132722e217ac7b40aee70fe10b226129da7435ed62994b15"
+  },
+  {
+   "wallet": "0x010df12e4fb07301fda96686da63899a6c4557ce",
+   "balance": 19.880287,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8348143"
+   ],
+   "owner": null,
+   "account_created": "2026-05-29T02:57:32.566999Z",
+   "first_deposit_at": "2026-05-29T03:01:56Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xb6b3141ab08b72f01861643f6e5059243a3fe4d2385b9100f3aafe0dff41c3a0"
+  },
+  {
+   "wallet": "0x82f5a61908712dc5ede7469eb0a7adbf6e50ae86",
+   "balance": 19.557036,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8587854"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T00:58:34.51878Z",
+   "first_deposit_at": "2026-06-12T01:04:19Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x4994ca051d8965e524bf0ec0d5bc6c07cd90e99ffe103c72ee8b605f39bb5c53"
+  },
+  {
+   "wallet": "0x730418b3143a57e8b38a94278af2c621e145713b",
+   "balance": 19.504665,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8098860"
+   ],
+   "owner": null,
+   "account_created": "2026-05-14T17:18:01.247113Z",
+   "first_deposit_at": "2026-05-14T17:48:18Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x01a3d06c0afd6ac1207cf2d45a4fa1b418594876738fad4a2ddea565c457e200"
+  },
+  {
+   "wallet": "0xeb5fc0f9f6774d20c38359d560d7c81c30f015ae",
+   "balance": 19.330011,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7874040"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T18:37:39.208493Z",
+   "first_deposit_at": "2026-05-04T18:52:24Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xba0a9c0367588ad519bdf411e3dfb0793e4a669cb1f2777ca099a036e7b1c333"
+  },
+  {
+   "wallet": "0xc180884fac68195aa1ba138d0d52a8781e7f0740",
+   "balance": 19.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8576591"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T17:34:24.632429Z",
+   "first_deposit_at": "2026-06-11T17:49:46Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x7337400edbd6ce06db5dbf6e6192cd3db08db57b630c2037045b89ee5b1c8887"
+  },
+  {
+   "wallet": "0x02d2d392765749f638bc40492817de2e2bc8b09d",
+   "balance": 18.919066,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7875174"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T19:42:32.414313Z",
+   "first_deposit_at": "2026-05-04T19:45:30Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x9a100a34082badd7f0b0ebaa33ed0d62c211433b9eb8893eb1581fa95086a5c0"
+  },
+  {
+   "wallet": "0xe9f9c6a5b535bbf15b160104f7965a9bfd30261f",
+   "balance": 18.87,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8351627"
+   ],
+   "owner": null,
+   "account_created": "2026-05-29T09:54:20.659786Z",
+   "first_deposit_at": "2026-05-29T10:09:59Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x900bc7d8b43c36214e23756fb90df616d2c87f6880a0eefbde17312164558bdf"
+  },
+  {
+   "wallet": "0x86019c876da614ea71711e47406cc41c1c2e1659",
+   "balance": 18.87,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8858341"
+   ],
+   "owner": null,
+   "account_created": "2026-06-22T22:39:14.901791Z",
+   "first_deposit_at": "2026-06-22T22:47:28Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xf240dafb25ce33a20a2c37fd7b3944e76de6e703e6112a3d13b18d6330c59fe2"
+  },
+  {
+   "wallet": "0x401f3aae16aaea4fc9754e1689557ced5bf20369",
+   "balance": 18.860478,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7885555"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T08:16:42.090693Z",
+   "first_deposit_at": "2026-05-05T08:40:46Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x70d7b39996a1b46d1246f8a46bf7e9d4582b865e91d16f28667d4a926faddb17"
+  },
+  {
+   "wallet": "0x163ae283f1a49f1ba0211710b9a00dc53ab0e817",
+   "balance": 18.73,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7895816"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T18:44:38.168432Z",
+   "first_deposit_at": "2026-10-27T07:38:12Z",
+   "stuck_since": "2026-10-27T07:38:12Z",
+   "first_deposit_tx": "0x0cc20dd4d94ff1299252d015f0565601e6a9d16181b3ef6b1d6cdf36a8de8472"
+  },
+  {
+   "wallet": "0x32c5a5f9240d1a72b8b097e1d351ca4aac415c9f",
+   "balance": 18.578018,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8343242"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T18:46:01.22499Z",
+   "first_deposit_at": "2026-05-28T18:49:59Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x91f41b606f85d2fdfa37d19514618c591b80f26b3dc505198ef8188862769401"
+  },
+  {
+   "wallet": "0xbfbdd8ebc90707c44f8534e465ff1250835b90c3",
+   "balance": 18.294592,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7873226"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T17:53:10.22413Z",
+   "first_deposit_at": "2026-05-04T17:56:20Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x8ecf4100277184b25d041def2fc3f7b3f52e165b985381151e7efddf90bdb677"
+  },
+  {
+   "wallet": "0xa9c9a8f1d13500fa7122d90badae0bb995033480",
+   "balance": 18.16,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8189596"
+   ],
+   "owner": null,
+   "account_created": "2026-05-18T20:28:05.677534Z",
+   "first_deposit_at": "2026-05-18T20:30:41Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x226b40dbf37224f9a783bdf09f0816708e81c5b4752f70a63ec14418d02c9d0c"
+  },
+  {
+   "wallet": "0x4a312188e30fd7e7ccb93e7018da9e0714ab1ef2",
+   "balance": 18.03,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8344381"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T20:22:44.13998Z",
+   "first_deposit_at": "2026-05-28T22:11:10Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x78e4c5cd0c73ef4f8a48d9a5988eedb7db35ecf623bde0b824f0f7d9463013f6"
+  },
+  {
+   "wallet": "0xcd32e9782c7b4b8d0b5353e3a650f29d92ac417c",
+   "balance": 17.813329,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7887952"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T10:58:36.500704Z",
+   "first_deposit_at": "2026-05-05T11:06:22Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x4901e5164a890b30a5ec7755bbc9310e3b124148808a2f63e29ee2bdbdb848b0"
+  },
+  {
+   "wallet": "0x409261fa017bba58cc1b0b592db14d4ba2f95e8e",
+   "balance": 17.75,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8599983"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T12:56:55.677527Z",
+   "first_deposit_at": "2026-06-12T13:08:15Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xc01b15cfc0c9e86c02ecc60d9e431b5c1c6b7e7d0f5d3197251ee205a71f6494"
+  },
+  {
+   "wallet": "0xc1ed0ec77314a918f0c9d34ccdd441dd3b29633f",
+   "balance": 17.71,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8781795"
+   ],
+   "owner": null,
+   "account_created": "2026-06-19T14:15:43.430562Z",
+   "first_deposit_at": "2026-06-19T14:20:29Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xf1b5d769ddcc5e2e139fe1df00dd502d7cee043825275eb0eeb46ed16f2631e0"
+  },
+  {
+   "wallet": "0xce1dd40ad9d238009f8c356538aace06fbe835a1",
+   "balance": 17.264558,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7888977"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T12:11:10.294886Z",
+   "first_deposit_at": "2026-05-05T13:34:28Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xf6f4aff123a7c630bb5b456dd91dc6750b3f3f41895761fd0a57ac116ff146a9"
+  },
+  {
+   "wallet": "0x28917f87908f762e2098842218fa08125062aa06",
+   "balance": 17.107205,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8578445"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T18:30:54.869207Z",
+   "first_deposit_at": "2026-06-11T20:51:10Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x768d9438675c65634fc9ff0c54c469c98e5360681c90ec641acf97566060d5f2"
+  },
+  {
+   "wallet": "0x20f5d89278bcce9567d89074f0444330c7e11f7e",
+   "balance": 17.022057,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7894210"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T17:17:49.003101Z",
+   "first_deposit_at": "2026-05-05T17:34:36Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xb69308d042934c7a2c3ac7945243817f753574f63dc1bdadf2e5dd83211c47e4"
+  },
+  {
+   "wallet": "0x90a652c834b1ef7bfdb1aa2e72fea7b2e92e4c92",
+   "balance": 16.88,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7862981"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T14:00:58.159514Z",
+   "first_deposit_at": "2026-10-25T15:15:48Z",
+   "stuck_since": "2026-10-25T15:15:48Z",
+   "first_deposit_tx": "0x69006a2f8eaaf63efeb2fbc0ed6ae8e7660e5213f1cb695be326b9556d925580"
+  },
+  {
+   "wallet": "0x03a42470d11bc4199ed12a21b198ce830d6929c6",
+   "balance": 16.513616,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8715082"
+   ],
+   "owner": null,
+   "account_created": "2026-06-16T21:21:38.295114Z",
+   "first_deposit_at": "2026-06-18T01:27:10Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x59c34a585406e819862dd35cdabdd0721728b21212c9c1f979d3958f2e28dcef"
+  },
+  {
+   "wallet": "0xb2d4fae234628a4847ce8705dd0628e4c27382e2",
+   "balance": 16.04,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8582852"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T20:32:03.112956Z",
+   "first_deposit_at": "2026-06-11T20:36:36Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x89fbbe64eb7c1f858b09149561b5b04fe018aee83a429fde99233b7cfae70385"
+  },
+  {
+   "wallet": "0xacd465d39f79a2177f83375dc183374d79fb1f24",
+   "balance": 15.757758,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7880864"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T02:18:28.853126Z",
+   "first_deposit_at": "2026-05-05T02:26:46Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xae91f80bd94686d5bba89c74955c47244f96d9849afbede17485c349b17a5006"
+  },
+  {
+   "wallet": "0xfb07726c7f562ac51ebfec064c6ecc7734f9528b",
+   "balance": 15.43,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8343472"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T19:06:05.708855Z",
+   "first_deposit_at": "2026-05-28T19:16:45Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x223ab9512ca2d42a3cf7ae47844cf403416e7fdfe08a1c69c0e0ab78102a134c"
+  },
+  {
+   "wallet": "0x5d6777ea2ca279c164d623856368208b0ee496be",
+   "balance": 15.201728,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8944769"
+   ],
+   "owner": null,
+   "account_created": "2026-06-28T07:49:35.866181Z",
+   "first_deposit_at": "2026-07-15T18:06:38Z",
+   "stuck_since": "2026-07-15T18:06:38Z",
+   "first_deposit_tx": "0x0e7fb689f7f8fb743ec2360871886c144f9edd0dc0f3e44b225c58d1ccbc6353"
+  },
+  {
+   "wallet": "0xb0530a3f57387f3b1d7655bfe3037f7f9f91e8d6",
+   "balance": 15.12,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8338854"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T13:01:05.640073Z",
+   "first_deposit_at": "2026-10-15T13:32:40Z",
+   "stuck_since": "2026-10-15T13:32:40Z",
+   "first_deposit_tx": "0xac506d5c7741d827cc560989cd164edd3f601d1bd689de2da03ee50df0b3cd2e"
+  },
+  {
+   "wallet": "0xd7bb8ee72f7feb184504a67097dc851ea3cf0115",
+   "balance": 15.118099,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7867692"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T15:27:36.593846Z",
+   "first_deposit_at": "2026-05-04T15:31:56Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x0f49fb1089c465d19a1a80cb9444ad5786a60e17f608dc2fc4b946cbadd4c185"
+  },
+  {
+   "wallet": "0xd9eb37ff70dc738dd02e10e6a70ec41263bdbb0a",
+   "balance": 15.01,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8574944"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T16:37:37.250066Z",
+   "first_deposit_at": "2026-06-11T17:06:57Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x628ac9886b44930f9a2845a7f063adbeaaa2e492a0c017fd15cd5a3d3540850a"
+  },
+  {
+   "wallet": "0x5a870aa4691de577625c119a6db290156133fe06",
+   "balance": 15.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7888591"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T11:45:32.659565Z",
+   "first_deposit_at": "2026-05-05T11:49:58Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xcdc957cdd569986d5b7e593fcb18a1ef6c9eb0f5159799ba44746a0943e2aabe"
+  },
+  {
+   "wallet": "0xfc93a6221fb1720f963e7da31e3121665f5af73d",
+   "balance": 15.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8091831"
+   ],
+   "owner": null,
+   "account_created": "2026-05-14T10:27:02.127427Z",
+   "first_deposit_at": "2026-05-14T10:19:54Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x337367daf85560def7a2056927e6c81e1b3ab8f1e0e1454a479bca020b13981f"
+  },
+  {
+   "wallet": "0x31e0845ad5a2ea8651f80d6336842761887596b2",
+   "balance": 15.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8598104"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T10:57:47.888069Z",
+   "first_deposit_at": "2026-06-12T11:04:57Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xd27365cc160d07045874b9ff574a996bc2252552b37236db03b8b469ee0e7335"
+  },
+  {
+   "wallet": "0xdb3f3857dee701bd4cc37a732a49ef0c30ebf2ed",
+   "balance": 15.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8739182"
+   ],
+   "owner": null,
+   "account_created": "2026-06-17T18:23:15.121395Z",
+   "first_deposit_at": "2026-07-17T13:08:09Z",
+   "stuck_since": "2026-07-17T13:08:09Z",
+   "first_deposit_tx": "0x91e2fed5692220dce71cd0f5f53a94befe37fb1f874807f30f4d7b57ae5c6353"
+  },
+  {
+   "wallet": "0xa1388a117dcef8a30a0f271948f801f2681e750b",
+   "balance": 14.98,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8584949"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T22:06:43.272027Z",
+   "first_deposit_at": "2026-06-12T03:10:43Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x1b159704d82a37f8d6354294cb6457d77134069dbce955377433a0fce5dd0a8f"
+  },
+  {
+   "wallet": "0xd6f87b3344e3c567fe46a2847565609d5eda91b5",
+   "balance": 14.88,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8350939"
+   ],
+   "owner": null,
+   "account_created": "2026-05-29T08:35:32.782652Z",
+   "first_deposit_at": "2026-05-29T08:44:49Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x1ee15bbc8945ba5873219e4ed6f9c247139fefcfab121cde2366c261bc1fa0fd"
+  },
+  {
+   "wallet": "0x0cb7a3b5beda81c9869c7f4bc8b6c9c795d25f6d",
+   "balance": 14.587227,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8599015"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T12:00:09.760881Z",
+   "first_deposit_at": "2026-06-12T12:17:57Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x2e736cd74f07e98739bfd29b073517b5ff25fa4e692f79d50bbc5a70cb0595ad"
+  },
+  {
+   "wallet": "0x58f17cf1f098e4886715bb523a39163610586ec9",
+   "balance": 14.393558,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8592014"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T04:15:48.767102Z",
+   "first_deposit_at": "2026-06-12T05:17:37Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xc59096e01d80f28051c1ec87772788f5185a3613016444fbda75836d25dea894"
+  },
+  {
+   "wallet": "0xc593d92c2654e6320ea0b191e1e9c3d496ce586b",
+   "balance": 14.376734,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8026786"
+   ],
+   "owner": null,
+   "account_created": "2026-05-11T14:09:28.595213Z",
+   "first_deposit_at": "2026-05-11T17:03:41Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x051dd3022bce688bc91e3bbd9c59506afcd5c2976883448bc66b15f307fb6c13"
+  },
+  {
+   "wallet": "0xa3754259e0b68f775035acd819fc73b545117326",
+   "balance": 14.05,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8907338"
+   ],
+   "owner": null,
+   "account_created": "2026-06-25T18:54:52.949677Z",
+   "first_deposit_at": "2026-06-25T19:12:29Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xb833287e746b7e4dd9cdc4ad25ef7226fe22aa0dd97287598286e4757e07c138"
+  },
+  {
+   "wallet": "0x3dd3caa0984cf2b7d5019313c3d64f2b38acbe4a",
+   "balance": 13.508662,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7884200"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T06:40:47.740814Z",
+   "first_deposit_at": "2026-05-05T07:10:40Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xc41fcfe00d78fca36cfb4bab2ce63bba2c0bd6489a0789ccce0fb7917f9a057b"
+  },
+  {
+   "wallet": "0x1743cf0df5f0acf4d7856b1dd9ee5402cebba5bd",
+   "balance": 13.408479,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8830795"
+   ],
+   "owner": null,
+   "account_created": "2026-06-21T14:43:23.093467Z",
+   "first_deposit_at": "2026-10-20T14:17:11Z",
+   "stuck_since": "2026-10-20T14:17:11Z",
+   "first_deposit_tx": "0x9ffde5e6d73fa656667b5e83a34d88943262294fb7af7146c755976589719aa4"
+  },
+  {
+   "wallet": "0x28a5a9b3a00bd097c560d45324970f4506ada2e0",
+   "balance": 13.39,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8584249"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T21:31:06.866784Z",
+   "first_deposit_at": "2026-06-11T21:41:12Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x6838128680b9db68da2865205ab51efe34b1377c649aaf0f0ab8b460217149b3"
+  },
+  {
+   "wallet": "0x135522b516e02c3d13dd2fe39bba06f57923a5a7",
+   "balance": 13.371004,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7884100"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T06:33:28.792717Z",
+   "first_deposit_at": "2026-05-05T06:41:44Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x17eb008c40c8b93d4d872f9f521a4398a012917c2198629fedcc49f771c71309"
+  },
+  {
+   "wallet": "0x9ffe34bf56214a39d0201958741a7d725ef94253",
+   "balance": 13.22,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8353203"
+   ],
+   "owner": null,
+   "account_created": "2026-05-29T12:54:22.341528Z",
+   "first_deposit_at": "2026-05-29T12:58:15Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x8c1b5fe375ab9d531e0ff0f39a0335133710f15fad0c5f8dcbf90d33224770bd"
+  },
+  {
+   "wallet": "0xf12b907718da6abe2d5f91d35c512fdf0cd669ed",
+   "balance": 13.21,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7997399"
+   ],
+   "owner": null,
+   "account_created": "2026-05-10T05:59:13.089179Z",
+   "first_deposit_at": "2026-05-10T06:08:25Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x9ba09bc4b49a6fc05eb1ef7bb66953d3d356aa271ebbacda9e7e03dd54a2eb71"
+  },
+  {
+   "wallet": "0x052e507b893c150b39b24a80e5c4a660f9bc7a4e",
+   "balance": 13.16,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8602248"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T14:47:52.28209Z",
+   "first_deposit_at": "2026-06-12T14:56:31Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x40e28b71b381827298fd70af359ea78c0a72dcd7818fe66affb0eb4e25378186"
+  },
+  {
+   "wallet": "0xf076396b7269d6f1ccdf71fc6c604baa7f9a1a18",
+   "balance": 13.15,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8598128"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T10:59:10.940768Z",
+   "first_deposit_at": "2026-06-12T13:09:06Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x0b7425d41f69f77f6d61fcfd88178800e080079e0660da0936e2c0986938be30"
+  },
+  {
+   "wallet": "0xd0457376938e419780968bf2462a67aeb9ba6947",
+   "balance": 12.58,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8354939"
+   ],
+   "owner": null,
+   "account_created": "2026-05-29T15:30:45.59358Z",
+   "first_deposit_at": "2026-05-29T15:34:26Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x5885215c05184ff446d502ad016146d106d75475ba54e49147b21bac08637042"
+  },
+  {
+   "wallet": "0x19986599901a1521e85f8d830ac9cc9e55bfe40e",
+   "balance": 12.33,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8597153"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T09:49:18.906976Z",
+   "first_deposit_at": "2026-06-12T09:53:10Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x0bf50c2e02530841f93a5972ca079a24a6424e257384a5138f11d8d894ee317d"
+  },
+  {
+   "wallet": "0x7cb8650a9eeacdcdf855a4c8ea338d630f060061",
+   "balance": 12.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7930817"
+   ],
+   "owner": null,
+   "account_created": "2026-05-07T13:10:31.251847Z",
+   "first_deposit_at": "2026-05-07T13:12:35Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x721a8c3e43aa7ecd2f4ec3655b79bd13a8913df1dda9890e753047d3b1c0ea39"
+  },
+  {
+   "wallet": "0xf1e09e0710c809afe6220640e08f1b396f89be2f",
+   "balance": 12.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8594556"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T06:59:20.513154Z",
+   "first_deposit_at": "2026-06-12T07:17:18Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xb39d8576ba6859caf4ae48f2b4fa23cea73c7a947d203c1b8b2c7f6b14572855"
+  },
+  {
+   "wallet": "0x7d6a7993797390242d5dd6f0667749709d7a5cd1",
+   "balance": 11.978382,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7886047"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T08:49:26.599808Z",
+   "first_deposit_at": "2026-05-05T08:54:26Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x7d542719a39f393e82fb5df8acc1d376799bd9a3f7a8734d70a6a7c32204936a"
+  },
+  {
+   "wallet": "0x5183851a5cb77a233234eb5ad867893bd1b7877d",
+   "balance": 11.89,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8578501"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T18:32:26.266837Z",
+   "first_deposit_at": "2026-06-11T18:41:31Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x6b7cedf69567e8efc7868d897bb7670bc44a601e5c7b7c6b27c5aae54043e0c3"
+  },
+  {
+   "wallet": "0x4f7bed99ac6f8f5e13bfc0a4b0a362ebbe2e1f8f",
+   "balance": 11.88,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7891879"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T15:06:32.256915Z",
+   "first_deposit_at": "2026-05-05T16:16:22Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x189aff6227f0e1dfd79310a4bd1f38968c18f97f606cc921463abc9ea385d5d3"
+  },
+  {
+   "wallet": "0x1fec5ee79f1ea05b7a34070a818384326e911de2",
+   "balance": 11.88,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8118847"
+   ],
+   "owner": null,
+   "account_created": "2026-05-15T17:19:01.406605Z",
+   "first_deposit_at": "2026-05-15T17:25:36Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x6c480b8b6289c84ab425d2ab6997e5ef3940eb2139197ff4ab0c90477419f8fb"
+  },
+  {
+   "wallet": "0x2f91cb7e4116eae42c03bd1d508c1359bbb7a1da",
+   "balance": 11.875177,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8345553"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T22:16:17.611011Z",
+   "first_deposit_at": "2026-09-22T17:25:48Z",
+   "stuck_since": "2026-09-22T17:25:48Z",
+   "first_deposit_tx": "0x9b25251323bfce351d3cfe4b283ab0bfaddcd935ae3b9644371af874a9ef4f45"
+  },
+  {
+   "wallet": "0xec49ee22975362060d743746f53273e3279df9b1",
+   "balance": 11.852643,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8596003"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T08:33:09.542477Z",
+   "first_deposit_at": "2026-06-12T08:40:36Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x04806b699843393aac5fcbec6981f8be8e422a090014bf02e5b3595bc4773cb9"
+  },
+  {
+   "wallet": "0x67aa4b5872e07b6ab9fdf3be89f26a545e7d91a0",
+   "balance": 11.642984,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8350745"
+   ],
+   "owner": null,
+   "account_created": "2026-05-29T08:13:33.495214Z",
+   "first_deposit_at": "2026-05-29T10:40:56Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x8ebd7e82d943c6097697f1c328ab7ea3b1b25d7ff956384c58b415f45090e67a"
+  },
+  {
+   "wallet": "0x37d69522981b970e7203326d9d6193dc3d3b8627",
+   "balance": 11.58,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8453377"
+   ],
+   "owner": null,
+   "account_created": "2026-06-04T21:15:25.19462Z",
+   "first_deposit_at": "2026-06-07T01:39:55Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xd5e973cdd61eef990473e2a54eb9bd05f97b0dabb0720dd308db825aa53e77c8"
+  },
+  {
+   "wallet": "0x2a7d1e4a2734ecdbd6df95ee96618ec21f42452b",
+   "balance": 11.566629,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7891365"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T14:37:20.27292Z",
+   "first_deposit_at": "2026-05-05T14:52:54Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x22ff13d06dd7fbbbb9428cc18427b00ca995c0810eddca49e2d6aa008dddca7f"
+  },
+  {
+   "wallet": "0xc9326c807cc1b6fd494bdacea60cb6c356bc0324",
+   "balance": 11.55,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8130115"
+   ],
+   "owner": null,
+   "account_created": "2026-05-16T07:24:13.082769Z",
+   "first_deposit_at": "2026-05-16T07:21:14Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xf89dbb81810728422ac097f880a0fb19bf3cfb8b7eea7e24625252fe11569a20"
+  },
+  {
+   "wallet": "0xdb16c849eeeb262680bbf2d2a69f0445c4cf2f96",
+   "balance": 11.52,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8587619"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T00:44:29.23228Z",
+   "first_deposit_at": "2026-06-12T01:04:45Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xb848efd2c78a652cfcbb4cdf563530f2c97238725019a1d5db92df61aa398995"
+  },
+  {
+   "wallet": "0x1bdb92e99ce872c558d024b2e7ab873c0be68918",
+   "balance": 11.342925,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7894935"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T17:55:45.486451Z",
+   "first_deposit_at": "2026-05-05T18:10:36Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x0b689b6ed658a0f4eba022fe8313042991b33cdae0df2ab5efcbbccb8c204648"
+  },
+  {
+   "wallet": "0x2f0da05d5454dea441fecd137df60776f0b01ec5",
+   "balance": 11.340283,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7873744"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T18:22:53.027519Z",
+   "first_deposit_at": "2026-05-04T18:33:12Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x4cd0d00071838d497851fb55f1ef8860fea3f1b1c9fd88e5e6181a7fd9248dac"
+  },
+  {
+   "wallet": "0x1beb260171864cfc2cbf62738b6c892dc591986a",
+   "balance": 11.29,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8353445"
+   ],
+   "owner": null,
+   "account_created": "2026-05-29T13:18:15.795917Z",
+   "first_deposit_at": "2026-05-29T13:32:27Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x80feafd42595b2c5aa3ae706cfc3837f7124b6db36cbe39eec492a8bb340ba18"
+  },
+  {
+   "wallet": "0x590d79ba352d3e972a62ed267857db2ca8c9618e",
+   "balance": 11.22,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8585320"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T22:28:04.071515Z",
+   "first_deposit_at": "2026-06-11T22:43:01Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xe741466164e021ab94422d7333846d5cb234671ccd94d1fdaf32ef08ce090706"
+  },
+  {
+   "wallet": "0xe11fce21b082fd82d66e1071208d531e7de1d994",
+   "balance": 11.13,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8185440"
+   ],
+   "owner": null,
+   "account_created": "2026-05-18T16:21:21.521899Z",
+   "first_deposit_at": "2026-05-19T14:30:17Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xcd000ee8653e14b2ac43ac6904428324c6d5e52dc051be24daeac08ecff2787d"
+  },
+  {
+   "wallet": "0xa0739705989b80aaebf8e74ffc148e733401f3c4",
+   "balance": 11.038041,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8703747"
+   ],
+   "owner": null,
+   "account_created": "2026-06-16T13:18:36.648367Z",
+   "first_deposit_at": "2026-06-30T17:43:08Z",
+   "stuck_since": "2026-06-30T17:43:08Z",
+   "first_deposit_tx": "0xf8868ffb4386028e6dcb4a6b5847e856e81e739595dfc088e5c09f79c5fa9644"
+  },
+  {
+   "wallet": "0x996244dcd50e77fcb55eb409d92fd76665188e32",
+   "balance": 11.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7881307"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T02:51:21.464102Z",
+   "first_deposit_at": "2026-05-05T03:48:04Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x8d7f79dbb98abd1f5f31fb661ac5b9e4d1ef8dcf13208a19281e00978c0e26fe"
+  },
+  {
+   "wallet": "0xa96ee458ea20584c433c640200376c8a39df0f64",
+   "balance": 10.92,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7874009"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T18:36:05.08297Z",
+   "first_deposit_at": "2026-05-07T17:17:22Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x5d4d48df2871d03607e60fc266d0a633c41ee952d4aec565c3278e8a15242db7"
+  },
+  {
+   "wallet": "0x45c84497e9ab77cb1dbca90727777f97388daa1d",
+   "balance": 10.867735,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7862238"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T13:49:51.163532Z",
+   "first_deposit_at": "2026-05-04T14:55:22Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x7aeedba1624cb5c3b48a6070c0566ab95f55a2587345fed780c6538fad2a6f36"
+  },
+  {
+   "wallet": "0xe7c917c1051f7ac0c24e70cafd917a73d871f5c6",
+   "balance": 10.86519,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7892242"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T15:27:23.903513Z",
+   "first_deposit_at": "2026-05-05T15:31:36Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x6413965919d5764fe870f42ba8e4761d36d5cbe6304cad71fe75a29ebd8e1379"
+  },
+  {
+   "wallet": "0xf0ebe00b3e89a28ea7fe2dacd9b4cc6b70f2c07a",
+   "balance": 10.862645,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7874053"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T18:38:11.262132Z",
+   "first_deposit_at": "2026-05-04T19:41:50Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x841e5764dc743d16cd9ab80c59692bd7e7fb5e94d0c928a7f4bd90df5f821469"
+  },
+  {
+   "wallet": "0xd2a070340a4d05b045002b70736781a7e3d592a1",
+   "balance": 10.860101,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7869229"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T15:55:44.357043Z",
+   "first_deposit_at": "2026-05-04T16:02:30Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x7880ce144eeb7e84e2b3d00347b3a10a0fcc4ab41ed8b8a48f54ef125a1f9a47"
+  },
+  {
+   "wallet": "0xe686c3fcec4ee29678b2c55cb4ff6e90213da8b0",
+   "balance": 10.85883,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7890470"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T13:44:41.499029Z",
+   "first_deposit_at": "2026-05-05T13:50:52Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xad5442dd0656ee2ba8d30c65f9c8671eb39fbaf26dfdc1e720cf862c757c9b60"
+  },
+  {
+   "wallet": "0x1ffb344077c643c805dac47dbf4bfd1751165f30",
+   "balance": 10.856301,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7876832"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T21:20:10.92069Z",
+   "first_deposit_at": "2026-05-04T21:25:24Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x08eb5859c4db8bcfa7e5873497d813469bd6e00cc7383f45b1c607efab1d81a0"
+  },
+  {
+   "wallet": "0xad27eb5c83987c7b4f1e2e5660e04e5119e5ef14",
+   "balance": 10.85376,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7871695"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T16:30:24.706451Z",
+   "first_deposit_at": "2026-05-04T16:34:16Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xcae8058a5e8c28f45880ff58f395d952260f1c64f40bebc03a4c9b1c5052a7c1"
+  },
+  {
+   "wallet": "0x869d9b1b6976065fffd581ffceb7db4b0ac85c5e",
+   "balance": 10.85376,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7876570"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T21:03:44.20362Z",
+   "first_deposit_at": "2026-05-04T21:11:36Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x7f50f109603d27e495e2145d4f5e4b9adc093071759f1cea1d6f9951eb67c520"
+  },
+  {
+   "wallet": "0x73a1f098bd2de562a86aabd191d168a91b3258a1",
+   "balance": 10.85376,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7897327"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T20:12:10.480226Z",
+   "first_deposit_at": "2026-05-05T20:44:44Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x6eea14fcb200caa02f3dbe14c236d7a5474093416e758cc075ca9b4ed6147898"
+  },
+  {
+   "wallet": "0x0cda4a6bec4b420979a75710b41da3d55feffd10",
+   "balance": 10.849951,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7881440"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T03:03:34.769909Z",
+   "first_deposit_at": "2026-05-05T03:35:00Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xe19734d49049466b58b59057bc868578d22366ce03845a134a549d3a86c51103"
+  },
+  {
+   "wallet": "0x66872b20f0b85c075faabe1dfd84e5b4dc884def",
+   "balance": 10.849951,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7888687"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T11:51:49.683996Z",
+   "first_deposit_at": "2026-05-05T11:58:10Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xb11f74d435e36648ccf2fe42fd86790139486face6f7eec5bc18ad489a901e65"
+  },
+  {
+   "wallet": "0x782ecf69481d643011438ed35f6d1d93cf7946b8",
+   "balance": 10.847414,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7887979"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T11:00:07.615494Z",
+   "first_deposit_at": "2026-05-05T11:19:42Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xd172f6a6847fe91998397fb3db022cf5779567cff9cbb6e611473539a7a65029"
+  },
+  {
+   "wallet": "0xb9414018d626bcfe0dc5d76360eacddae1b7a297",
+   "balance": 10.846145,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7887957"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T10:58:52.062303Z",
+   "first_deposit_at": "2026-05-05T11:18:34Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x68796caa23fc435d55498b70f2e51c67dc379fae38d8528e1bc01126ea434160"
+  },
+  {
+   "wallet": "0xc04a746f4d3c45dc8e8a925c334f01de0831c4db",
+   "balance": 10.82,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8341493"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T16:25:44.002466Z",
+   "first_deposit_at": "2026-05-28T16:31:47Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x2211a84f0f412101f057c791d6c736f84551cf01f1e57ae792de68c6a181724f"
+  },
+  {
+   "wallet": "0xb212d8bbcf060cb3ff7be068cbe5c6bf84afda84",
+   "balance": 10.81,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8341160"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T15:57:31.24115Z",
+   "first_deposit_at": "2026-05-28T16:03:52Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xfdd498604f1782319bd02981140f1da8a71326343f47c355a7ef4aae052a9102"
+  },
+  {
+   "wallet": "0xf1dd36ed54f7ddbd8e851868186b9488200c389f",
+   "balance": 10.75,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8580498"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T19:21:02.880929Z",
+   "first_deposit_at": "2026-06-11T19:42:30Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x10aca6ffa4e2f916ed81d731dc57b737f65ca0c0ef1bb4e50a251a3345b8f00f"
+  },
+  {
+   "wallet": "0x625608d54be74cc13861bd5f02107a96ef0a463f",
+   "balance": 10.75,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8582154"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T20:06:28.825818Z",
+   "first_deposit_at": "2026-06-11T20:13:48Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x17be8a2d07a3936119283ad0a8ca261e082f1c61871c8cb3b0b3c6ce2630962f"
+  },
+  {
+   "wallet": "0x786be1f87ea9645dfb173489fd0f3a9fd719ac10",
+   "balance": 10.75,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8583881"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T21:15:51.210733Z",
+   "first_deposit_at": "2026-06-11T21:19:42Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x4269bd4c98c40e40caecb2c905d22b1da623efe9f91f6a29096e17bca09e192d"
+  },
+  {
+   "wallet": "0xee87e5cb13c9bbd2a5189322b7fcad640bf6135a",
+   "balance": 10.75,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8586682"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T23:45:09.773962Z",
+   "first_deposit_at": "2026-06-11T23:48:34Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x87838d12a2c3222f656a123f1c4123e36c276b245d3ae0fca5e3c8e49e8f0684"
+  },
+  {
+   "wallet": "0x1c5673b2dd797d2b674016ba5316a2bb2332196d",
+   "balance": 10.74,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8585378"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T22:31:22.774711Z",
+   "first_deposit_at": "2026-06-11T22:33:48Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x8fe37739dee5c916bb9a2cc915be6638c5f9f5b401d6214459a011239379728a"
+  },
+  {
+   "wallet": "0x6b32f226649c60e826dd6de099793acef7dad8b0",
+   "balance": 10.73,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8599469"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T12:26:02.637648Z",
+   "first_deposit_at": "2026-06-12T12:32:49Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x85c819ef8ae5f407af7d3ad1775fa0275da5da5fd0bd58e919ed60c9d8a5bc09"
+  },
+  {
+   "wallet": "0x6a6c441c2f157490b4cad6c3e053238054e440c1",
+   "balance": 10.72,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8577819"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T18:14:11.330363Z",
+   "first_deposit_at": "2026-06-11T18:16:46Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x3ef46e4a0d67dd819d67c51d04488e886e4bf398f5a753b4a05cb452f11471cd"
+  },
+  {
+   "wallet": "0xb5a706b335ea46969b04ed223a557c7a340bbac8",
+   "balance": 10.51,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8578603"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T18:34:55.714283Z",
+   "first_deposit_at": "2026-06-11T18:51:52Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x19aee75e2a549b2e0e8ebb1ba68baa8d6637140a0579b3cb907b72c01737ec11"
+  },
+  {
+   "wallet": "0xa60aab5886670ede0805237378c0fe8addce027e",
+   "balance": 10.498063,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8218483"
+   ],
+   "owner": null,
+   "account_created": "2026-05-20T08:23:53.258278Z",
+   "first_deposit_at": "2026-09-18T09:33:55Z",
+   "stuck_since": "2026-09-18T09:33:55Z",
+   "first_deposit_tx": "0x00bba0360dddc680ed3f17d7b54361449ba185e784735500d42f1e2f482ad407"
+  },
+  {
+   "wallet": "0x934ed573b4883ce7adebde57a9e2034338ae7996",
+   "balance": 10.463847,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7894722"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T17:44:34.838162Z",
+   "first_deposit_at": "2026-05-05T17:48:14Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x096ed3559d829d69180b37771173dcd3e1c552e22a4b9d515887fbaa7d358d9a"
+  },
+  {
+   "wallet": "0x827b1ef19cf43800358b9df25c492b535008c506",
+   "balance": 10.46,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8574743"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T16:30:24.649998Z",
+   "first_deposit_at": "2026-06-11T16:40:42Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xd4054959d8b704c3e6035e4733ffe8171a2cdc0dcd5d20d7016e56a5703e65b1"
+  },
+  {
+   "wallet": "0x00c24d0e3b45da17fb873aaef0be6bcd298d5007",
+   "balance": 10.449985,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7885360"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T08:01:49.735546Z",
+   "first_deposit_at": "2026-05-05T12:00:32Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x51af7630cbff88db25b2f9a2f31038978f2ebf16220939dc3bb3b7cbb9026cc7"
+  },
+  {
+   "wallet": "0x589c1c907235c0addd5dd00fdebd4157d5eb6272",
+   "balance": 10.425185,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7892301"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T15:30:41.208732Z",
+   "first_deposit_at": "2026-05-05T16:04:32Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x1b64247640d278209645a1e38ef2ad7d07d6a8d2826151dbc1e362f027c5b4c0"
+  },
+  {
+   "wallet": "0xf3d8c4caef3e2a72683c53c263dc10927bd859ce",
+   "balance": 10.420712,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7882722"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T04:43:30.614243Z",
+   "first_deposit_at": "2026-05-05T04:52:14Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x96dafb2b5cd5f58e311bef542e257ab3c017bd5d74be7682b305197bde4e11b1"
+  },
+  {
+   "wallet": "0x49a282cac289be8bc66c0a68762aa860905592e4",
+   "balance": 10.372619,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7881456"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T03:04:41.838198Z",
+   "first_deposit_at": "2026-05-05T03:07:30Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x76e3e2212ecfd1f23826d000a2f57cc6c8131247cc4c5cc7ad2bf05185e3a86c"
+  },
+  {
+   "wallet": "0x6b8c196ce8d9e05ac87a2d6d224519e59b156191",
+   "balance": 10.2,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7980454"
+   ],
+   "owner": null,
+   "account_created": "2026-05-09T18:21:07.058069Z",
+   "first_deposit_at": "2026-05-09T18:32:42Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xe55e7f9d779f488e384eb3d76940be0724f7c40276b79be31189b90f4f5f432f"
+  },
+  {
+   "wallet": "0x8f35c7aefc6260290d4c687eb2fcac65be94b576",
+   "balance": 10.185664,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7888241"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T11:19:34.756122Z",
+   "first_deposit_at": "2026-05-20T22:47:11Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x954593d40916095a22459c149a2271c2a45de6e765101dc235abcb749233e204"
+  },
+  {
+   "wallet": "0x376e0f317e1dfdf77bc39ca55ffe653294a0a375",
+   "balance": 10.184477,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7894640"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T17:40:29.086563Z",
+   "first_deposit_at": "2026-05-05T17:59:52Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x3f115a5aba945cb0601ff4b07f146e0dae7dd5c3d8bdf000f807e4670fc6bf1f"
+  },
+  {
+   "wallet": "0x692181c54ce0c059c8bed4feee687bae7d685780",
+   "balance": 10.01,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8352571"
+   ],
+   "owner": null,
+   "account_created": "2026-05-29T11:43:42.675066Z",
+   "first_deposit_at": "2026-05-29T11:49:51Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x9bffba77e97b66ab379a74644e0348799f8eb07e397b3ed380ac88193d498112"
+  },
+  {
+   "wallet": "0xf5dd2bddfe8c67115d93f62be9e3377424914ad3",
+   "balance": 10.001081,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7888465"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T11:36:15.190569Z",
+   "first_deposit_at": "2026-05-05T11:47:12Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x2c178a1bdf3f62c88c18dfe19ec4cc7dd94e5787dd056a163c7ac97864ff5594"
+  },
+  {
+   "wallet": "0xe8f1f04bbd81183b6c60f29c5b24bcd25006e877",
+   "balance": 10.000822,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8595611"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T08:07:19.552229Z",
+   "first_deposit_at": "2026-06-12T08:15:51Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x978413253f668b2479253e2e08072b21c8c50d522dddb2464377e33b46bd727a"
+  },
+  {
+   "wallet": "0x349fb9b12d5482feb103b05db5ba9048cb2ee82f",
+   "balance": 10.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8342520"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T17:41:25.657173Z",
+   "first_deposit_at": "2026-05-28T18:07:04Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x58f0bf20642bdeb945b42fb4da9f0554513827bbd6becad3d2f9bdb953bd1e97"
+  },
+  {
+   "wallet": "0x746ddbc6bd3640ee9611b2e68b0ac84ecd48b1f9",
+   "balance": 10.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8345280"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T21:47:39.884818Z",
+   "first_deposit_at": "2026-05-28T22:30:04Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xc8dd0b367c0e308e546a9b6c1f26ffaeeeb398d7050c38c62cb529d2c529193a"
+  },
+  {
+   "wallet": "0xd2c8b8007517630feeb95f346fc2dfff92bcd7e3",
+   "balance": 10.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8472440"
+   ],
+   "owner": null,
+   "account_created": "2026-06-06T15:14:26.830267Z",
+   "first_deposit_at": "2026-06-06T16:41:30Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xcebbaa2c038b0017e762a00f481691dcb3b0e332c4fc8f35806dcd53a06ff18d"
+  },
+  {
+   "wallet": "0x02d71ba1c7d41072ec3b9e4fc0e0cd3989705684",
+   "balance": 10.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [],
+   "owner": "0x5527c18d24a1d07fb8ee6a083c619891cf82e6d5",
+   "account_created": null,
+   "first_deposit_at": "2026-06-16T16:55:17Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xcccfebe870040b50f633e38d659835a3a3142e011a371bd19a6353e2db632a4b"
+  },
+  {
+   "wallet": "0x95306bbca4f7581ffd9a6c5201e7a6f2df092edb",
+   "balance": 10.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [],
+   "owner": "0x66bd9caae07b03ac835b928e42379f43627f39bf",
+   "account_created": null,
+   "first_deposit_at": "2026-06-17T07:08:01Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x01b83344b2ba35361a15a63dc9751a550d33f4d6757978b4c565a640be4f83e7"
+  },
+  {
+   "wallet": "0x06c48e2793d0864a3e695bba79dbbd30bbd3f17b",
+   "balance": 9.98,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8340888"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T15:38:27.031326Z",
+   "first_deposit_at": "2026-05-28T15:47:34Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x1ed3256952b8d3115ba9d5d769f6ab125485589b1646dc485bc07acf730679a4"
+  },
+  {
+   "wallet": "0xec239c95d34335ebbb7d24a574cbedfc0b622da8",
+   "balance": 9.974088,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8234437"
+   ],
+   "owner": null,
+   "account_created": "2026-05-21T02:14:40.665802Z",
+   "first_deposit_at": "2026-05-21T02:23:42Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x21a98151429c4ae32794a4c4090cc640958c36a8aa012fc6fe63acb4ac4ebf6e"
+  },
+  {
+   "wallet": "0xb0967eb13d9ea7fa25ac62b7bb47a9055f455bfe",
+   "balance": 9.959654,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8574828"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T16:33:48.722599Z",
+   "first_deposit_at": "2026-06-11T16:43:54Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x88a732499493c972d21d38b31dd04139df725f361d48b314c5247cd7bf81e196"
+  },
+  {
+   "wallet": "0x5a3ca20664ffdbb6c1da7f31b0e736f85cee6633",
+   "balance": 9.951873,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7874268"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T18:50:58.881295Z",
+   "first_deposit_at": "2026-05-04T19:09:08Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x6fb1f276a800ff71dccc4062eb8fa9ef841f7ca8167d0ea7673edc0d6c5bd0a1"
+  },
+  {
+   "wallet": "0x5b688ba9e9722eaf0d4d6afeeeed811640afe269",
+   "balance": 9.94402,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7885683"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T08:24:31.379406Z",
+   "first_deposit_at": "2026-05-05T08:26:28Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x6dbe9297a598b95151ffb70b45393ccc631ef44be91d6887fa7bd0b03f42571b"
+  },
+  {
+   "wallet": "0x3ad5eb42eb75bcad10fe24fa05f6185d8e06e687",
+   "balance": 9.942346,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7874848"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T19:23:49.264241Z",
+   "first_deposit_at": "2026-05-04T19:54:24Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xca22fb25bca9d20840d87ccbb3a355c3f5b4b647414e42d63447bd4366a1536a"
+  },
+  {
+   "wallet": "0x40aba830fa3b6f4b99a4d30c024c9176c99ce152",
+   "balance": 9.93827,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8171719"
+   ],
+   "owner": null,
+   "account_created": "2026-05-17T22:14:57.931477Z",
+   "first_deposit_at": "2026-05-17T22:30:26Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xfeea9769848191bf66a9d41cb8ff8cc40a62225223bfda9a4174a61117cc5faf"
+  },
+  {
+   "wallet": "0x24462a6ec8af553d6bc68d00e986cfe68ec5c70d",
+   "balance": 9.935851,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8048748"
+   ],
+   "owner": null,
+   "account_created": "2026-05-12T14:56:06.849408Z",
+   "first_deposit_at": "2026-05-12T15:00:43Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x1d0fd41f209e720b2fa6297e168c2305570c468668ec27c74c488b026bc70be7"
+  },
+  {
+   "wallet": "0x32e899666bc9f0518a73433d5b1a67d5d6ef6cf0",
+   "balance": 9.928493,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8577879"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T18:15:31.687647Z",
+   "first_deposit_at": "2026-06-11T18:17:58Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xdd4fde448c3bbb2ea346b032d1af8227b79178033384fc2fb30691a20fd79e0e"
+  },
+  {
+   "wallet": "0x97f370d0db467050bcd42edf6634ee847a1847a1",
+   "balance": 9.895893,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8351043"
+   ],
+   "owner": null,
+   "account_created": "2026-05-29T08:46:44.111139Z",
+   "first_deposit_at": "2026-10-22T21:47:51Z",
+   "stuck_since": "2026-10-22T21:47:51Z",
+   "first_deposit_tx": "0x746231b82dd5ca5759a225a1e049b1842552bc7e6820cd3932b3f8d06c181a8f"
+  },
+  {
+   "wallet": "0x6f112fb21d3d8c64569fce9fe75081c173a657a8",
+   "balance": 9.739012,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8344117"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T19:59:08.557101Z",
+   "first_deposit_at": "2026-05-28T20:09:24Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x16260ba46ccd4cd5b00389e53113ba017a0b8df2d649d591a4dd3313b7ad3059"
+  },
+  {
+   "wallet": "0x1616c8329e32b083eb371209e8647ec244d368f7",
+   "balance": 9.30995,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8853970"
+   ],
+   "owner": null,
+   "account_created": "2026-06-22T18:16:18.874047Z",
+   "first_deposit_at": "2026-07-11T23:21:53Z",
+   "stuck_since": "2026-07-11T23:21:53Z",
+   "first_deposit_tx": "0xc8b746b2c097290dd1cdb774ceaf944f75567105e8cea6a7f36dd89d49bf61b1"
+  },
+  {
+   "wallet": "0x128e318867534c49f164c040039c5193b2fe74f7",
+   "balance": 9.25952,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7888323"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T11:25:10.769758Z",
+   "first_deposit_at": "2026-05-05T11:35:14Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x1f7cbb18dfafac312f6d833a36b4bd6ca8ee5834ca13e6f72c91d3bce818de89"
+  },
+  {
+   "wallet": "0xed3adb53be390ca091d1dcaa33e98bbc84d51d9b",
+   "balance": 9.23,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8344707"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T20:52:50.987714Z",
+   "first_deposit_at": "2026-05-28T21:28:09Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x1bd3e465ba3342209d9d2e73c90c4c1b35eb04996b013f742cff600a17254a01"
+  },
+  {
+   "wallet": "0x0c2c9a0402cb13ca73f63facd76057f505fcb04b",
+   "balance": 9.23,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8578692"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T18:37:19.558198Z",
+   "first_deposit_at": "2026-06-11T18:43:31Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x2bedbe813852203d6f5f5bbdd4a14fda83db918455f9a2f54bd8aafb895971dc"
+  },
+  {
+   "wallet": "0x19e4aed3a1db366711bc0b83741dd6ca32637465",
+   "balance": 9.23,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8583359"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T20:52:43.39752Z",
+   "first_deposit_at": "2026-06-11T21:28:09Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xaf95a2e8a22958886a05fc1672b1cbebde19310ef2b4b208aa7484696e962fd9"
+  },
+  {
+   "wallet": "0x89e9d5d1574964a22995c6330e110a840cbccad1",
+   "balance": 9.23,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8593417"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T05:44:02.856506Z",
+   "first_deposit_at": "2026-06-12T05:50:13Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xeafba566e22ba7df11aba81bda1c8335b501b66ec3c4b3920b0a0216231b138a"
+  },
+  {
+   "wallet": "0x1de9cf81336df865cc4231d1eb3d299ef4d19ec3",
+   "balance": 9.23,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8598481"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T11:25:23.953298Z",
+   "first_deposit_at": "2026-06-12T15:39:31Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x02ea8ce6a274d0d2c48e24cbfc9f1c0024212b2902a7605c79a38a165d64e9b5"
+  },
+  {
+   "wallet": "0x0bf3858d35eea5d973a8aaedb4b781ed0e6d2890",
+   "balance": 9.221044,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7871278"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T16:16:21.724104Z",
+   "first_deposit_at": "2026-05-04T16:47:56Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x51bd16c3564bbf58b6468850aaf510d5e0f162efaa8e74c8910540115746cad5"
+  },
+  {
+   "wallet": "0x5f48ad14b274e6abe0f603121727629258fdf4fa",
+   "balance": 9.210464,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7878394"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T23:06:25.206321Z",
+   "first_deposit_at": "2026-05-04T23:19:46Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xa22ca7fb792b9a4860ad840e4716e6b405c6819453369c99f31567095bae9202"
+  },
+  {
+   "wallet": "0x9e952d7a0c0c5c454265e1100223028399fd9757",
+   "balance": 9.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8068503"
+   ],
+   "owner": null,
+   "account_created": "2026-05-13T14:36:06.437273Z",
+   "first_deposit_at": "2026-05-13T14:54:43Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xb1f8fc9ffc03cf987884b53d54e7767740cf21d899bd38ec547fa603ace25a23"
+  },
+  {
+   "wallet": "0x639316a2232d331eddb4171975f763d961ecbc3b",
+   "balance": 8.940628,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7864321"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T14:38:29.114619Z",
+   "first_deposit_at": "2026-05-04T14:47:36Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xfdaee71d5e41e5eaf3fabb8140d3acf44a4dc43315f69510061f07bd0927ea2c"
+  },
+  {
+   "wallet": "0x172a6e87b01d9715094b8d840d55481df5398713",
+   "balance": 8.86,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8342957"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T18:22:24.751073Z",
+   "first_deposit_at": "2026-05-28T18:39:11Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x8a47c9bf03216d3d5ef5cd9b3143c6defd9b5e8bf7f17d1d12ac1c9802b52093"
+  },
+  {
+   "wallet": "0x70ee00c54fec050c86c180987fce94d924f94e66",
+   "balance": 8.83,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8227228"
+   ],
+   "owner": null,
+   "account_created": "2026-05-20T17:41:57.340225Z",
+   "first_deposit_at": "2026-05-20T17:51:00Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xdc0a2da8313d15c434f7b49b7fcf1553299f63abab613533526eb0bde0944d1a"
+  },
+  {
+   "wallet": "0xb63ffa69cf6dafd62153c82dbd5f9575086040ad",
+   "balance": 8.760124,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7981898"
+   ],
+   "owner": null,
+   "account_created": "2026-05-09T19:07:08.125906Z",
+   "first_deposit_at": "2026-05-09T20:19:22Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x8333edd7c94002f2278430589a6bc97b0398040d48e54ae50aa55afef6abe6f6"
+  },
+  {
+   "wallet": "0x7219b176aa0d7db7f33cf199efb36db4d62d45ad",
+   "balance": 8.66,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8582465"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T20:16:35.583778Z",
+   "first_deposit_at": "2026-06-11T20:19:13Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xa802c8f43fe830640583f593dbef62bac71b53b6c1f66628239accd28ac13115"
+  },
+  {
+   "wallet": "0x321244bf4032ef6eb7197ee2d952fd221402c967",
+   "balance": 8.610186,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7886418"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T09:15:25.035479Z",
+   "first_deposit_at": "2026-05-05T09:26:22Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xc193740157b8cc6cebe305c2c8f98642614ac6da8b716d29a64a93a901104634"
+  },
+  {
+   "wallet": "0xde44de85606526f1d2b754edf8c91e9ffa2ae048",
+   "balance": 8.53,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8906250"
+   ],
+   "owner": null,
+   "account_created": "2026-06-25T17:42:39.043404Z",
+   "first_deposit_at": "2026-06-25T17:46:44Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x74bfc8cd53643e4a391e52090feaeee4b1a36503f4dafa31d8a0a510e792c817"
+  },
+  {
+   "wallet": "0x30258b5122442a8cb5bef361c463ca735fb71877",
+   "balance": 8.432562,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7868080"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T15:44:26.812268Z",
+   "first_deposit_at": "2026-05-04T15:50:08Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xadfa1c66b808c858f14ce8c5329b70a3fdf1b7cbf670e10cc1b32e3ed34ceb0d"
+  },
+  {
+   "wallet": "0x70cbea2f545b23840abadee4576efae7b9dcc68f",
+   "balance": 8.307571,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7881666"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T03:22:02.753592Z",
+   "first_deposit_at": "2026-05-05T03:48:14Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x99e55f6034eff1fa5afaa240fa71d06bed4ba6d33dcdf636c91cad68cfbba528"
+  },
+  {
+   "wallet": "0xa55446001ba9c60877e38c98f05abda9df859327",
+   "balance": 8.26,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8342759"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T18:01:42.457982Z",
+   "first_deposit_at": "2026-05-28T18:07:29Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xfa792bd06e0f8e01a53f47abaae017077a745e07801094c6039ad0325a764ccb"
+  },
+  {
+   "wallet": "0xbc62fadb8dbc17c3d274956f2677fed057f110ac",
+   "balance": 8.26,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8585272"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T22:25:20.30245Z",
+   "first_deposit_at": "2026-06-11T22:29:40Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x006a02ff99f4082f494d045ac48c4e8f4104ddc9eaf74c2da297a25ac95d5c7a"
+  },
+  {
+   "wallet": "0xc27b4809c743e82313bae2e0eb9afc4ba63421b5",
+   "balance": 8.26,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8586418"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T23:29:04.816043Z",
+   "first_deposit_at": "2026-06-11T23:46:19Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x8f5b7b994af33593f4af0d5b479d7b44bafd2668b38ba4c4ec4272351e3176f1"
+  },
+  {
+   "wallet": "0x6ec17b54f1c24335bf482b142c8cf3871d36dbb8",
+   "balance": 8.26,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8597176"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T09:50:37.349872Z",
+   "first_deposit_at": "2026-06-12T09:58:25Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x3109db1d782983c72d8eaf924974d2da2abc2f89fa8bec5620ffec33087bf6bb"
+  },
+  {
+   "wallet": "0xb4031c31fb32bef4fad3b08e95a8ea28c813db26",
+   "balance": 8.123024,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8837407"
+   ],
+   "owner": null,
+   "account_created": "2026-06-21T20:14:55.679201Z",
+   "first_deposit_at": "2026-06-21T20:55:23Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xc8bb0b4de4a938f4e696293203365b014b9265722c57709a94b723161f616456"
+  },
+  {
+   "wallet": "0x46265c4a380b54386ec756f60ca396f631de04d2",
+   "balance": 8.109499,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7885580"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T08:18:20.810507Z",
+   "first_deposit_at": "2026-05-05T08:23:46Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x017a34c90472febe85684dd46987d352e8d5e57f0e93b0a89d0b92075f89c4e9"
+  },
+  {
+   "wallet": "0xf2267fb621b5b8f81566c9dc318342e0efbdfb83",
+   "balance": 8.106643,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7872314"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T17:04:43.761482Z",
+   "first_deposit_at": "2026-05-04T17:13:32Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x27d0c2967a0eeb58bee2c5656d5751b2cc6be3ecc3b48d711adb78b92e7e1d66"
+  },
+  {
+   "wallet": "0x950777e306208c51a42d4763ad53187a35f41072",
+   "balance": 8.081252,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7890110"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T13:24:25.632746Z",
+   "first_deposit_at": "2026-05-05T13:33:02Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x4941c742634e7fad472b3caa5f1fd7e7c67ef3b455991163e6e519951d64cfa1"
+  },
+  {
+   "wallet": "0x62a4a6a2820e1bb82ab84ef25020122a85b7b18f",
+   "balance": 8.074059,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7879871"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T01:03:08.664706Z",
+   "first_deposit_at": "2026-05-05T01:12:42Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xe21794318a8729cc43fa546669fa26172005123ac734c8b048329609263628e4"
+  },
+  {
+   "wallet": "0xb3a0d6247e16aec9e02429cdae939f0aaabb26ae",
+   "balance": 7.93,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8341661"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T16:39:55.526725Z",
+   "first_deposit_at": "2026-05-28T16:47:36Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xf98f49293671991c0c1e271d8493c192235e455d8bbaab6c8c9bb6a9eed6708b"
+  },
+  {
+   "wallet": "0x065105b096d2401554a08d65de8b39194c940ecf",
+   "balance": 7.89,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8339663"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T14:06:32.262982Z",
+   "first_deposit_at": "2026-05-28T14:10:13Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xb45f3672c5cdfa3752a13dc0b1a0557a5eb336e877d30c368b8097ad147eed27"
+  },
+  {
+   "wallet": "0x9c8c219a7cc4b3cb3d1b3be35da2e4ad6399b32d",
+   "balance": 7.888017,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7863227"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T14:15:50.637849Z",
+   "first_deposit_at": "2026-05-04T14:36:20Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xa10456caf5e52ad4fabae6e37757e3a8ae97d68f886cafd40b160c61471c7b74"
+  },
+  {
+   "wallet": "0x525d0aa7c7455e9cb3e7369b32dadfc2b6f21c16",
+   "balance": 7.86,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8351342"
+   ],
+   "owner": null,
+   "account_created": "2026-05-29T09:19:18.233288Z",
+   "first_deposit_at": "2026-05-29T09:33:28Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x2b0c3cfdaf63972928b41979498944112d69b01e1b34fb947113c7d889768e1d"
+  },
+  {
+   "wallet": "0x05d3c570d299008335af6d39adf99d0b6021560a",
+   "balance": 7.81,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8575976"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T17:13:17.304242Z",
+   "first_deposit_at": "2026-06-11T17:16:13Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x51bcd270b8a7c6773ccf3d79f4991b208694981f1f566917ad9c1ffd37b5e4dc"
+  },
+  {
+   "wallet": "0xdbbf29d941a19859dd7a04b3067509df0375fb68",
+   "balance": 7.81,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8584192"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T21:28:40.910562Z",
+   "first_deposit_at": "2026-06-11T21:35:51Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x8816503c7d67de8559838e8567e38df654db681fce9da109b41a29807d28796f"
+  },
+  {
+   "wallet": "0x70aa2303a4fbc23197bb640fb6b38948025e2fe7",
+   "balance": 7.8,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8587204"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T00:19:31.749163Z",
+   "first_deposit_at": "2026-06-12T00:34:36Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x1a9ba21628735af598ebceaff1f453e19cb7c3ee8a5e5891031a8d36e8f4f4ea"
+  },
+  {
+   "wallet": "0xcd723a231581b644bf83d9c075b0055a301af8b8",
+   "balance": 7.78,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8345530"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T22:12:46.020336Z",
+   "first_deposit_at": "2026-05-28T22:27:16Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xb2adfda93e69fd38e21dcb5975cf4242a2fdb5eb6785bd07132d0ed5dfdb056c"
+  },
+  {
+   "wallet": "0xd555956c07a60c3a61579bac8f4cf9ae2c49c060",
+   "balance": 7.76,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8584967"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T22:07:32.505117Z",
+   "first_deposit_at": "2026-06-11T22:11:36Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x50807f5e57faaab257305e84219fa421e00124ca6beff775d4e8cbb02c8d23a1"
+  },
+  {
+   "wallet": "0x45d7892b5ae50222b2c1e1c753bd887f972789e6",
+   "balance": 7.738175,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7891662"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T14:53:49.324035Z",
+   "first_deposit_at": "2026-05-05T15:59:14Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xaddcfdd46292f37e6f96c641a6087d41d1cd13a1991eed7328641dbf72f35cfc"
+  },
+  {
+   "wallet": "0x288ff4069cd58f7cbe6901326c1284e9f48d149b",
+   "balance": 7.729394,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7876789"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T21:17:42.689536Z",
+   "first_deposit_at": "2026-05-04T21:19:28Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xc8bd12ac8545f6b48b691c9ff5e982641b7da24bdbddc2b9baa4960d7b8782c9"
+  },
+  {
+   "wallet": "0x0bac35330b4d09dea728d3d4a0e154c0d642c766",
+   "balance": 7.577534,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7890210"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T13:29:18.961894Z",
+   "first_deposit_at": "2026-05-05T16:37:44Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x2d1d7d6e3d02a259696a27a7c7cca0f3ed521eb774f49f6d7b28bac66abb13e8"
+  },
+  {
+   "wallet": "0x48476a740026a0d23579c77687c5945cee6c3f0f",
+   "balance": 7.577177,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7895010"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T17:59:07.795713Z",
+   "first_deposit_at": "2026-05-05T18:06:36Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x517fceabe261d2ecc5b94c331670bfb7a021e1dc32a10a10668da635ea1b7fdb"
+  },
+  {
+   "wallet": "0xd54bf1373ad90fd3f0f089397c4942620582a168",
+   "balance": 7.487238,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7861940"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T13:40:14.828898Z",
+   "first_deposit_at": "2026-05-04T13:51:58Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xf94da121da0c19082ae8640573b75595bc983b9f4d2c05997d448ffa841f274b"
+  },
+  {
+   "wallet": "0x3bb8e5bcbe70f4a6b997003a6bcdd09dd61f93f7",
+   "balance": 7.471486,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7888057"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T11:05:20.185031Z",
+   "first_deposit_at": "2026-05-05T11:31:56Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xd5b8d7edb36ba641d3b82521899b46392725554a673826b7294932f490947213"
+  },
+  {
+   "wallet": "0x61fd8d88e26b4d79fc7ecaf3ede5bc1e3c77be4c",
+   "balance": 7.468864,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7881651"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T03:21:00.913118Z",
+   "first_deposit_at": "2026-05-05T04:15:00Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x115bbbc4d2df26c69e02c06792edfffd8fb5feb7ee037fac5b54ba573d0e162b"
+  },
+  {
+   "wallet": "0xda2a471c86837bada0d15658bbfa9a6bedc5d911",
+   "balance": 7.468864,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7883436"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T05:42:37.759998Z",
+   "first_deposit_at": "2026-05-05T08:45:38Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x6d12db0c6faa21d15dc35316bfe8b01348c44c9b151e6f21d9752586389e4d22"
+  },
+  {
+   "wallet": "0xa596f01adb12b3f0eb174027172e12521dfe01ca",
+   "balance": 7.45,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8341086"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T15:52:42.797412Z",
+   "first_deposit_at": "2026-05-28T15:58:08Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x7c18b1731c32f42adca8160a43c0e825600bcb331feee7115526352ab412854b"
+  },
+  {
+   "wallet": "0x213c3d2496c158cf309cf708db19c6d85c21a5d1",
+   "balance": 7.45,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8342418"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T17:35:04.529533Z",
+   "first_deposit_at": "2026-05-28T17:42:41Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xa11cc6bbf6f26478db7a4bb311f15d7b060c95537867c49ca88cf71c41a6afef"
+  },
+  {
+   "wallet": "0xe74d6864e93a4ca659b6901cbe8f488d5bbddd6c",
+   "balance": 7.45,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8345295"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T21:49:33.211018Z",
+   "first_deposit_at": "2026-05-28T21:54:50Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xf4be7d834b6602400501203f07cf246958978848030a11440eaf0b81c1bbf051"
+  },
+  {
+   "wallet": "0x618d78e88d301d46a8f70d4b4372f23131f0c57b",
+   "balance": 7.4,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8601491"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T14:14:15.733148Z",
+   "first_deposit_at": "2026-06-12T14:24:36Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x0c3e802599b7beb8a906503a7f2b8c0846891767cf0a9fccb6b61968642c81e8"
+  },
+  {
+   "wallet": "0xb47ea2f2c523443e9c1c18101b96dfda2b780183",
+   "balance": 7.38,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8576514"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T17:31:40.862171Z",
+   "first_deposit_at": "2026-06-11T17:37:03Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x1ec36267813b8e3fccded97410b53578a305c2ede1f7e988ed635226cc58085c"
+  },
+  {
+   "wallet": "0x4d72d91038448450d7be95a0e1949e9b9eb39a05",
+   "balance": 7.3,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8244699"
+   ],
+   "owner": null,
+   "account_created": "2026-05-21T15:13:36.116879Z",
+   "first_deposit_at": "2026-06-22T19:40:50Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xdabcf5b011fad0daedb8ebbb9d5dceb0ac67dd7025d02baab1357d95757b839d"
+  },
+  {
+   "wallet": "0xc13ebc7da04292d865ba8b93415b2b2ab8299d47",
+   "balance": 7.3,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8860366"
+   ],
+   "owner": null,
+   "account_created": "2026-06-23T01:32:22.730602Z",
+   "first_deposit_at": "2026-07-27T09:59:10Z",
+   "stuck_since": "2026-07-27T09:59:10Z",
+   "first_deposit_tx": "0x459b7f2afb835ceff95be0bf4bf41e7f847cbfa1fda699d9b07d416d4b2a85ef"
+  },
+  {
+   "wallet": "0xf84dca6717a940020b36b17dd770204978ea77db",
+   "balance": 7.252194,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7886689"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T09:33:00.771253Z",
+   "first_deposit_at": "2026-05-05T09:44:12Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xf529af9de7a1641e334fd05467277102d038121235ce2fed599e50def10afc97"
+  },
+  {
+   "wallet": "0xfb3ae621883571b9b8957bce65fc06a9d1886796",
+   "balance": 7.24,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8210026"
+   ],
+   "owner": null,
+   "account_created": "2026-05-19T22:17:24.544718Z",
+   "first_deposit_at": "2026-10-26T22:33:00Z",
+   "stuck_since": "2026-10-26T22:33:00Z",
+   "first_deposit_tx": "0x031f2cf99d3f6400fab7dad932dc455458ae09571fd98bed1a96e218ddb105f5"
+  },
+  {
+   "wallet": "0x8524b75317203d249a4d9c1f6a5c227b28679eda",
+   "balance": 7.237498,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7886915"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T09:47:41.437415Z",
+   "first_deposit_at": "2026-05-05T09:52:44Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xc23e5c4e44825e92d92666c85d6849a46cc516a100a74f24c2696b7d230c839e"
+  },
+  {
+   "wallet": "0xbc1cf51aad5b663cac4aed3d16e851af3cdf7094",
+   "balance": 7.220442,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7877228"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T21:44:32.811858Z",
+   "first_deposit_at": "2026-05-04T21:47:38Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x6520d8834360dfc620b4804dfe44c0e23eb2208d93a90dc876e443c042183696"
+  },
+  {
+   "wallet": "0x6a490b3ca7405ad3512fa0de351acfe09df45cb8",
+   "balance": 7.16,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8189099"
+   ],
+   "owner": null,
+   "account_created": "2026-05-18T19:57:48.825618Z",
+   "first_deposit_at": "2026-05-18T20:02:46Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xa902c12cb177828bc753e8f2bcf2cd1e8cec0a385a937e61662d03693a304998"
+  },
+  {
+   "wallet": "0x359dd5e75b62614f01e2a11df470ae9c1ee343b9",
+   "balance": 7.16,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8782475"
+   ],
+   "owner": null,
+   "account_created": "2026-06-19T14:55:46.131325Z",
+   "first_deposit_at": "2026-06-19T18:47:56Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x20ed5741adb96ea80970b83f4e64be56131a4e912e6b34bfb9c584b9fd6c4f81"
+  },
+  {
+   "wallet": "0x86906a14380866395e526067859c8eb408e2b473",
+   "balance": 7.15,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8184969"
+   ],
+   "owner": null,
+   "account_created": "2026-05-18T15:54:31.240717Z",
+   "first_deposit_at": "2026-05-18T15:59:28Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xd303f731b23535315a0566902635cd996f84f51ab39abaeb0928185edbbc3854"
+  },
+  {
+   "wallet": "0xfc18a797520f195ecc49fa40fd3048ce220e21fc",
+   "balance": 7.147934,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8341530"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T16:28:51.465462Z",
+   "first_deposit_at": "2026-05-28T16:38:44Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x4011a8a24af1616e639faa93d8348c4542099d6632c802222838b4da8715c888"
+  },
+  {
+   "wallet": "0x53523b07eacba3e3f343521aa1639f16d764700f",
+   "balance": 7.14,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8792365"
+   ],
+   "owner": null,
+   "account_created": "2026-06-19T22:44:03.976185Z",
+   "first_deposit_at": "2026-06-19T22:46:22Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x34eb43d0725c030794961d70294da77051c5cb3e06333ae20a91696d23e9f0e8"
+  },
+  {
+   "wallet": "0xfa2db9aae14eb339b2045c6e4e7300474f925197",
+   "balance": 7.14,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8793146"
+   ],
+   "owner": null,
+   "account_created": "2026-06-19T23:33:51.421622Z",
+   "first_deposit_at": "2026-06-19T23:37:53Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xd7049ae1accd9232f3694893773bd7cd713b16b2b49efc56310b1b139dfbb493"
+  },
+  {
+   "wallet": "0x86cbfc9eec53ceb7e3fd798a300f97aaffc5987b",
+   "balance": 7.127594,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8342044"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T17:08:04.162674Z",
+   "first_deposit_at": "2026-05-28T18:19:14Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x033913fe7e732f2bff7f6011813e3a51597b043a3a645ba264bbe838adbd9970"
+  },
+  {
+   "wallet": "0x0b1bc32e1671080101b4605504dcf9ce97cd7c25",
+   "balance": 7.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7872486"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T17:13:41.459937Z",
+   "first_deposit_at": "2026-05-04T17:16:34Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x30c7bf41f3a2b8486fb2ef187be0fa7168522f9235bf22145d9fb108c9256518"
+  },
+  {
+   "wallet": "0x692bcc8bbf84e7a564bc4c7c9ee1065e1df9ad5a",
+   "balance": 6.960692,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8596831"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T09:27:30.878599Z",
+   "first_deposit_at": "2026-06-12T10:14:52Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xfd3a0752fdf8b9483742c8b88b54dff470e00312c162f9f5fa28113e4501a832"
+  },
+  {
+   "wallet": "0x734cb40c4c74ee4ad4400c965b8b75faf6d6f4f9",
+   "balance": 6.449012,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8462329"
+   ],
+   "owner": null,
+   "account_created": "2026-06-05T16:35:48.660129Z",
+   "first_deposit_at": "2026-06-29T18:11:08Z",
+   "stuck_since": "2026-06-29T18:11:08Z",
+   "first_deposit_tx": "0x34a9789bb73fd3f5de35a6c8d591d1fcb5e2d7bd6dc6c7e98c463b8b4125b926"
+  },
+  {
+   "wallet": "0x259f14e57711f8c00e0632334dc91ab3b16459fe",
+   "balance": 6.059714,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7892570"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T15:46:11.751776Z",
+   "first_deposit_at": "2026-05-05T16:25:24Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x9d734e98d6a2b796a214b9388e387bf11518b94e932ccabd120ebe612a136810"
+  },
+  {
+   "wallet": "0xd72b0d667d0483462164a413a1e12118829bc6b2",
+   "balance": 5.867062,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8339117"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T13:23:42.263541Z",
+   "first_deposit_at": "2026-05-28T14:55:55Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x5a4fffc2ef999475b097d9969d457bb4c78caca84311276de683f99ace6062c4"
+  },
+  {
+   "wallet": "0xc47d681b9202284bcb03f785a9f3640e1b5f7b10",
+   "balance": 5.522402,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7880337"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T01:38:20.487896Z",
+   "first_deposit_at": "2026-05-05T03:59:50Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x0398a0d91eb651a6003d749a7fb9a617e63560bf04ed14987d9cb4ab22c7ddf1"
+  },
+  {
+   "wallet": "0x654745308fbee568baa0cf5e697200c2d9031deb",
+   "balance": 5.441469,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8345522"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T22:11:32.302537Z",
+   "first_deposit_at": "2026-05-28T22:26:55Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x049d7b6d446b0d192ee68944ac1df8a291d6347c0f5bfb337883e85151506d97"
+  },
+  {
+   "wallet": "0xf301e08b1205105f470e2be26452520099fcc778",
+   "balance": 5.299445,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8791792"
+   ],
+   "owner": null,
+   "account_created": "2026-06-19T22:14:09.202352Z",
+   "first_deposit_at": "2026-08-16T07:45:31Z",
+   "stuck_since": "2026-08-16T07:45:31Z",
+   "first_deposit_tx": "0x9217e54579cac1172bc206b14efd1ea05754471c459e56e4049f3e2856a018cf"
+  },
+  {
+   "wallet": "0x1e3b98a5c57e0bae12188c272e69af651d329487",
+   "balance": 5.109362,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7871754"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T16:33:44.543835Z",
+   "first_deposit_at": "2026-05-04T16:42:16Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x522dbebf6f3ad019fddfd06e297e3a8b08aec53c7731ed5b5f719ba0eabb155a"
+  },
+  {
+   "wallet": "0x7c72952c795877a65259ece5199e2b939043e746",
+   "balance": 5.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7892467"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T15:40:37.161313Z",
+   "first_deposit_at": "2026-05-05T19:49:16Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x797660a99597a609dd87fba72674e2003fb2846f8bdc53ddaaf2ae9c48326775"
+  },
+  {
+   "wallet": "0x1bf7239632210fc27a1ce378ee2c133aa69623cd",
+   "balance": 5.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8280166"
+   ],
+   "owner": null,
+   "account_created": "2026-05-23T23:37:00.184907Z",
+   "first_deposit_at": "2026-05-23T23:41:49Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x60774d4f80bb64731da95d0f29f672449b5129a501d13ce8e2898954ec81895e"
+  },
+  {
+   "wallet": "0x94c418bc010dc497dcbb4f9c2efae92d699c1eaf",
+   "balance": 5.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8128311"
+   ],
+   "owner": null,
+   "account_created": "2026-05-16T04:43:38.711831Z",
+   "first_deposit_at": "2026-10-26T15:04:17Z",
+   "stuck_since": "2026-10-26T15:04:17Z",
+   "first_deposit_tx": "0x54981e24dd8ef3361b3412f175ee565a18d7712aa1796d6967781724b134ca51"
+  },
+  {
+   "wallet": "0xfcc3c857e5df17d6a3b9a52a01264d1ce01f5fb6",
+   "balance": 4.966983,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7886492"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T09:19:46.381649Z",
+   "first_deposit_at": "2026-05-05T09:38:10Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x6fc5c4f2a697ebf428add515d17489658ab34eeb4faa177aac961533fff301ee"
+  },
+  {
+   "wallet": "0x6c7e7bc89deb6e9ee80ff9a67e3dcbbb9af8d9cf",
+   "balance": 4.79,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8874447"
+   ],
+   "owner": null,
+   "account_created": "2026-06-23T19:00:11.85297Z",
+   "first_deposit_at": "2026-10-25T23:09:06Z",
+   "stuck_since": "2026-10-25T23:09:06Z",
+   "first_deposit_tx": "0x4306efec7132a3bc26e372800efd3a177c4b6648b466753a2a55f5fa9d1910e9"
+  },
+  {
+   "wallet": "0x6fa8c5a5190d577e5a6f0438ebb22ccfe4ec0837",
+   "balance": 4.45743,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8594840"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T07:17:38.73218Z",
+   "first_deposit_at": "2026-06-12T07:28:42Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xba3a7ee13c8b49e4b282bcb33c4c8e232201ac8c5d1b7b7bf31d1a7a6ee97dbe"
+  },
+  {
+   "wallet": "0xf0828944694f48634375a9d2403918a9ac387889",
+   "balance": 4.157513,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8599200"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T12:11:01.911053Z",
+   "first_deposit_at": "2026-06-12T14:51:31Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x3171f1a0537953cd0f80719fed320c7ef6b54a05bc0b4ebb25b38cac6f498aae"
+  },
+  {
+   "wallet": "0x229906f7c06a39727edc3274cfcbfad8ae7235c7",
+   "balance": 3.707987,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8029238"
+   ],
+   "owner": null,
+   "account_created": "2026-05-11T16:15:20.372501Z",
+   "first_deposit_at": "2026-05-11T16:23:35Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xe0a54ae36d170883b86f5799f68e36281807ae054fd9e077bc0319f252ed2870"
+  },
+  {
+   "wallet": "0xe2969d28949b9b031ec8d6a7caa12ff21fe98430",
+   "balance": 3.457613,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7878795"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T23:36:44.912744Z",
+   "first_deposit_at": "2026-05-04T23:42:52Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xb73d37568cb180d8bb521a21a58db855aac7e0d2fbb52c3cf010a3397205185c"
+  },
+  {
+   "wallet": "0x5f9e2ed4e133f28075144827829c5e832dc6d32f",
+   "balance": 3.445526,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8352840"
+   ],
+   "owner": null,
+   "account_created": "2026-05-29T12:16:34.187663Z",
+   "first_deposit_at": "2026-05-29T12:18:54Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x9e5ba06b58a3a1ce937c66d8e31e6deb7816b7d427dae938ee643887df9969e3"
+  },
+  {
+   "wallet": "0x306274a384a5afdbcc5c962354847f159270a349",
+   "balance": 3.1,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7861863"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T13:38:15.233344Z",
+   "first_deposit_at": "2026-05-04T14:33:12Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x7005a4f21f09f7d98020603ff7a437da1b7722127d5b2d534f1ded70f4fa1bc4"
+  },
+  {
+   "wallet": "0xead4e1a4015d23116de0337074523255ba7387fa",
+   "balance": 3.091598,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7863385"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T14:23:43.447219Z",
+   "first_deposit_at": "2026-05-04T15:09:26Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xafa09b5f46f15af724bce052080d69357ab6aeeed120eba7e2049e59e63a29fe"
+  },
+  {
+   "wallet": "0xf0e9aaa1a5f05c3475c735703da0c3777783c0e3",
+   "balance": 3.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7881274"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T02:48:29.493542Z",
+   "first_deposit_at": "2026-05-05T02:51:48Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x952c55a71cece30c5d0943f9b51642e305969520dfdd640f99ec5b6c12f4bf39"
+  },
+  {
+   "wallet": "0x2334f556dc926a062cd03a2bc62a07ad865f490a",
+   "balance": 3.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7881012"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T02:29:38.60295Z",
+   "first_deposit_at": "2026-05-05T06:19:36Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xff873dd83a094a50c73161238e9a6308df80ab7d3f795996f0c9364cc466ab4e"
+  },
+  {
+   "wallet": "0xf132ba6d7cbb0ddb05a6e4449185a0d3973220a5",
+   "balance": 3.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7885515"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T08:13:25.06862Z",
+   "first_deposit_at": "2026-05-05T08:35:38Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x020ef81f83776be552343f89dfc674840e3c52800f39785b3fa4515e382a7f27"
+  },
+  {
+   "wallet": "0x82672a856b0776190951e9fc2f7c42cc4861c6d6",
+   "balance": 3.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7886643"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T09:30:20.534208Z",
+   "first_deposit_at": "2026-05-05T09:56:44Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x289751f1344c856fd77036a272db7149bf3e335f42c36a26373cb98631bbddc7"
+  },
+  {
+   "wallet": "0x9ab58a26a21dd8d82164cbe43383d2a99efcc239",
+   "balance": 3.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7889199"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T12:25:02.248876Z",
+   "first_deposit_at": "2026-05-05T12:27:30Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x9905247c923511693e6992e6314ae85b6fd8317c40e86dafb5f0e39e8df1d598"
+  },
+  {
+   "wallet": "0x75eaa3b1c68c7780e764836c9eeee7fd0714104b",
+   "balance": 3.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7889656"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T12:55:34.535356Z",
+   "first_deposit_at": "2026-05-05T12:57:50Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x6ceaedfcf36e5c37a1fc0c8b8d3f8e7a67cbf4ce501512b284709ae073579b0c"
+  },
+  {
+   "wallet": "0xd6bc2d38913eb8256c2a4951f3b91b7e9d79a5b8",
+   "balance": 3.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7892456"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T15:39:58.234328Z",
+   "first_deposit_at": "2026-05-05T15:47:52Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x235bf936a705cb1840b720b699a1672f82366aab10d2199f4040d0219eb21f37"
+  },
+  {
+   "wallet": "0x843338d7b31668e8aafb0275cfe0570a10ee7957",
+   "balance": 3.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7895215"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T18:10:32.955716Z",
+   "first_deposit_at": "2026-05-05T18:28:46Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x8e8ad0606cce7ec45657a0f3efd7e504af9d143186400caa98e70266124f08f3"
+  },
+  {
+   "wallet": "0xe28f9df587b72d5f9d797a5617ea1dae300f61a6",
+   "balance": 3.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7896272"
+   ],
+   "owner": null,
+   "account_created": "2026-05-05T19:08:04.13373Z",
+   "first_deposit_at": "2026-05-05T19:34:00Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x7b546a8fb93306498cccb1b138a424f70080bc0abe0a9ab1f9e4dca96e70e3ae"
+  },
+  {
+   "wallet": "0x2b39dc787ab30792e3fe04965200c50740308995",
+   "balance": 2.989779,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8586204"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T23:16:12.894495Z",
+   "first_deposit_at": "2026-06-12T13:01:00Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x625a699642029024fcf3f29410795f40ff3361d8b5cfeab7761ee687fe880e40"
+  },
+  {
+   "wallet": "0xa4a6d131aacbba472ecbc33cd7c8c4461de72511",
+   "balance": 2.985129,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8589704"
+   ],
+   "owner": null,
+   "account_created": "2026-06-12T02:23:33.753368Z",
+   "first_deposit_at": "2026-06-12T02:27:37Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xc68b95177cc1abb86bc8bc5bf4743d4278a92be53b3bf1f949a3e4f2c8b8f7cc"
+  },
+  {
+   "wallet": "0xa497a55affe5f9add60ad7e221e6d9757ba487d0",
+   "balance": 2.730081,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7867890"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T15:35:58.687867Z",
+   "first_deposit_at": "2026-05-04T15:40:32Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xdc1c29ab360b9e703c8040e86f8b6bcf9e6d03726c0e610b25165ab87cf38c12"
+  },
+  {
+   "wallet": "0x39fcbd59aeeae00d1fc696f9337cae3e0747a8dc",
+   "balance": 2.403859,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8584163"
+   ],
+   "owner": null,
+   "account_created": "2026-06-11T21:27:25.622674Z",
+   "first_deposit_at": "2026-06-11T22:24:01Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x106d2bbe5bc7571f8f569df10282ffac1e297bf9e7a2b69bda205f4652b180a6"
+  },
+  {
+   "wallet": "0x03ecccb7b41ea0fd41358bfc82bd4762c1aab148",
+   "balance": 2.143986,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8348373"
+   ],
+   "owner": null,
+   "account_created": "2026-05-29T03:17:38.647298Z",
+   "first_deposit_at": "2026-05-29T04:50:33Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xd02b340a0fad441b7689beca6cd52b0feaab310d824efbedd4ef20a4a4d73eaa"
+  },
+  {
+   "wallet": "0x4037f73a09fdf01a1ee1ff58393ab4f2324dbd67",
+   "balance": 2.069187,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7873198"
+   ],
+   "owner": null,
+   "account_created": "2026-05-04T17:51:21.917317Z",
+   "first_deposit_at": "2026-05-05T16:37:24Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0xb190e1611adfc0eb484d42cd77ee64f4c54b0d73e704a4473c8bd05d1785f639"
+  },
+  {
+   "wallet": "0x8a9e2c11441845c1be04bc4ea1eec0c0fab560fc",
+   "balance": 2.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "7820200"
+   ],
+   "owner": null,
+   "account_created": "2026-05-03T17:41:22.412398Z",
+   "first_deposit_at": "2026-05-03T17:49:08Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x1f4e6bbe3e4e2b6519f4bb95771183ca73766a70b211a0d4e798c24ec7f7e7ba"
+  },
+  {
+   "wallet": "0xd5123939427bcca7f7f18072f78f5d2ad909d1c2",
+   "balance": 2.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8101564"
+   ],
+   "owner": null,
+   "account_created": "2026-05-14T19:55:31.96819Z",
+   "first_deposit_at": "2026-05-28T18:56:17Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x1aef254ef2d31b05fcd00a106b0f59f2277f759ebde55267584245a8e93c48a9"
+  },
+  {
+   "wallet": "0x22b9fa6f28e3b3d12071855d56a514f23c1eefc1",
+   "balance": 1.2,
+   "token": "pUSD",
+   "polymarket_user_ids": [],
+   "owner": "0xaa602f01a1c09ba9b96885ef91706f065a825687",
+   "account_created": null,
+   "first_deposit_at": "2026-06-18T08:23:41Z",
+   "stuck_since": "2026-06-29T12:19:55Z",
+   "first_deposit_tx": "0x7d00b1d66f1d4e0ae657478e982e4a9bd6464e987c229438e7aa40cc93d995d9"
+  }
+ ]
+}

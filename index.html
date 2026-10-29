@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polymarket Stranded Deposits</title>
+<meta name="description" content="Since June 29, 2026, deposits to some Polymarket accounts land in a wallet that hasn't been created yet. Polymarket frees them eventually, with no public notice. Every wallet, balance and release here can be checked on the Polygon blockchain.">
+<style>
+:root {
+  --bg: #fbfaf8; --fg: #1b1b1a; --muted: #6b6a66; --line: #e4e2dd; --card: #ffffff;
+  --accent: #b3261e; --ok: #1f7a4d; --bar: #3d5a80; --bar-hover: #1f3a63; --area: rgba(61, 90, 128, .14);
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #141413; --fg: #ecebe8; --muted: #9a988f; --line: #2c2b29; --card: #1c1b1a; --accent: #f2766b; --ok: #5cc28f; --bar: #8fb0d9; --bar-hover: #c4d8f0; --area: rgba(143, 176, 217, .16); }
+}
+:root[data-theme="dark"] { --bg: #141413; --fg: #ecebe8; --muted: #9a988f; --line: #2c2b29; --card: #1c1b1a; --accent: #f2766b; --ok: #5cc28f; --bar: #8fb0d9; --bar-hover: #c4d8f0; --area: rgba(143, 176, 217, .16); }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 980px; margin: 0 auto; padding: 40px 16px 80px; }
+h1 { font-size: clamp(28px, 5vw, 42px); line-height: 1.15; margin: 0 0 14px; letter-spacing: -0.02em; }
+h2 { font-size: 21px; margin: 56px 0 10px; }
+h3 { font-size: 16px; margin: 28px 0 8px; }
+p { margin: 0 0 12px; max-width: 70ch; }
+a { color: inherit; text-decoration-color: var(--muted); text-underline-offset: 2px; }
+.lede { color: var(--muted); font-size: 18px; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 28px 0 8px; }
+.stat { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+.stat b { display: block; font-size: 28px; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
+.stat span { color: var(--muted); font-size: 14px; }
+.stat.alert b { color: var(--accent); }
+.mono { font-family: var(--mono); font-size: 13px; }
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--card); }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); white-space: nowrap; vertical-align: top; }
+th { color: var(--muted); font-weight: 500; font-size: 13px; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+tr:last-child td { border-bottom: 0; }
+.status { font-size: 13px; }
+.status.stuck { color: var(--accent); }
+.status.freed { color: var(--ok); }
+button, .button { font: inherit; font-size: 14px; padding: 8px 14px; border-radius: 8px; border: 1px solid var(--line); background: var(--card); color: var(--fg); cursor: pointer; text-decoration: none; display: inline-block; }
+button:hover, .button:hover { border-color: var(--muted); }
+.row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin: 12px 0; }
+.note { color: var(--muted); font-size: 14px; }
+pre { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; overflow-x: auto; font: 12.5px/1.5 var(--mono); }
+ol li, ul li { margin-bottom: 6px; max-width: 72ch; }
+.chart { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 14px 6px; position: relative; margin-top: 8px; }
+.chart h4 { margin: 0 0 2px; font-size: 14px; font-weight: 600; }
+.chart .sub { margin: 0 0 8px; color: var(--muted); font-size: 13px; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.grid { stroke: var(--line); stroke-width: 1; }
+.axis { fill: var(--muted); font-size: 11px; }
+.bar { fill: var(--bar); }
+.bar.on { fill: var(--bar-hover); }
+.dot { fill: var(--bar); stroke: var(--card); stroke-width: 1.5; }
+.dot.on { fill: var(--bar-hover); }
+.line { fill: none; stroke: var(--bar); stroke-width: 2; }
+.areafill { fill: var(--area); }
+.cross { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 3 3; }
+.tip { position: absolute; pointer-events: none; background: var(--fg); color: var(--bg); font-size: 13px; padding: 6px 9px; border-radius: 6px; white-space: nowrap; opacity: 0; transition: opacity .1s; z-index: 2; }
+.pair { display: grid; grid-template-columns: 2fr 1fr; gap: 12px; }
+@media (max-width: 720px) { .pair { grid-template-columns: 1fr; } }
+details { margin-top: 12px; }
+summary { cursor: pointer; color: var(--muted); font-size: 14px; }
+.callout { border-left: 3px solid var(--accent); padding: 4px 0 4px 14px; margin: 16px 0; }
+footer { margin-top: 56px; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Some Polymarket deposits get stuck for weeks, with no public explanation.</h1>
+  <p class="lede">If your Polymarket account was created in the weeks before June 29, 2026, a deposit can land in a wallet that hasn't been created yet. The money is right there on the blockchain, but you can't withdraw it. Polymarket can release it with a single transaction, and it does, eventually. We couldn't find any public notice saying when, or why it happens. Every wallet, balance and release on this page can be checked on the Polygon blockchain. Account dates and user IDs come from Polymarket's own public profile service.</p>
+
+  <div class="stats" id="stats"></div>
+  <p class="note" id="asof"></p>
+
+  <h2>Who is stuck right now</h2>
+  <p id="stuck-intro"></p>
+  <div class="row">
+    <button id="verify">Check every wallet live</button>
+    <a class="button" href="data/stuck-wallets.csv" download>Download the list (CSV)</a>
+    <a class="button" href="data/stuck-wallets.json" download>Download the list (JSON)</a>
+  </div>
+  <p class="note" id="verify-status">The live check runs in your browser against a public Polygon node. Nothing gets sent anywhere else.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Wallet</th><th class="num">Stuck</th><th>Stuck since</th><th class="num">Days</th><th>Deposit</th><th>Source</th><th>Live check</th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+  <p class="note" id="table-note"></p>
+
+  <h2>Polymarket can fix it, and has, for some</h2>
+  <p id="rescued-intro"></p>
+  <div class="chart" id="c-perday"><h4>Wallets freed each day</h4><p class="sub">Each bar is one day. Hover for the amount released.</p></div>
+
+  <h3>How long people waited</h3>
+  <p id="wait-intro"></p>
+  <div class="pair">
+    <div class="chart" id="c-waits"><h4>Time from first deposit to release</h4><p class="sub">Number of wallets, by how long they waited (counted from the switch if the money arrived earlier)</p></div>
+    <div class="chart" id="c-waitstats"><h4>In numbers</h4><p class="sub">All freed wallets</p><div id="waitstats"></div></div>
+  </div>
+  <div class="chart" id="c-scatter"><h4>Every release, and how long it took</h4><p class="sub">One dot per wallet. Higher means a longer wait.</p></div>
+
+  <h3>Money sitting in limbo</h3>
+  <p>On any given day since the switch, this is roughly how much money was sitting in wallets that hadn't been created yet. It counts wallets that were freed later and wallets that are still stuck, each one with the balance it had when it was freed, or holds now.</p>
+  <div class="chart" id="c-backlog"><h4>Money waiting in wallets that haven't been created yet</h4><p class="sub">Hover to see the amount and the number of wallets on each day</p></div>
+
+  <h3>Two clean-ups, then a trickle</h3>
+  <p id="when-intro"></p>
+
+  <details>
+    <summary>Every freed wallet, with the transaction that freed it</summary>
+    <div class="row"><a class="button" href="data/rescued.json" download>Download all releases (JSON)</a></div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Wallet</th><th class="num">Held</th><th>First deposit</th><th>Freed</th><th class="num">Waited</th></tr></thead>
+        <tbody id="rescued-rows"></tbody>
+      </table>
+    </div>
+  </details>
+
+  <h2>What actually goes wrong</h2>
+  <p>Since May 2026, Polymarket accounts trade through a deposit wallet, a small smart contract made by Polymarket's wallet factory (<a class="mono" href="https://polygonscan.com/address/0x00000000000Fb5C9ADea0298D729A0CB3823Cc07">0x0000…3Cc07</a>). The address is worked out in advance, so the app can show it and take deposits before the contract exists. Polymarket creates the contract later.</p>
+  <p id="switch-p"></p>
+  <p>The factory still has a recovery function, <span class="mono">deployLegacy</span>, that creates the old wallet. Only Polymarket can call it. As soon as it runs, the owner can withdraw as normal. Every release counted on this page is one of those calls.</p>
+
+  <h2>Reported in public, no answer yet</h2>
+  <ul id="reports"></ul>
+
+  <h2>For the Polymarket team: how to clear the list in one go</h2>
+  <div class="callout" id="batch-intro"></div>
+  <ol>
+    <li>Download <a href="data/stuck-wallets.csv" download>the list</a>. Each row has the wallet, the balance, and either the Polymarket user ID your profile service returns for it or, where the owner posted it, the owner's address.</li>
+    <li>Look up the signer address of each user ID in your database. For the wallets whose owner reported it publicly, it's already in the file.</li>
+    <li id="batch-step">Call <span class="mono">deployLegacy(owners, ids)</span> on the factory with <span class="mono">ids[i] = bytes32(owners[i])</span>. It takes a list.</li>
+    <li>Confirm it worked: <span class="mono">eth_getCode(wallet)</span> stops returning <span class="mono">0x</span>, or just press "Check every wallet live" on this page.</li>
+    <li>Then make it automatic, so the next person gets their money in minutes instead of weeks.</li>
+  </ol>
+  <p id="batch-ready"></p>
+  <details id="batch-details"><summary>Ready-made call for the publicly reported wallets</summary><pre id="batch-call"></pre></details>
+
+  <h2>Check it yourself</h2>
+  <ol>
+    <li><b>The wallet has no contract.</b> Open a stuck wallet on Polygonscan. It shows a balance but no contract code. Any Polygon node will tell you the same: <span class="mono">eth_getCode(wallet)</span> returns <span class="mono">0x</span>.</li>
+    <li><b>The money is there.</b> <span class="mono">balanceOf(wallet)</span> on the pUSD token (<a class="mono" href="https://polygonscan.com/token/0xC011a7E12a19f7B1f670d46F03B03f3342E82DFB">0xC011…2DFB</a>) returns the amount in the table.</li>
+    <li><b>It really is a Polymarket wallet.</b> Polymarket's own profile service returns it as the account's <span class="mono">proxyWallet</span>, and the account was created before the switch: <span class="mono">gamma-api.polymarket.com/public-profile?address=&lt;wallet&gt;</span>.</li>
+    <li><b>The factory predicts exactly this address.</b> Where the owner is public, <span class="mono">predictLegacyWalletAddress(owner)</span> on the factory returns the stuck wallet.</li>
+    <li><b>The releases are real.</b> Every freed wallet links to the <span class="mono">deployLegacy</span> transaction that freed it. Its balance one block earlier shows the money was already waiting inside.</li>
+  </ol>
+
+  <h2>How we got these numbers</h2>
+  <p><b>Stuck wallets.</b> Every deposit into pUSD, Polymarket's currency, leaves an event on the chain naming the wallet that received it. We read every one of those since pUSD launched on March 31, 2026, <span id="receivers"></span>. We kept the ones that hold pUSD, have no contract and have never sent a transaction, and then kept only those that Polymarket's profile service lists as an account created between the factory's first wallet (May 1, 2026) and the switch. Each one was checked again at a single block, and we found the transaction that first funded it. Wallets reported on GitHub were checked when the page was built.</p>
+  <p><b>Freed wallets.</b> The factory leaves an event every time it creates a wallet, and the event says which type. We listed every old-type wallet created after the switch and kept the ones that already held pUSD, USDC or USDC.e one block before they were created. The wait runs from the first deposit, or from the switch if the money arrived earlier, to the moment the wallet was freed.</p>
+  <p><b>What this misses.</b> The stuck list is a floor, not a ceiling. A wallet funded without a pUSD deposit, or one that isn't linked to a public Polymarket profile, only shows up if its owner reported it. For wallets whose owner isn't public we can't run the factory's own address check, but Polymarket can, from the user ID. Accounts created before the factory existed are left out, because they may use an older type of wallet. The figures are a snapshot of the moment we read the chain; the live check shows what has changed since.</p>
+  <p><b>Disclosure.</b> The person who made this page has money stuck in one of these wallets.</p>
+  <p>The scripts and the raw data are in this site's repository. Run them again and you'll get the same lists, minus wallets freed since and plus any that got stuck since.</p>
+  <pre>python3 scan/scan.py 84902320 &lt;latest block&gt; out           # every pUSD deposit, then stuck candidates
+python3 scan/enrich.py out                                   # deposits, user IDs, re-check at one block
+python3 scan/factory_scan.py 84900000 &lt;latest block&gt; out/factory.json
+cd out && python3 ../scan/fixed.py && python3 ../scan/rescued2.py 86272144 && cd ..
+PYTHONPATH=scan python3 scan/build.py out                    # writes data/</pre>
+
+  <footer>Data: <a href="data/data.json">data.json</a>, <a href="data/rescued.json">rescued.json</a>, <a href="data/stuck-wallets.csv">stuck-wallets.csv</a>. Not affiliated with Polymarket.</footer>
+</main>
+<script>
+const RPC = "https://polygon-bor-rpc.publicnode.com";
+const NS = "http://www.w3.org/2000/svg";
+const short = a => a.slice(0, 6) + "…" + a.slice(-4);
+const usd = n => "$" + n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const usd0 = n => "$" + Math.round(n).toLocaleString("en-US");
+const num = n => n.toLocaleString("en-US");
+const day = iso => new Date(iso).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+const dayShort = iso => new Date(iso).toLocaleDateString("en-GB", { day: "numeric", month: "short", timeZone: "UTC" });
+const daysBetween = (a, b) => Math.floor((new Date(b) - new Date(a)) / 864e5);
+const el = (tag, attrs = {}, ...kids) => { const e = document.createElement(tag); Object.assign(e, attrs); e.append(...kids); return e; };
+const link = (href, text, cls) => el("a", { href, textContent: text, className: cls || "" });
+const plural = (n, w, ws) => `${num(n)} ${n === 1 ? w : ws || w + "s"}`;
+const waitText = d => d < 1 ? "under a day" : plural(Math.round(d), "day");
+
+let DATA;
+
+function svgEl(svg, tag, attrs, text) {
+  const e = document.createElementNS(NS, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]);
+  if (text != null) e.textContent = text;
+  svg.append(e);
+  return e;
+}
+
+function makeTip(box) {
+  const tip = el("div", { className: "tip" });
+  box.append(tip);
+  return {
+    show(e, text) {
+      const r = box.getBoundingClientRect();
+      tip.textContent = text;
+      tip.style.left = Math.max(4, Math.min(e.clientX - r.left + 12, r.width - tip.offsetWidth - 4)) + "px";
+      tip.style.top = Math.max(0, e.clientY - r.top - 34) + "px";
+      tip.style.opacity = 1;
+    },
+    hide() { tip.style.opacity = 0; },
+  };
+}
+
+function niceTop(max) {
+  if (max <= 0) return 1;
+  const p = Math.pow(10, Math.floor(Math.log10(max)));
+  for (const m of [1, 1.2, 1.5, 2, 2.5, 3, 4, 5, 6, 8, 10]) if (m * p >= max) return m * p;
+  return 10 * p;
+}
+
+// Vertical bars with a per-bar tooltip; labelEvery thins the x labels.
+function bars(id, items, { height = 220, labelEvery = 1, fmt = num } = {}) {
+  const box = document.getElementById(id), tip = makeTip(box);
+  const W = Math.max(320, Math.min(720, box.clientWidth - 28)), H = height, L = 44, B = 26, T = 8;
+  const top = niceTop(Math.max(...items.map(i => i.value)));
+  const y = v => T + (H - T - B) * (1 - v / top);
+  const bw = (W - L) / items.length, gap = Math.min(2, bw * 0.2);
+  const svg = document.createElementNS(NS, "svg");
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  svg.setAttribute("role", "img");
+  svg.setAttribute("aria-label", box.querySelector("h4").textContent);
+  for (let k = 0; k <= 4; k++) {
+    const v = top * k / 4;
+    svgEl(svg, "line", { x1: L, x2: W, y1: y(v), y2: y(v), class: "grid" });
+    svgEl(svg, "text", { x: L - 8, y: y(v) + 4, "text-anchor": "end", class: "axis" }, fmt(v));
+  }
+  items.forEach((it, i) => {
+    const x = L + i * bw + gap / 2, w = Math.max(1, bw - gap), h = y(0) - y(it.value), r = Math.min(4, w / 2, h);
+    const bar = svgEl(svg, "path", { class: "bar", d: h > 0 ? `M${x},${y(0)} V${y(it.value) + r} Q${x},${y(it.value)} ${x + r},${y(it.value)} H${x + w - r} Q${x + w},${y(it.value)} ${x + w},${y(it.value) + r} V${y(0)} Z` : "" });
+    const hit = svgEl(svg, "rect", { x: L + i * bw, y: T, width: bw, height: H - T - B, fill: "transparent" });
+    hit.addEventListener("mousemove", e => { bar.classList.add("on"); tip.show(e, it.tip); });
+    hit.addEventListener("mouseleave", () => { bar.classList.remove("on"); tip.hide(); });
+    if (i % labelEvery === 0) svgEl(svg, "text", { x: L + i * bw + bw / 2, y: H - B + 16, "text-anchor": "middle", class: "axis" }, it.label);
+  });
+  box.append(svg);
+}
+
+function dateAxis(svg, x, d0, d1, H, B) {
+  const start = new Date(d0), end = new Date(d1);
+  for (let d = new Date(Date.UTC(start.getUTCFullYear(), start.getUTCMonth() + 1, 1)); d <= end; d.setUTCMonth(d.getUTCMonth() + 1)) {
+    const iso = d.toISOString().slice(0, 10);
+    svgEl(svg, "text", { x: x(iso), y: H - B + 16, "text-anchor": "middle", class: "axis" }, d.toLocaleDateString("en-GB", { month: "short", timeZone: "UTC" }));
+  }
+}
+
+function scatter(id, points, d0, d1) {
+  const box = document.getElementById(id), tip = makeTip(box);
+  const W = Math.max(320, Math.min(720, box.clientWidth - 28)), H = 260, L = 44, B = 26, T = 8;
+  const span = new Date(d1) - new Date(d0);
+  const x = iso => L + (W - L - 8) * (new Date(iso) - new Date(d0)) / span;
+  const top = niceTop(Math.max(...points.map(p => p.days)));
+  const y = v => T + (H - T - B) * (1 - v / top);
+  const svg = document.createElementNS(NS, "svg");
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  svg.setAttribute("role", "img");
+  svg.setAttribute("aria-label", "Wait in days for each freed wallet, by date freed");
+  for (let k = 0; k <= 4; k++) {
+    const v = top * k / 4;
+    svgEl(svg, "line", { x1: L, x2: W, y1: y(v), y2: y(v), class: "grid" });
+    svgEl(svg, "text", { x: L - 8, y: y(v) + 4, "text-anchor": "end", class: "axis" }, Math.round(v) + "d");
+  }
+  dateAxis(svg, x, d0, d1, H, B);
+  for (const p of points) {
+    const c = svgEl(svg, "circle", { cx: x(p.rescued), cy: y(p.days), r: 4, class: "dot" });
+    c.addEventListener("mousemove", e => { c.classList.add("on"); tip.show(e, `${usd(p.amount)} freed ${dayShort(p.rescued)} after ${waitText(p.days)}`); });
+    c.addEventListener("mouseleave", () => { c.classList.remove("on"); tip.hide(); });
+  }
+  box.append(svg);
+}
+
+function area(id, series) {
+  const box = document.getElementById(id), tip = makeTip(box);
+  const W = Math.max(320, Math.min(720, box.clientWidth - 28)), H = 240, L = 56, B = 26, T = 8;
+  const d0 = series[0].day, d1 = series[series.length - 1].day, span = new Date(d1) - new Date(d0);
+  const x = iso => L + (W - L - 8) * (new Date(iso) - new Date(d0)) / span;
+  const top = niceTop(Math.max(...series.map(s => s.amount)));
+  const y = v => T + (H - T - B) * (1 - v / top);
+  const svg = document.createElementNS(NS, "svg");
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  svg.setAttribute("role", "img");
+  svg.setAttribute("aria-label", "Money waiting in wallets that haven't been created yet, per day");
+  for (let k = 0; k <= 4; k++) {
+    const v = top * k / 4;
+    svgEl(svg, "line", { x1: L, x2: W, y1: y(v), y2: y(v), class: "grid" });
+    svgEl(svg, "text", { x: L - 8, y: y(v) + 4, "text-anchor": "end", class: "axis" }, v >= 1000 ? "$" + Math.round(v / 1000) + "k" : "$" + Math.round(v));
+  }
+  dateAxis(svg, x, d0, d1, H, B);
+  const pts = series.map(s => `${x(s.day)},${y(s.amount)}`).join(" L");
+  svgEl(svg, "path", { class: "areafill", d: `M${x(d0)},${y(0)} L${pts} L${x(d1)},${y(0)} Z` });
+  svgEl(svg, "path", { class: "line", d: `M${pts}` });
+  const cross = svgEl(svg, "line", { class: "cross", y1: T, y2: H - B, x1: 0, x2: 0, opacity: 0 });
+  const dot = svgEl(svg, "circle", { r: 4, class: "dot", cx: 0, cy: 0, opacity: 0 });
+  const hit = svgEl(svg, "rect", { x: L, y: T, width: W - L, height: H - T - B, fill: "transparent" });
+  hit.addEventListener("mousemove", e => {
+    const r = svg.getBoundingClientRect(), px = (e.clientX - r.left) * W / r.width;
+    const i = Math.max(0, Math.min(series.length - 1, Math.round((px - L) / (W - L - 8) * (series.length - 1))));
+    const s = series[i];
+    cross.setAttribute("x1", x(s.day)); cross.setAttribute("x2", x(s.day));
+    dot.setAttribute("cx", x(s.day)); dot.setAttribute("cy", y(s.amount)); dot.setAttribute("opacity", 1); cross.setAttribute("opacity", 1);
+    tip.show(e, `${dayShort(s.day)}: ${usd0(s.amount)} in ${plural(s.wallets, "wallet")}`);
+  });
+  hit.addEventListener("mouseleave", () => { tip.hide(); cross.setAttribute("opacity", 0); dot.setAttribute("opacity", 0); });
+  box.append(svg);
+}
+
+async function load() {
+  DATA = await (await fetch("data/data.json")).json();
+  const w = DATA.wallets, R = DATA.rescued, now = DATA.checked_at;
+  const total = w.reduce((s, x) => s + x.balance, 0);
+  const oldest = w.length ? w.reduce((m, x) => x.since < m ? x.since : m, w[0].since) : null;
+
+  document.getElementById("stats").append(...[
+    [usd0(total), `stuck right now, in ${plural(w.length, "wallet")}`, true],
+    [oldest ? plural(daysBetween(oldest, now), "day") : "none", "the longest a wallet has been stuck", true],
+    [usd0(R.total), `freed from ${plural(R.count, "wallet")} since the switch`],
+    [waitText(R.median_wait_days), "median wait, among wallets that were freed"],
+  ].map(([b, s, alert]) => el("div", { className: "stat" + (alert ? " alert" : "") }, el("b", { textContent: b }), el("span", { textContent: s }))));
+  document.getElementById("asof").textContent = `Snapshot of Polygon block ${num(DATA.checked_at_block)}, taken ${day(now)} at ${now.slice(11, 16)} UTC. Wallets freed after that still appear in the list until the next scan; the live check shows the current state.`;
+
+  // Stuck right now
+  document.getElementById("stuck-intro").textContent = w.length
+    ? (() => {
+        const frozenSinceSwitch = w.filter(x => x.since === DATA.switch_at).length;
+        const scanned = w.filter(x => x.found_by === "scan").length;
+        return `${plural(w.length, "wallet")} hold ${usd(total)} that their owners can't withdraw. None of them has a contract yet. ` +
+          `${num(scanned)} belong to accounts that Polymarket's profile service says were created before the switch. The other ${num(w.length - scanned)} were reported by their owners on GitHub, and for each one the factory confirms the address belongs to that owner. ` +
+          `${plural(frozenSinceSwitch, "wallet was", "wallets were")} funded before the switch and have been stuck since it; some of their owners may not have tried to use the money since. ` +
+          `The other ${num(w.length - frozenSinceSwitch)} were funded after it and got stuck straight away.`;
+      })()
+    : "No stuck wallets were found in this snapshot.";
+  const rows = document.getElementById("rows");
+  for (const [i, x] of w.entries()) {
+    const dep = x.deposits[0];
+    rows.append(el("tr", { id: "w-" + x.wallet, hidden: i >= 25 },
+      el("td", {}, link("https://polygonscan.com/address/" + x.wallet, short(x.wallet), "mono")),
+      el("td", { className: "num" }, usd(x.balance) + (x.token !== "pUSD" ? " " + x.token : "")),
+      el("td", {}, day(x.since)),
+      el("td", { className: "num" }, num(daysBetween(x.since, now))),
+      el("td", {}, dep && dep.tx ? link("https://polygonscan.com/tx/" + dep.tx, short(dep.tx), "mono") : "–"),
+      el("td", {}, x.report_url ? link(x.report_url, "public report") : "scan"),
+      el("td", { className: "status" }, "not checked yet")));
+  }
+  if (w.length > 25) {
+    const more = el("button", { textContent: `Show all ${num(w.length)} wallets` });
+    more.addEventListener("click", () => { rows.querySelectorAll("tr[hidden]").forEach(r => r.hidden = false); more.remove(); });
+    document.querySelector("#rows").closest(".table-wrap").after(el("div", { className: "row" }, more));
+  }
+  document.getElementById("table-note").textContent = `Each row links to the wallet and to the deposit that funded it. "Public report" means the owner posted it on Polymarket's GitHub.`;
+
+  // Freed wallets
+  const switchDay = DATA.switch_at.slice(0, 10), today = now.slice(0, 10);
+  document.getElementById("rescued-intro").textContent =
+    `Since the switch, Polymarket has freed ${plural(R.count, "wallet")} holding ${usd0(R.total)}, in ${plural(R.transactions, "transaction")} sent from ${plural(R.rescuers, "different account")} it controls. Some of those transactions freed up to 20 wallets at once. The most recent was on ${day(R.last_rescue)}.`;
+  const perDay = [];
+  for (let d = new Date(switchDay); d.toISOString().slice(0, 10) <= today; d.setUTCDate(d.getUTCDate() + 1)) {
+    const k = d.toISOString().slice(0, 10), v = R.per_day[k] || { count: 0, amount: 0 };
+    perDay.push({ label: dayShort(k), value: v.count, tip: `${dayShort(k)}: ${plural(v.count, "wallet")} freed, ${usd0(v.amount)}` });
+  }
+  bars("c-perday", perDay, { labelEvery: document.getElementById("c-perday").clientWidth < 500 ? 30 : 14 });
+
+  document.getElementById("wait-intro").textContent =
+    `For every freed wallet we can see exactly when the first money arrived. Half of those people waited more than ${waitText(R.median_wait_days)}. One in ten waited more than ${waitText(R.p90_wait_days)}, and the longest wait was ${waitText(R.max_wait_days)}. Only ${plural(R.within_1_day, "wallet was", "wallets were")} freed within a day.`;
+  const binsDef = [[0, 1, "<1"], [1, 3, "1–3"], [3, 7, "3–7"], [7, 14, "7–14"], [14, 30, "14–30"], [30, 60, "30–60"], [60, 90, "60–90"], [90, 1e9, "90+"]];
+  bars("c-waits", binsDef.map(([a, b, l]) => {
+    const n = R.waits.filter(p => p.days >= a && p.days < b).length;
+    return { label: l, value: n, tip: `${l} days: ${plural(n, "wallet")}` };
+  }), { height: 240 });
+  const ws = document.getElementById("waitstats");
+  for (const [k, v] of [["Typical wait", waitText(R.median_wait_days)], ["1 in 10 waited over", waitText(R.p90_wait_days)], ["Longest wait", waitText(R.max_wait_days)], ["Waited over a week", plural(R.over_7_days, "wallet")], ["Waited over a month", plural(R.over_30_days, "wallet")], ["Freed within a day", plural(R.within_1_day, "wallet")]])
+    ws.append(el("div", { className: "row", style: "justify-content:space-between;margin:6px 0;font-size:14px" }, el("span", { className: "note", textContent: k }), el("b", { textContent: v })));
+  scatter("c-scatter", R.waits, DATA.switch_at, now);
+
+  area("c-backlog", DATA.backlog);
+
+  const big = R.big_days.map(b => `${plural(b.count, "wallet")} on ${dayShort(b.day)}`).join(" and ");
+  document.getElementById("when-intro").textContent = R.big_days.length
+    ? `Most of the freed wallets came out of ${R.big_days.length === 1 ? "one big clean-up" : "a couple of big clean-ups"}: ${big}. ${num(R.main_rescuer_count)} of the ${num(R.count)} releases came from one account, ${short(R.main_rescuer)}, so Polymarket has shown it can work through a list. Nothing on that scale has happened since. In the ${plural(R.since_last_big_days, "day")} after the last clean-up it freed ${plural(R.since_last_big_count, "wallet")}, mostly one per transaction, while ${num(DATA.stuck_funded_after_last_cleanup)} of today's stuck wallets were funded in that same time.`
+    : `Releases come one or two at a time.`;
+
+  const rr = document.getElementById("rescued-rows");
+  const rescued = await (await fetch("data/rescued.json")).json();
+  for (const x of rescued.slice().reverse()) {
+    const held = Object.entries(x.held_before).map(([k, v]) => usd(v) + (k !== "pUSD" ? " " + k : "")).join(" + ");
+    rr.append(el("tr", {},
+      el("td", {}, link("https://polygonscan.com/address/" + x.wallet, short(x.wallet), "mono")),
+      el("td", { className: "num" }, held),
+      el("td", {}, x.first_deposit_tx ? link("https://polygonscan.com/tx/" + x.first_deposit_tx, day(x.first_deposit_at)) : "–"),
+      el("td", {}, link("https://polygonscan.com/tx/" + x.created_tx, day(x.created_at))),
+      el("td", { className: "num" }, x.wait_days == null ? "–" : waitText(x.wait_days))));
+  }
+
+  document.getElementById("receivers").textContent = DATA.deposit_receivers_scanned ? `${num(DATA.deposit_receivers_scanned)} receiving wallets in all` : "every receiving wallet";
+  document.getElementById("switch-p").textContent =
+    `On ${day(DATA.switch_at)} at ${DATA.switch_at.slice(11, 16)} UTC (block ${num(DATA.switch_block)}), the factory started creating a new type of wallet. The stuck accounts still have their old wallet address in Polymarket's profile service, and deposits keep going there. Since the switch, the factory has only created old-type wallets through deployLegacy, so the old wallet never gets created by itself. The money sits at an address with no contract, and the owner can't move it.`;
+
+  document.getElementById("reports").append(...DATA.reports.map(r => el("li", {},
+    link(r.url, r.title), `. Opened ${day(r.opened)} in one of Polymarket's developer kits, ${plural(r.comments, "comment")}, ${r.polymarket_replies === 0 ? "none from a Polymarket team member" : plural(r.polymarket_replies, "reply", "replies") + " from Polymarket team members"}.`)));
+
+  document.getElementById("batch-intro").textContent =
+    `Everything you need is in the download: ${plural(w.length, "wallet")}, ${usd(total)}, read from block ${num(DATA.checked_at_block)} on ${day(now)}. Wallets you've freed since then will still be on it, so drop any whose contract already exists before you send the batch.`;
+  if (DATA.batch.calldata) {
+    const B = DATA.batch, totalGas = B.gas_per_wallet * w.length;
+    document.getElementById("batch-step").append(` At about ${num(Math.round(B.gas_per_wallet / 1000) * 1000)} gas per wallet, all ${num(w.length)} need around ${Math.round(totalGas / 1e6)} million gas in total, well under Polygon's ${Math.round(B.block_gas_limit / 1e6)} million block limit, so one transaction or a handful will do.`);
+    document.getElementById("batch-ready").textContent = `For the ${plural(B.known_owners, "wallet")} whose owners posted their address publicly, here is the exact call. We simulated it from ${short(B.simulated_from)}, the account that sent most past releases, and it goes through using ${num(B.simulated_gas)} gas.`;
+    document.getElementById("batch-call").textContent = `to:   ${DATA.factory}\ndata: ${DATA.batch.calldata}`;
+  } else {
+    document.getElementById("batch-details").remove();
+  }
+}
+
+async function rpcBatch(calls) {
+  const body = calls.map((c, i) => ({ jsonrpc: "2.0", id: i, method: c[0], params: c[1] }));
+  const res = await (await fetch(RPC, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body) })).json();
+  return res.sort((a, b) => a.id - b.id).map(r => r.result);
+}
+
+document.getElementById("verify").addEventListener("click", async () => {
+  const status = document.getElementById("verify-status");
+  status.textContent = "Checking…";
+  let stuck = 0, freed = 0;
+  try {
+    for (let i = 0; i < DATA.wallets.length; i += 25) {
+      const part = DATA.wallets.slice(i, i + 25);
+      const out = await rpcBatch(part.flatMap(x => [
+        ["eth_getCode", [x.wallet, "latest"]],
+        ["eth_call", [{ to: x.token_address, data: "0x70a08231" + x.wallet.slice(2).padStart(64, "0") }, "latest"]],
+      ]));
+      part.forEach((x, j) => {
+        const code = out[2 * j], raw = out[2 * j + 1];
+        const cell = document.querySelector(`#w-${x.wallet} .status`);
+        if (code == null || raw == null) { cell.className = "status"; cell.textContent = "couldn't check, try again"; return; }
+        const bal = parseInt(raw, 16) / 1e6;
+        if (code === "0x" && bal > 0) { stuck++; cell.className = "status stuck"; cell.textContent = `still stuck, ${usd(bal)}`; }
+        else { freed++; cell.className = "status freed"; cell.textContent = code !== "0x" ? "freed since the scan" : "money moved"; }
+      });
+      status.textContent = `Checked ${num(Math.min(i + 25, DATA.wallets.length))} of ${num(DATA.wallets.length)}…`;
+    }
+    status.textContent = `Just checked: ${plural(stuck, "wallet")} still stuck, ${plural(freed, "wallet")} freed or emptied since the scan.`;
+  } catch (e) {
+    status.textContent = "The public node didn't answer. Give it a minute and try again.";
+  }
+});
+
+load();
+</script>
+</body>
+</html>
