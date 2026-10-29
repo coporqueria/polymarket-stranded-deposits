@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Polymarket Stranded Deposits</title>
-<meta name="description" content="Since June 29, 2026, deposits to some Polymarket accounts land in a wallet that hasn't been created yet. Polymarket frees them eventually, with no public notice. Every wallet, balance and release here can be checked on the Polygon blockchain.">
+<meta name="description" content="Deposits to older Polymarket accounts can land in a wallet that was never created. Who is stuck, how long Polymarket takes to free them, and the one call that would free everyone. All checkable on Polygon.">
 <style>
 :root {
   --bg: #fbfaf8; --fg: #1b1b1a; --muted: #6b6a66; --line: #e4e2dd; --card: #ffffff;
@@ -24,9 +24,9 @@ h3 { font-size: 16px; margin: 28px 0 8px; }
 p { margin: 0 0 12px; max-width: 70ch; }
 a { color: inherit; text-decoration-color: var(--muted); text-underline-offset: 2px; }
 .lede { color: var(--muted); font-size: 18px; }
-.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 28px 0 8px; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 28px 0 8px; }
 .stat { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
-.stat b { display: block; font-size: 28px; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
+.stat b { display: block; font-size: clamp(22px, 6vw, 28px); font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
 .stat span { color: var(--muted); font-size: 14px; }
 .stat.alert b { color: var(--accent); }
 .mono { font-family: var(--mono); font-size: 13px; }
@@ -63,54 +63,52 @@ ol li, ul li { margin-bottom: 6px; max-width: 72ch; }
 @media (max-width: 720px) { .pair { grid-template-columns: 1fr; } }
 details { margin-top: 12px; }
 summary { cursor: pointer; color: var(--muted); font-size: 14px; }
+details.more { border-top: 1px solid var(--line); padding-top: 12px; margin-top: 16px; }
+details.more summary { color: var(--fg); font-size: 15px; font-weight: 500; }
+details.more[open] summary { margin-bottom: 10px; }
 .callout { border-left: 3px solid var(--accent); padding: 4px 0 4px 14px; margin: 16px 0; }
 footer { margin-top: 56px; color: var(--muted); font-size: 13px; }
 </style>
 </head>
 <body>
 <main>
-  <h1>Some Polymarket deposits get stuck for weeks, with no public explanation.</h1>
-  <p class="lede">If your Polymarket account was created in the weeks before June 29, 2026, a deposit can land in a wallet that hasn't been created yet. The money is right there on the blockchain, but you can't withdraw it. Polymarket can release it with a single transaction, and it does, eventually. We couldn't find any public notice saying when, or why it happens. Every wallet, balance and release on this page can be checked on the Polygon blockchain. Account dates and user IDs come from Polymarket's own public profile service.</p>
+  <h1 id="title">Hundreds of Polymarket users can't withdraw their deposits. One transaction would fix it.</h1>
+  <p class="lede" id="lede">If your account was made before June 29, your deposits can land in an old wallet that was never created. The money is there on Polygon, but you can't touch it until Polymarket creates that wallet. They do it eventually, usually after days or weeks.</p>
 
   <div class="stats" id="stats"></div>
   <p class="note" id="asof"></p>
 
-  <h2>Who is stuck right now</h2>
+  <h2>Still stuck</h2>
   <p id="stuck-intro"></p>
   <div class="row">
     <button id="verify">Check every wallet live</button>
     <a class="button" href="data/stuck-wallets.csv" download>Download the list (CSV)</a>
-    <a class="button" href="data/stuck-wallets.json" download>Download the list (JSON)</a>
+    <a class="button" href="data/stuck-wallets.json" download>JSON</a>
   </div>
-  <p class="note" id="verify-status">The live check runs in your browser against a public Polygon node. Nothing gets sent anywhere else.</p>
+  <p class="note" id="verify-status">The check runs in your browser against a public Polygon node.</p>
   <div class="table-wrap">
     <table>
-      <thead><tr><th>Wallet</th><th class="num">Stuck</th><th>Stuck since</th><th class="num">Days</th><th>Deposit</th><th>Source</th><th>Live check</th></tr></thead>
+      <thead><tr><th>Wallet</th><th class="num">Stuck</th><th>Since</th><th class="num">Days</th><th>Deposit</th><th>Source</th><th>Live check</th></tr></thead>
       <tbody id="rows"></tbody>
     </table>
   </div>
-  <p class="note" id="table-note"></p>
 
-  <h2>Polymarket can fix it, and has, for some</h2>
+  <h2>Freed so far</h2>
   <p id="rescued-intro"></p>
-  <div class="chart" id="c-perday"><h4>Wallets freed each day</h4><p class="sub">Each bar is one day. Hover for the amount released.</p></div>
+  <div class="chart" id="c-perday"><h4>Wallets freed each day</h4><p class="sub">Hover a bar for the amount</p></div>
 
-  <h3>How long people waited</h3>
-  <p id="wait-intro"></p>
   <div class="pair">
-    <div class="chart" id="c-waits"><h4>Time from first deposit to release</h4><p class="sub">Number of wallets, by how long they waited (counted from the switch if the money arrived earlier)</p></div>
+    <div class="chart" id="c-waits"><h4>How long people waited</h4><p class="sub">Wallets by days from first deposit to release</p></div>
     <div class="chart" id="c-waitstats"><h4>In numbers</h4><p class="sub">All freed wallets</p><div id="waitstats"></div></div>
   </div>
-  <div class="chart" id="c-scatter"><h4>Every release, and how long it took</h4><p class="sub">One dot per wallet. Higher means a longer wait.</p></div>
 
-  <h3>Money sitting in limbo</h3>
-  <p>On any given day since the switch, this is roughly how much money was sitting in wallets that hadn't been created yet. It counts wallets that were freed later and wallets that are still stuck, each one with the balance it had when it was freed, or holds now.</p>
-  <div class="chart" id="c-backlog"><h4>Money waiting in wallets that haven't been created yet</h4><p class="sub">Hover to see the amount and the number of wallets on each day</p></div>
+  <div class="chart" id="c-backlog"><h4>Money stuck on each day</h4><p class="sub">Freed and still stuck wallets together. Hover for the amount.</p></div>
 
-  <h3>Two clean-ups, then a trickle</h3>
-  <p id="when-intro"></p>
-
-  <details>
+  <details class="more" data-chart="scatter">
+    <summary>Every release and how long it took</summary>
+    <div class="chart" id="c-scatter"><p class="sub">One dot per wallet. Higher means a longer wait.</p></div>
+  </details>
+  <details class="more">
     <summary>Every freed wallet, with the transaction that freed it</summary>
     <div class="row"><a class="button" href="data/rescued.json" download>Download all releases (JSON)</a></div>
     <div class="table-wrap">
@@ -121,48 +119,55 @@ footer { margin-top: 56px; color: var(--muted); font-size: 13px; }
     </div>
   </details>
 
-  <h2>What actually goes wrong</h2>
-  <p>Since May 2026, Polymarket accounts trade through a deposit wallet, a small smart contract made by Polymarket's wallet factory (<a class="mono" href="https://polygonscan.com/address/0x00000000000Fb5C9ADea0298D729A0CB3823Cc07">0x0000…3Cc07</a>). The address is worked out in advance, so the app can show it and take deposits before the contract exists. Polymarket creates the contract later.</p>
-  <p id="switch-p"></p>
-  <p>The factory still has a recovery function, <span class="mono">deployLegacy</span>, that creates the old wallet. Only Polymarket can call it. As soon as it runs, the owner can withdraw as normal. Every release counted on this page is one of those calls.</p>
+  <h2>How to free everyone at once</h2>
+  <p id="batch-intro"></p>
+  <details class="more" id="batch-details">
+    <summary>Steps and a ready-made call</summary>
+    <ol>
+      <li>Take the <a href="data/stuck-wallets.csv" download>list</a>. Each row has the wallet, the balance and the Polymarket user ID, or the owner's address when they posted it.</li>
+      <li>Look up each user ID's signer address.</li>
+      <li>Call <span class="mono">deployLegacy(owners, ids)</span> on the factory with <span class="mono">ids[i] = bytes32(owners[i])</span>.</li>
+      <li>Skip any wallet that already has code, since the list is a snapshot. Afterwards, "Check every wallet live" above should turn every row green.</li>
+    </ol>
+    <p id="batch-ready"></p>
+    <pre id="batch-call"></pre>
+  </details>
 
-  <h2>Reported in public, no answer yet</h2>
+  <h2>Reported, no reply</h2>
   <ul id="reports"></ul>
 
-  <h2>For the Polymarket team: how to clear the list in one go</h2>
-  <div class="callout" id="batch-intro"></div>
-  <ol>
-    <li>Download <a href="data/stuck-wallets.csv" download>the list</a>. Each row has the wallet, the balance, and either the Polymarket user ID your profile service returns for it or, where the owner posted it, the owner's address.</li>
-    <li>Look up the signer address of each user ID in your database. For the wallets whose owner reported it publicly, it's already in the file.</li>
-    <li id="batch-step">Call <span class="mono">deployLegacy(owners, ids)</span> on the factory with <span class="mono">ids[i] = bytes32(owners[i])</span>. It takes a list.</li>
-    <li>Confirm it worked: <span class="mono">eth_getCode(wallet)</span> stops returning <span class="mono">0x</span>, or just press "Check every wallet live" on this page.</li>
-    <li>Then make it automatic, so the next person gets their money in minutes instead of weeks.</li>
-  </ol>
-  <p id="batch-ready"></p>
-  <details id="batch-details"><summary>Ready-made call for the publicly reported wallets</summary><pre id="batch-call"></pre></details>
+  <details class="more">
+    <summary>Why this happens</summary>
+    <p>Polymarket accounts trade through a deposit wallet, a small contract made by Polymarket's wallet factory (<a class="mono" href="https://polygonscan.com/address/0x00000000000Fb5C9ADea0298D729A0CB3823Cc07">0x0000…3Cc07</a>). The address is known in advance, so the app can take deposits before the contract exists.</p>
+    <p id="switch-p"></p>
+    <p>The factory has a function to create old wallets, <span class="mono">deployLegacy</span>, and only Polymarket can call it. Once it runs, the owner can withdraw as normal. Every release on this page is one of those calls.</p>
+  </details>
 
-  <h2>Check it yourself</h2>
-  <ol>
-    <li><b>The wallet has no contract.</b> Open a stuck wallet on Polygonscan. It shows a balance but no contract code. Any Polygon node will tell you the same: <span class="mono">eth_getCode(wallet)</span> returns <span class="mono">0x</span>.</li>
-    <li><b>The money is there.</b> <span class="mono">balanceOf(wallet)</span> on the pUSD token (<a class="mono" href="https://polygonscan.com/token/0xC011a7E12a19f7B1f670d46F03B03f3342E82DFB">0xC011…2DFB</a>) returns the amount in the table.</li>
-    <li><b>It really is a Polymarket wallet.</b> Polymarket's own profile service returns it as the account's <span class="mono">proxyWallet</span>, and the account was created before the switch: <span class="mono">gamma-api.polymarket.com/public-profile?address=&lt;wallet&gt;</span>.</li>
-    <li><b>The factory predicts exactly this address.</b> Where the owner is public, <span class="mono">predictLegacyWalletAddress(owner)</span> on the factory returns the stuck wallet.</li>
-    <li><b>The releases are real.</b> Every freed wallet links to the <span class="mono">deployLegacy</span> transaction that freed it. Its balance one block earlier shows the money was already waiting inside.</li>
-  </ol>
+  <details class="more">
+    <summary>Check it yourself</summary>
+    <ol>
+      <li><b>No contract.</b> A stuck wallet on Polygonscan shows a balance and no code. <span class="mono">eth_getCode(wallet)</span> returns <span class="mono">0x</span>.</li>
+      <li><b>The money is there.</b> <span class="mono">balanceOf(wallet)</span> on pUSD (<a class="mono" href="https://polygonscan.com/token/0xC011a7E12a19f7B1f670d46F03B03f3342E82DFB">0xC011…2DFB</a>) returns the amount in the table.</li>
+      <li><b>It's a Polymarket account.</b> <span class="mono">gamma-api.polymarket.com/public-profile?address=&lt;wallet&gt;</span> returns it as the account's <span class="mono">proxyWallet</span>, created before June 29.</li>
+      <li><b>The factory agrees.</b> Where the owner is public, <span class="mono">predictLegacyWalletAddress(owner)</span> returns the stuck wallet.</li>
+      <li><b>The releases are real.</b> Each freed wallet links to its <span class="mono">deployLegacy</span> transaction, and its balance one block earlier shows the money was already inside.</li>
+    </ol>
+  </details>
 
-  <h2>How we got these numbers</h2>
-  <p><b>Stuck wallets.</b> Every deposit into pUSD, Polymarket's currency, leaves an event on the chain naming the wallet that received it. We read every one of those since pUSD launched on March 31, 2026, <span id="receivers"></span>. We kept the ones that hold pUSD, have no contract and have never sent a transaction, and then kept only those that Polymarket's profile service lists as an account created between the factory's first wallet (May 1, 2026) and the switch. Each one was checked again at a single block, and we found the transaction that first funded it. Wallets reported on GitHub were checked when the page was built.</p>
-  <p><b>Freed wallets.</b> The factory leaves an event every time it creates a wallet, and the event says which type. We listed every old-type wallet created after the switch and kept the ones that already held pUSD, USDC or USDC.e one block before they were created. The wait runs from the first deposit, or from the switch if the money arrived earlier, to the moment the wallet was freed.</p>
-  <p><b>What this misses.</b> The stuck list is a floor, not a ceiling. A wallet funded without a pUSD deposit, or one that isn't linked to a public Polymarket profile, only shows up if its owner reported it. For wallets whose owner isn't public we can't run the factory's own address check, but Polymarket can, from the user ID. Accounts created before the factory existed are left out, because they may use an older type of wallet. The figures are a snapshot of the moment we read the chain; the live check shows what has changed since.</p>
-  <p><b>Disclosure.</b> The person who made this page has money stuck in one of these wallets.</p>
-  <p>The scripts and the raw data are in this site's repository. Run them again and you'll get the same lists, minus wallets freed since and plus any that got stuck since.</p>
-  <pre>python3 scan/scan.py 84902320 &lt;latest block&gt; out           # every pUSD deposit, then stuck candidates
-python3 scan/enrich.py out                                   # deposits, user IDs, re-check at one block
+  <details class="more">
+    <summary>How I got these numbers, and what they miss</summary>
+    <p><b>Stuck wallets.</b> I read every pUSD deposit since pUSD launched on March 31, 2026<span id="receivers"></span>. I kept wallets that hold pUSD, have no contract and have never sent a transaction, and that Polymarket's profile service lists as an account created between the factory's first wallet (May 1) and June 29. Each was re-checked at one block, with the transaction that first funded it. Wallets reported on GitHub were added by hand.</p>
+    <p><b>Freed wallets.</b> I listed every old-type wallet the factory created after June 29 and kept those that already held pUSD, USDC or USDC.e one block before. A wait runs from the first deposit, or from June 29 if the money was there earlier, to the release.</p>
+    <p><b>What it misses.</b> The stuck list is a floor. A wallet funded some other way, or not tied to a public profile, only shows up if its owner reported it. Accounts older than the factory are left out because they may use another kind of wallet.</p>
+    <p>Scripts and raw data are in the <a href="https://github.com/coporqueria/polymarket-stranded-deposits">repository</a>:</p>
+    <pre>python3 scan/scan.py 84902320 &lt;latest block&gt; out
+python3 scan/enrich.py out
 python3 scan/factory_scan.py 84900000 &lt;latest block&gt; out/factory.json
 cd out && python3 ../scan/fixed.py && python3 ../scan/rescued2.py 86272144 && cd ..
-PYTHONPATH=scan python3 scan/build.py out                    # writes data/</pre>
+PYTHONPATH=scan python3 scan/build.py out</pre>
+  </details>
 
-  <footer>Data: <a href="data/data.json">data.json</a>, <a href="data/rescued.json">rescued.json</a>, <a href="data/stuck-wallets.csv">stuck-wallets.csv</a>. Not affiliated with Polymarket.</footer>
+  <footer>Data: <a href="data/data.json">data.json</a>, <a href="data/rescued.json">rescued.json</a>, <a href="data/stuck-wallets.csv">stuck-wallets.csv</a>. Not affiliated with Polymarket. I have money stuck in one of these wallets.</footer>
 </main>
 <script>
 const RPC = "https://polygon-bor-rpc.publicnode.com";
@@ -315,22 +320,19 @@ async function load() {
   document.getElementById("stats").append(...[
     [usd0(total), `stuck right now, in ${plural(w.length, "wallet")}`, true],
     [oldest ? plural(daysBetween(oldest, now), "day") : "none", "the longest a wallet has been stuck", true],
-    [usd0(R.total), `freed from ${plural(R.count, "wallet")} since the switch`],
-    [waitText(R.median_wait_days), "median wait, among wallets that were freed"],
+    [usd0(R.total), `freed from ${plural(R.count, "wallet")} since June 29`],
+    [waitText(R.median_wait_days), "typical wait before Polymarket frees one"],
   ].map(([b, s, alert]) => el("div", { className: "stat" + (alert ? " alert" : "") }, el("b", { textContent: b }), el("span", { textContent: s }))));
-  document.getElementById("asof").textContent = `Snapshot of Polygon block ${num(DATA.checked_at_block)}, taken ${day(now)} at ${now.slice(11, 16)} UTC. Wallets freed after that still appear in the list until the next scan; the live check shows the current state.`;
+  document.getElementById("title").textContent = `${num(w.length)} Polymarket accounts can't withdraw their deposits. One transaction would fix it.`;
+  document.getElementById("asof").textContent = `Read from Polygon block ${num(DATA.checked_at_block)} on ${day(now)} at ${now.slice(11, 16)} UTC. The live check below shows what has changed since.`;
 
   // Stuck right now
   document.getElementById("stuck-intro").textContent = w.length
     ? (() => {
-        const frozenSinceSwitch = w.filter(x => x.since === DATA.switch_at).length;
-        const scanned = w.filter(x => x.found_by === "scan").length;
-        return `${plural(w.length, "wallet")} hold ${usd(total)} that their owners can't withdraw. None of them has a contract yet. ` +
-          `${num(scanned)} belong to accounts that Polymarket's profile service says were created before the switch. The other ${num(w.length - scanned)} were reported by their owners on GitHub, and for each one the factory confirms the address belongs to that owner. ` +
-          `${plural(frozenSinceSwitch, "wallet was", "wallets were")} funded before the switch and have been stuck since it; some of their owners may not have tried to use the money since. ` +
-          `The other ${num(w.length - frozenSinceSwitch)} were funded after it and got stuck straight away.`;
+        const before = w.filter(x => x.since === DATA.switch_at).length;
+        return `${plural(w.length, "wallet")}, ${usd(total)} in all. ${num(before)} had money in them before June 29 and have been stuck since. The other ${num(w.length - before)} got stuck the moment the deposit arrived.`;
       })()
-    : "No stuck wallets were found in this snapshot.";
+    : "No stuck wallets in this snapshot.";
   const rows = document.getElementById("rows");
   for (const [i, x] of w.entries()) {
     const dep = x.deposits[0];
@@ -348,12 +350,13 @@ async function load() {
     more.addEventListener("click", () => { rows.querySelectorAll("tr[hidden]").forEach(r => r.hidden = false); more.remove(); });
     document.querySelector("#rows").closest(".table-wrap").after(el("div", { className: "row" }, more));
   }
-  document.getElementById("table-note").textContent = `Each row links to the wallet and to the deposit that funded it. "Public report" means the owner posted it on Polymarket's GitHub.`;
 
   // Freed wallets
   const switchDay = DATA.switch_at.slice(0, 10), today = now.slice(0, 10);
+  const lastBig = R.big_days.length ? R.big_days[R.big_days.length - 1].day : null;
   document.getElementById("rescued-intro").textContent =
-    `Since the switch, Polymarket has freed ${plural(R.count, "wallet")} holding ${usd0(R.total)}, in ${plural(R.transactions, "transaction")} sent from ${plural(R.rescuers, "different account")} it controls. Some of those transactions freed up to 20 wallets at once. The most recent was on ${day(R.last_rescue)}.`;
+    `Polymarket has freed ${plural(R.count, "wallet")} holding ${usd0(R.total)} since June 29, so it knows how. ` +
+    (R.big_days.length ? `Most came in ${R.big_days.length === 1 ? "one clean-up" : "two clean-ups"}, ${R.big_days.map(b => `${num(b.count)} on ${dayShort(b.day)}`).join(" and ")}. Since ${dayShort(lastBig)} it has been ${num(R.since_last_big_count)} in ${num(R.since_last_big_days)} days, mostly one at a time, while ${num(DATA.stuck_funded_after_last_cleanup)} new ones got stuck.` : "");
   const perDay = [];
   for (let d = new Date(switchDay); d.toISOString().slice(0, 10) <= today; d.setUTCDate(d.getUTCDate() + 1)) {
     const k = d.toISOString().slice(0, 10), v = R.per_day[k] || { count: 0, amount: 0 };
@@ -361,8 +364,6 @@ async function load() {
   }
   bars("c-perday", perDay, { labelEvery: document.getElementById("c-perday").clientWidth < 500 ? 30 : 14 });
 
-  document.getElementById("wait-intro").textContent =
-    `For every freed wallet we can see exactly when the first money arrived. Half of those people waited more than ${waitText(R.median_wait_days)}. One in ten waited more than ${waitText(R.p90_wait_days)}, and the longest wait was ${waitText(R.max_wait_days)}. Only ${plural(R.within_1_day, "wallet was", "wallets were")} freed within a day.`;
   const binsDef = [[0, 1, "<1"], [1, 3, "1–3"], [3, 7, "3–7"], [7, 14, "7–14"], [14, 30, "14–30"], [30, 60, "30–60"], [60, 90, "60–90"], [90, 1e9, "90+"]];
   bars("c-waits", binsDef.map(([a, b, l]) => {
     const n = R.waits.filter(p => p.days >= a && p.days < b).length;
@@ -371,14 +372,10 @@ async function load() {
   const ws = document.getElementById("waitstats");
   for (const [k, v] of [["Typical wait", waitText(R.median_wait_days)], ["1 in 10 waited over", waitText(R.p90_wait_days)], ["Longest wait", waitText(R.max_wait_days)], ["Waited over a week", plural(R.over_7_days, "wallet")], ["Waited over a month", plural(R.over_30_days, "wallet")], ["Freed within a day", plural(R.within_1_day, "wallet")]])
     ws.append(el("div", { className: "row", style: "justify-content:space-between;margin:6px 0;font-size:14px" }, el("span", { className: "note", textContent: k }), el("b", { textContent: v })));
-  scatter("c-scatter", R.waits, DATA.switch_at, now);
+  document.querySelector('details[data-chart="scatter"]').addEventListener("toggle", e => { if (e.target.open && !e.target.dataset.drawn) { e.target.dataset.drawn = 1; scatter("c-scatter", R.waits, DATA.switch_at, now); } });
 
   area("c-backlog", DATA.backlog);
 
-  const big = R.big_days.map(b => `${plural(b.count, "wallet")} on ${dayShort(b.day)}`).join(" and ");
-  document.getElementById("when-intro").textContent = R.big_days.length
-    ? `Most of the freed wallets came out of ${R.big_days.length === 1 ? "one big clean-up" : "a couple of big clean-ups"}: ${big}. ${num(R.main_rescuer_count)} of the ${num(R.count)} releases came from one account, ${short(R.main_rescuer)}, so Polymarket has shown it can work through a list. Nothing on that scale has happened since. In the ${plural(R.since_last_big_days, "day")} after the last clean-up it freed ${plural(R.since_last_big_count, "wallet")}, mostly one per transaction, while ${num(DATA.stuck_funded_after_last_cleanup)} of today's stuck wallets were funded in that same time.`
-    : `Releases come one or two at a time.`;
 
   const rr = document.getElementById("rescued-rows");
   const rescued = await (await fetch("data/rescued.json")).json();
@@ -392,22 +389,21 @@ async function load() {
       el("td", { className: "num" }, x.wait_days == null ? "–" : waitText(x.wait_days))));
   }
 
-  document.getElementById("receivers").textContent = DATA.deposit_receivers_scanned ? `${num(DATA.deposit_receivers_scanned)} receiving wallets in all` : "every receiving wallet";
+  document.getElementById("receivers").textContent = DATA.deposit_receivers_scanned ? `, ${num(DATA.deposit_receivers_scanned)} receiving wallets in all` : "";
   document.getElementById("switch-p").textContent =
-    `On ${day(DATA.switch_at)} at ${DATA.switch_at.slice(11, 16)} UTC (block ${num(DATA.switch_block)}), the factory started creating a new type of wallet. The stuck accounts still have their old wallet address in Polymarket's profile service, and deposits keep going there. Since the switch, the factory has only created old-type wallets through deployLegacy, so the old wallet never gets created by itself. The money sits at an address with no contract, and the owner can't move it.`;
+    `On ${day(DATA.switch_at)} (block ${num(DATA.switch_block)}) the factory moved to a new type of wallet. Older accounts still show their old address, and deposits keep going there, but the factory no longer creates old wallets on its own. So the money waits at an address with no contract.`;
 
   document.getElementById("reports").append(...DATA.reports.map(r => el("li", {},
-    link(r.url, r.title), `. Opened ${day(r.opened)} in one of Polymarket's developer kits, ${plural(r.comments, "comment")}, ${r.polymarket_replies === 0 ? "none from a Polymarket team member" : plural(r.polymarket_replies, "reply", "replies") + " from Polymarket team members"}.`)));
+    link(r.url, r.title), `. Open since ${day(r.opened)}, ${plural(r.comments, "comment")}, ${r.polymarket_replies === 0 ? "no reply from Polymarket" : plural(r.polymarket_replies, "reply", "replies") + " from Polymarket"}.`)));
 
+  const B = DATA.batch, gas = B.gas_per_wallet * w.length;
   document.getElementById("batch-intro").textContent =
-    `Everything you need is in the download: ${plural(w.length, "wallet")}, ${usd(total)}, read from block ${num(DATA.checked_at_block)} on ${day(now)}. Wallets you've freed since then will still be on it, so drop any whose contract already exists before you send the batch.`;
-  if (DATA.batch.calldata) {
-    const B = DATA.batch, totalGas = B.gas_per_wallet * w.length;
-    document.getElementById("batch-step").append(` At about ${num(Math.round(B.gas_per_wallet / 1000) * 1000)} gas per wallet, all ${num(w.length)} need around ${Math.round(totalGas / 1e6)} million gas in total, well under Polygon's ${Math.round(B.block_gas_limit / 1e6)} million block limit, so one transaction or a handful will do.`);
-    document.getElementById("batch-ready").textContent = `For the ${plural(B.known_owners, "wallet")} whose owners posted their address publicly, here is the exact call. We simulated it from ${short(B.simulated_from)}, the account that sent most past releases, and it goes through using ${num(B.simulated_gas)} gas.`;
-    document.getElementById("batch-call").textContent = `to:   ${DATA.factory}\ndata: ${DATA.batch.calldata}`;
+    `The download has every stuck wallet and its Polymarket user ID. One deployLegacy call with all ${num(w.length)} owners would free them. At about ${num(Math.round(B.gas_per_wallet / 1000) * 1000)} gas each that's around ${Math.round(gas / 1e6)} million gas, about a third of one Polygon block.`;
+  if (B.calldata) {
+    document.getElementById("batch-ready").textContent = `For the ${plural(B.known_owners, "owner")} who posted their address, here is the exact call. I simulated it from ${short(B.simulated_from)}, the account behind most past releases, and it goes through at ${num(B.simulated_gas)} gas.`;
+    document.getElementById("batch-call").textContent = `to:   ${DATA.factory}\ndata: ${B.calldata}`;
   } else {
-    document.getElementById("batch-details").remove();
+    document.getElementById("batch-ready").remove(); document.getElementById("batch-call").remove();
   }
 }
 
