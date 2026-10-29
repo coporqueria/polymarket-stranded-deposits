@@ -37,6 +37,8 @@ th { color: var(--muted); font-weight: 500; font-size: 13px; }
 td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
 tr:last-child td { border-bottom: 0; }
 .status { font-size: 13px; }
+.compact { max-width: 560px; }
+.compact th, .compact td { padding: 6px 12px; }
 .status.stuck { color: var(--accent); }
 .status.freed { color: var(--ok); }
 button, .button { font: inherit; font-size: 14px; padding: 8px 14px; border-radius: 8px; border: 1px solid var(--line); background: var(--card); color: var(--fg); cursor: pointer; text-decoration: none; display: inline-block; }
@@ -72,8 +74,8 @@ footer { margin-top: 56px; color: var(--muted); font-size: 13px; }
 </head>
 <body>
 <main>
-  <h1 id="title">Hundreds of Polymarket users can't withdraw their deposits. One transaction would fix it.</h1>
-  <p class="lede" id="lede">If your account was made before June 29, your deposits can land in an old wallet that was never created. The money is there on Polygon, but you can't touch it until Polymarket creates that wallet. They do it eventually, usually after days or weeks.</p>
+  <h1 id="title">Money in hundreds of Polymarket accounts can't be withdrawn or traded</h1>
+  <p class="lede" id="lede">On June 29 Polymarket switched to a new type of deposit wallet. Some older accounts were never moved over: they still show their old wallet address, but that wallet was never created. Anything deposited there is on Polygon, yet nobody can withdraw or trade it until Polymarket creates the wallet by hand. One transaction could do it for everyone.</p>
 
   <div class="stats" id="stats"></div>
   <p class="note" id="asof"></p>
@@ -86,12 +88,15 @@ footer { margin-top: 56px; color: var(--muted); font-size: 13px; }
     <a class="button" href="data/stuck-wallets.json" download>JSON</a>
   </div>
   <p class="note" id="verify-status">The check runs in your browser against a public Polygon node.</p>
-  <div class="table-wrap">
+  <div class="table-wrap compact">
     <table>
-      <thead><tr><th>Wallet</th><th class="num">Stuck</th><th>Since</th><th class="num">Days</th><th>Deposit</th><th>Source</th><th>Live check</th></tr></thead>
+      <thead><tr><th>Wallet</th><th class="num">Amount</th><th class="num">Stuck for</th><th>Live check</th></tr></thead>
       <tbody id="rows"></tbody>
     </table>
   </div>
+
+  <h2>Reported in public, no reply</h2>
+  <ul id="reports"></ul>
 
   <h2>Freed so far</h2>
   <p id="rescued-intro"></p>
@@ -132,9 +137,6 @@ footer { margin-top: 56px; color: var(--muted); font-size: 13px; }
     <p id="batch-ready"></p>
     <pre id="batch-call"></pre>
   </details>
-
-  <h2>Reported, no reply</h2>
-  <ul id="reports"></ul>
 
   <details class="more">
     <summary>Why this happens</summary>
@@ -323,29 +325,25 @@ async function load() {
     [usd0(R.total), `freed from ${plural(R.count, "wallet")} since June 29`],
     [waitText(R.median_wait_days), "typical wait before Polymarket frees one"],
   ].map(([b, s, alert]) => el("div", { className: "stat" + (alert ? " alert" : "") }, el("b", { textContent: b }), el("span", { textContent: s }))));
-  document.getElementById("title").textContent = `${num(w.length)} Polymarket accounts can't withdraw their deposits. One transaction would fix it.`;
+  document.getElementById("title").textContent = `${usd0(total)} in ${num(w.length)} Polymarket accounts can't be withdrawn or traded`;
   document.getElementById("asof").textContent = `Read from Polygon block ${num(DATA.checked_at_block)} on ${day(now)} at ${now.slice(11, 16)} UTC. The live check below shows what has changed since.`;
 
   // Stuck right now
   document.getElementById("stuck-intro").textContent = w.length
     ? (() => {
         const before = w.filter(x => x.since === DATA.switch_at).length;
-        return `${plural(w.length, "wallet")}, ${usd(total)} in all. ${num(before)} had money in them before June 29 and have been stuck since. The other ${num(w.length - before)} got stuck the moment the deposit arrived.`;
+        return `${num(before)} had money in them before June 29 and have been stuck since. The other ${num(w.length - before)} got stuck the moment the deposit arrived.`;
       })()
     : "No stuck wallets in this snapshot.";
   const rows = document.getElementById("rows");
   for (const [i, x] of w.entries()) {
-    const dep = x.deposits[0];
-    rows.append(el("tr", { id: "w-" + x.wallet, hidden: i >= 25 },
+    rows.append(el("tr", { id: "w-" + x.wallet, hidden: i >= 10 },
       el("td", {}, link("https://polygonscan.com/address/" + x.wallet, short(x.wallet), "mono")),
-      el("td", { className: "num" }, usd(x.balance) + (x.token !== "pUSD" ? " " + x.token : "")),
-      el("td", {}, day(x.since)),
-      el("td", { className: "num" }, num(daysBetween(x.since, now))),
-      el("td", {}, dep && dep.tx ? link("https://polygonscan.com/tx/" + dep.tx, short(dep.tx), "mono") : "–"),
-      el("td", {}, x.report_url ? link(x.report_url, "public report") : "scan"),
-      el("td", { className: "status" }, "not checked yet")));
+      el("td", { className: "num" }, (x.balance < 10 ? usd(x.balance) : usd0(x.balance)) + (x.token !== "pUSD" ? " " + x.token : "")),
+      el("td", { className: "num" }, plural(daysBetween(x.since, now), "day")),
+      el("td", { className: "status" }, "not checked")));
   }
-  if (w.length > 25) {
+  if (w.length > 10) {
     const more = el("button", { textContent: `Show all ${num(w.length)} wallets` });
     more.addEventListener("click", () => { rows.querySelectorAll("tr[hidden]").forEach(r => r.hidden = false); more.remove(); });
     document.querySelector("#rows").closest(".table-wrap").after(el("div", { className: "row" }, more));
@@ -393,8 +391,13 @@ async function load() {
   document.getElementById("switch-p").textContent =
     `On ${day(DATA.switch_at)} (block ${num(DATA.switch_block)}) the factory moved to a new type of wallet. Older accounts still show their old address, and deposits keep going there, but the factory no longer creates old wallets on its own. So the money waits at an address with no contract.`;
 
+  const PLAIN = {
+    "https://github.com/Polymarket/py-builder-relayer-client/issues/27": "Deposits stranded by the wallet switch, with a request to create the old wallets",
+    "https://github.com/Polymarket/builder-relayer-client/issues/39": "Request to free 140 USDC sitting in an old wallet",
+  };
   document.getElementById("reports").append(...DATA.reports.map(r => el("li", {},
-    link(r.url, r.title), `. Open since ${day(r.opened)}, ${plural(r.comments, "comment")}, ${r.polymarket_replies === 0 ? "no reply from Polymarket" : plural(r.polymarket_replies, "reply", "replies") + " from Polymarket"}.`)));
+    link(r.url, PLAIN[r.url] || r.title), ` (GitHub). Open since ${day(r.opened)}, ${plural(r.comments, "comment")}, ${r.polymarket_replies === 0 ? "no reply from Polymarket" : plural(r.polymarket_replies, "reply", "replies") + " from Polymarket"}.`)),
+    el("li", {}, link("https://www.reddit.com/r/Polymarket/comments/1tgnjvw/update_wallet_stuck/", "\"Update wallet - stuck\""), " (Reddit, 18 May 2026). An earlier step of the same wallet upgrade: the app asks the user to deploy a new deposit wallet, the transfer fails, and they can't trade. Others reply with the same problem."));
 
   const B = DATA.batch, gas = B.gas_per_wallet * w.length;
   document.getElementById("batch-intro").textContent =
