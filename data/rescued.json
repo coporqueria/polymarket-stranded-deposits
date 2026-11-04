@@ -9479,5 +9479,65 @@
   "first_deposit_tx": "0x7c10c8f1737896a3312e0a5273a5a490226f43105ce4435967b15e463118f519",
   "first_deposit_at": "2026-10-27T09:51:02Z",
   "wait_days": 1.02
+ },
+ {
+  "wallet": "0x2914e77f15664340588d58e084be2bcf0185d3c7",
+  "created_tx": "0x040664622c56fd469f3d226c2bc24f32f326870b133eb3cad4fb77a63343bffd",
+  "created_at": "2026-10-29T07:33:07Z",
+  "rescuer": "0x376f2f3021fb2150cc7c07baac33c32768172ce7",
+  "held_before": {
+   "pUSD": 99.966063
+  },
+  "first_deposit_tx": "0x1273e6fd424f7fc3c8a80ded24fd7371bcf3cb62d27e40f1889c394351ed715a",
+  "first_deposit_at": "2026-05-04T17:29:48Z",
+  "wait_days": 121.8
+ },
+ {
+  "wallet": "0x8445df45f4ce5bd21d325a584219b284dd18733b",
+  "created_tx": "0x73846fabaad5d815096b1907ee7e4b9dfe0e3256f449337c83331e738f4da1be",
+  "created_at": "2026-10-29T08:39:41Z",
+  "rescuer": "0x5fe5d6ff4cb195f4e10425dbe03c05ed176575f8",
+  "held_before": {
+   "pUSD": 22.765765
+  },
+  "first_deposit_tx": "0x26d7952c09e96730660255e88105127a525ded53dac86a8d353385370651950c",
+  "first_deposit_at": "2026-10-29T07:58:20Z",
+  "wait_days": 0.03
+ },
+ {
+  "wallet": "0x8227323157c0e7f2964e17313b3db3527c723003",
+  "created_tx": "0x2c39834a63bad7971b948528fcc71e9c90f1b419ffc3d055550a168ff5171438",
+  "created_at": "2026-10-31T11:28:45Z",
+  "rescuer": "0xc93253b90f53af59cad729d05b1a5b78e30f4a93",
+  "held_before": {
+   "pUSD": 375.142203
+  },
+  "first_deposit_tx": "0x8e289965ec92585ef53572ffa2d73ee7be13f758c2d4881cf69a9c0118c00479",
+  "first_deposit_at": "2026-10-29T14:28:46Z",
+  "wait_days": 1.87
+ },
+ {
+  "wallet": "0xe2e85227605dfbb93cf410150c5b8b84d553e19c",
+  "created_tx": "0x3a351c9e0890473809227716b7cd69b8d11330d247e760a7de81b72154c2509a",
+  "created_at": "2026-11-04T02:20:09Z",
+  "rescuer": "0x924cfa31b01f8c0baf82833ac05b575ccd10b208",
+  "held_before": {
+   "pUSD": 500.0
+  },
+  "first_deposit_tx": "0x0d06d9424f2ad3a964dfa00c4103fb1cf71a4580f800dc9705b32ded8ceca67d",
+  "first_deposit_at": "2026-06-30T00:09:49Z",
+  "wait_days": 127.09
+ },
+ {
+  "wallet": "0x163debfd191d39908a31e4931b7980a39e941826",
+  "created_tx": "0x93ae3707ed71e7ecb368090065b01ee9ef70b87f54905082c0ec316735de51f1",
+  "created_at": "2026-11-04T02:59:51Z",
+  "rescuer": "0xa5d6a5fa071305c493ad13ef66c6fc31d4e49621",
+  "held_before": {
+   "pUSD": 265.780008
+  },
+  "first_deposit_tx": "0x3c3aaa3f42f0b6a79ceb88ce70c01afc7150c4b5a60ed7279b2249d7ae6c599a",
+  "first_deposit_at": "2026-10-29T18:58:40Z",
+  "wait_days": 5.33
  }
 ]

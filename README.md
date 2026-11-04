@@ -26,6 +26,13 @@ PYTHONPATH=scan python3 scan/build.py out                      # writes data/
 - `build.py` then keeps only accounts created before the switch, adds wallets their owners reported publicly (checking that the factory's `predictLegacyWalletAddress(owner)` returns that exact address), and simulates the batch `deployLegacy` call for the known owners.
 - `factory_scan.py`, `fixed.py` and `rescued2.py` list every old-type wallet the factory created after the switch, keep those that already held pUSD, USDC or USDC.e one block before, and date each one's first deposit. A wallet with no contract can't send anything, so its balance only grows, and the first funded block is found by binary search on historical balances.
 
+To refresh without the full scan, run the same steps on only the blocks since the last snapshot, with `scan/out` as the folder, then merge them into `data/` before building:
+
+```
+PYTHONPATH=scan python3 scan/update.py scan/out                # re-checks every listed wallet, adds the new ones
+PYTHONPATH=scan python3 scan/build.py scan/out
+```
+
 ## Known limits
 
 The stuck list is a floor. A wallet funded without a pUSD deposit, or not linked to a public Polymarket profile, only appears if its owner reported it. Waits are counted from the later of the first deposit and the switch.

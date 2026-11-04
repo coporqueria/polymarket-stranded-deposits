@@ -1,7 +1,7 @@
 {
- "checked_at_block": 96359964,
- "checked_at": "2026-10-29T03:42:05Z",
- "note": "Read from Polygon block 96359964 (2026-10-29T03:42:05Z). Wallets rescued after that time are still listed.",
+ "checked_at_block": 96735193,
+ "checked_at": "2026-11-04T16:04:06Z",
+ "note": "Read from Polygon block 96735193 (2026-11-04T16:04:06Z). Wallets rescued after that time are still listed.",
  "factory": "0x00000000000Fb5C9ADea0298D729A0CB3823Cc07",
  "fix": "deployLegacy(owners, ids) with ids[i] = bytes32(owners[i]); then check eth_getCode(wallet) != 0x",
  "wallets": [
@@ -535,19 +535,6 @@
    "first_deposit_tx": "0x66ec8edefbe6081e2b93fae6bc8241bdad4f1f2c6a5e3c47fb46e486779f9059"
   },
   {
-   "wallet": "0x2914e77f15664340588d58e084be2bcf0185d3c7",
-   "balance": 99.966063,
-   "token": "pUSD",
-   "polymarket_user_ids": [
-    "7872664"
-   ],
-   "owner": null,
-   "account_created": "2026-05-04T17:23:29.272998Z",
-   "first_deposit_at": "2026-05-04T17:29:48Z",
-   "stuck_since": "2026-06-29T12:19:55Z",
-   "first_deposit_tx": "0x1273e6fd424f7fc3c8a80ded24fd7371bcf3cb62d27e40f1889c394351ed715a"
-  },
-  {
    "wallet": "0x8a4286a8bd3cf636b55930b1dc83521697254f1b",
    "balance": 99.687365,
    "token": "pUSD",
@@ -559,6 +546,19 @@
    "first_deposit_at": "2026-05-05T08:53:18Z",
    "stuck_since": "2026-06-29T12:19:55Z",
    "first_deposit_tx": "0x71ed79f37d74578473c242a412ad16260df0b2f2e67b4312433f249f911aa645"
+  },
+  {
+   "wallet": "0xcdad584adaf45b9946988156bbf2d40fd2534ac3",
+   "balance": 99.64,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8148383"
+   ],
+   "owner": null,
+   "account_created": "2026-05-16T21:07:07.672015Z",
+   "first_deposit_at": "2026-11-03T09:40:06Z",
+   "stuck_since": "2026-11-03T09:40:06Z",
+   "first_deposit_tx": "0x60a3218c815f933dbc99c84e33d80819faffd64c67439d23640245d19ff9faa2"
   },
   {
    "wallet": "0x036db8fb826f52af8da1b4bc2606ad9c87bb606a",
@@ -3339,6 +3339,19 @@
    "first_deposit_at": "2026-06-12T08:15:51Z",
    "stuck_since": "2026-06-29T12:19:55Z",
    "first_deposit_tx": "0x978413253f668b2479253e2e08072b21c8c50d522dddb2464377e33b46bd727a"
+  },
+  {
+   "wallet": "0x1a6f9b9e5bb00b567befe27cdae78b4030944a38",
+   "balance": 10.0,
+   "token": "pUSD",
+   "polymarket_user_ids": [
+    "8340412"
+   ],
+   "owner": null,
+   "account_created": "2026-05-28T15:01:20.793719Z",
+   "first_deposit_at": "2026-11-04T04:42:37Z",
+   "stuck_since": "2026-11-04T04:42:37Z",
+   "first_deposit_tx": "0x339980c04f62d69fc6886b7c59f3d4e53b0370bc681e64eee8103f33dc163d92"
   },
   {
    "wallet": "0x349fb9b12d5482feb103b05db5ba9048cb2ee82f",

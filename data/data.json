@@ -1,10 +1,10 @@
 {
- "checked_at_block": 96359964,
- "checked_at": "2026-10-29T03:42:05Z",
+ "checked_at_block": 96735193,
+ "checked_at": "2026-11-04T16:04:06Z",
  "factory": "0x00000000000Fb5C9ADea0298D729A0CB3823Cc07",
  "switch_block": 89353733,
  "switch_at": "2026-06-29T12:19:55Z",
- "deposit_receivers_scanned": 1768034,
+ "deposit_receivers_scanned": null,
  "wallets": [
   {
    "wallet": "0x872805305484dc07b72c23bb611aa02e6bfc7285",
@@ -825,26 +825,6 @@
    "first_deposit_at": "2026-06-12T01:31:49Z"
   },
   {
-   "wallet": "0x2914e77f15664340588d58e084be2bcf0185d3c7",
-   "balance": 99.966063,
-   "token": "pUSD",
-   "token_address": "0xC011a7E12a19f7B1f670d46F03B03f3342E82DFB",
-   "since": "2026-06-29T12:19:55Z",
-   "deposits": [
-    {
-     "tx": "0x1273e6fd424f7fc3c8a80ded24fd7371bcf3cb62d27e40f1889c394351ed715a",
-     "time": "2026-05-04T17:29:48Z",
-     "amount": 99.966063
-    }
-   ],
-   "profile_created": "2026-05-04T17:23:29.272998Z",
-   "polymarket_user_ids": [
-    "7872664"
-   ],
-   "found_by": "scan",
-   "first_deposit_at": "2026-05-04T17:29:48Z"
-  },
-  {
    "wallet": "0x8a4286a8bd3cf636b55930b1dc83521697254f1b",
    "balance": 99.687365,
    "token": "pUSD",
@@ -863,6 +843,26 @@
    ],
    "found_by": "scan",
    "first_deposit_at": "2026-05-05T08:53:18Z"
+  },
+  {
+   "wallet": "0xcdad584adaf45b9946988156bbf2d40fd2534ac3",
+   "balance": 99.64,
+   "token": "pUSD",
+   "token_address": "0xC011a7E12a19f7B1f670d46F03B03f3342E82DFB",
+   "since": "2026-11-03T09:40:06Z",
+   "deposits": [
+    {
+     "tx": "0x60a3218c815f933dbc99c84e33d80819faffd64c67439d23640245d19ff9faa2",
+     "time": "2026-11-03T09:40:06Z",
+     "amount": 99.64
+    }
+   ],
+   "profile_created": "2026-05-16T21:07:07.672015Z",
+   "polymarket_user_ids": [
+    "8148383"
+   ],
+   "found_by": "scan",
+   "first_deposit_at": "2026-11-03T09:40:06Z"
   },
   {
    "wallet": "0x036db8fb826f52af8da1b4bc2606ad9c87bb606a",
@@ -5143,6 +5143,26 @@
    "first_deposit_at": "2026-06-12T08:15:51Z"
   },
   {
+   "wallet": "0x1a6f9b9e5bb00b567befe27cdae78b4030944a38",
+   "balance": 10.0,
+   "token": "pUSD",
+   "token_address": "0xC011a7E12a19f7B1f670d46F03B03f3342E82DFB",
+   "since": "2026-11-04T04:42:37Z",
+   "deposits": [
+    {
+     "tx": "0x339980c04f62d69fc6886b7c59f3d4e53b0370bc681e64eee8103f33dc163d92",
+     "time": "2026-11-04T04:42:37Z",
+     "amount": 10.0
+    }
+   ],
+   "profile_created": "2026-05-28T15:01:20.793719Z",
+   "polymarket_user_ids": [
+    "8340412"
+   ],
+   "found_by": "scan",
+   "first_deposit_at": "2026-11-04T04:42:37Z"
+  },
+  {
    "wallet": "0x349fb9b12d5482feb103b05db5ba9048cb2ee82f",
    "balance": 10.0,
    "token": "pUSD",
@@ -7503,7 +7523,7 @@
    "title": "Factory UUPS\u2192beacon migration strands integrator deposit funds; client 0.0.9 derives stale addresses (root cause for #17 + recovery request)",
    "opened": "2026-07-03T10:47:53Z",
    "state": "OPEN",
-   "comments": 7,
+   "comments": 8,
    "polymarket_replies": 0
   },
   {
@@ -7516,18 +7536,18 @@
   }
  ],
  "rescued": {
-  "count": 789,
-  "total": 193310.56,
-  "dated": 789,
-  "median_wait_days": 5.39,
+  "count": 794,
+  "total": 194574.21,
+  "dated": 794,
+  "median_wait_days": 5.369999999999999,
   "p90_wait_days": 17.17,
-  "max_wait_days": 107.76,
-  "over_7_days": 346,
-  "over_30_days": 42,
-  "within_1_day": 55,
-  "transactions": 197,
-  "last_rescue": "2026-10-28T10:20:07Z",
-  "rescuers": 72,
+  "max_wait_days": 127.09,
+  "over_7_days": 348,
+  "over_30_days": 44,
+  "within_1_day": 56,
+  "transactions": 202,
+  "last_rescue": "2026-11-04T02:59:51Z",
+  "rescuers": 77,
   "per_day": {
    "2026-07-06": {
     "count": 44,
@@ -7760,6 +7780,18 @@
    "2026-10-28": {
     "count": 1,
     "amount": 99.65
+   },
+   "2026-10-29": {
+    "count": 2,
+    "amount": 122.74
+   },
+   "2026-10-31": {
+    "count": 1,
+    "amount": 375.14
+   },
+   "2026-11-04": {
+    "count": 2,
+    "amount": 765.78
    }
   },
   "big_days": [
@@ -7774,8 +7806,8 @@
   ],
   "main_rescuer": "0x225a26a1ad56a918ed9701bb779da2e762807427",
   "main_rescuer_count": 674,
-  "since_last_big_count": 183,
-  "since_last_big_days": 107,
+  "since_last_big_count": 188,
+  "since_last_big_days": 113,
   "waits": [
    {
     "rescued": "2026-07-06",
@@ -11721,6 +11753,31 @@
     "rescued": "2026-10-28",
     "days": 1.02,
     "amount": 99.65
+   },
+   {
+    "rescued": "2026-10-29",
+    "days": 121.8,
+    "amount": 99.97
+   },
+   {
+    "rescued": "2026-10-29",
+    "days": 0.03,
+    "amount": 22.77
+   },
+   {
+    "rescued": "2026-10-31",
+    "days": 1.87,
+    "amount": 375.14
+   },
+   {
+    "rescued": "2026-11-04",
+    "days": 127.09,
+    "amount": 500.0
+   },
+   {
+    "rescued": "2026-11-04",
+    "days": 5.33,
+    "amount": 265.78
    }
   ]
  },
@@ -11732,613 +11789,643 @@
   },
   {
    "day": "2026-06-30",
-   "wallets": 614,
-   "amount": 44343.89
+   "wallets": 615,
+   "amount": 44843.89
   },
   {
    "day": "2026-07-01",
-   "wallets": 645,
-   "amount": 128177.65
+   "wallets": 646,
+   "amount": 128677.65
   },
   {
    "day": "2026-07-02",
-   "wallets": 676,
-   "amount": 130692.41
+   "wallets": 677,
+   "amount": 131192.41
   },
   {
    "day": "2026-07-03",
-   "wallets": 779,
-   "amount": 148239.85
+   "wallets": 780,
+   "amount": 148739.85
   },
   {
    "day": "2026-07-04",
-   "wallets": 839,
-   "amount": 152331.51
+   "wallets": 840,
+   "amount": 152831.51
   },
   {
    "day": "2026-07-05",
-   "wallets": 891,
-   "amount": 160566.93
+   "wallets": 892,
+   "amount": 161066.93
   },
   {
    "day": "2026-07-06",
-   "wallets": 936,
-   "amount": 166169.75
+   "wallets": 937,
+   "amount": 166669.75
   },
   {
    "day": "2026-07-07",
-   "wallets": 987,
-   "amount": 171171.13
+   "wallets": 988,
+   "amount": 171671.13
   },
   {
    "day": "2026-07-08",
-   "wallets": 578,
-   "amount": 43167.67
+   "wallets": 579,
+   "amount": 43667.67
   },
   {
    "day": "2026-07-09",
-   "wallets": 580,
-   "amount": 43183.14
+   "wallets": 581,
+   "amount": 43683.14
   },
   {
    "day": "2026-07-10",
-   "wallets": 583,
-   "amount": 53909.32
+   "wallets": 584,
+   "amount": 54409.32
   },
   {
    "day": "2026-07-11",
-   "wallets": 586,
-   "amount": 54009.64
+   "wallets": 587,
+   "amount": 54509.64
   },
   {
    "day": "2026-07-12",
-   "wallets": 587,
-   "amount": 54025.97
+   "wallets": 588,
+   "amount": 54525.97
   },
   {
    "day": "2026-07-13",
-   "wallets": 591,
-   "amount": 54077.26
+   "wallets": 592,
+   "amount": 54577.26
   },
   {
    "day": "2026-07-14",
-   "wallets": 446,
-   "amount": 31497.15
+   "wallets": 447,
+   "amount": 31997.15
   },
   {
    "day": "2026-07-15",
-   "wallets": 449,
-   "amount": 32612.35
+   "wallets": 450,
+   "amount": 33112.35
   },
   {
    "day": "2026-07-16",
-   "wallets": 423,
-   "amount": 30596.39
+   "wallets": 424,
+   "amount": 31096.39
   },
   {
    "day": "2026-07-17",
-   "wallets": 424,
-   "amount": 30611.39
+   "wallets": 425,
+   "amount": 31111.39
   },
   {
    "day": "2026-07-18",
-   "wallets": 427,
-   "amount": 31106.58
+   "wallets": 428,
+   "amount": 31606.58
   },
   {
    "day": "2026-07-19",
-   "wallets": 428,
-   "amount": 31146.46
+   "wallets": 429,
+   "amount": 31646.46
   },
   {
    "day": "2026-07-20",
-   "wallets": 398,
-   "amount": 21550.48
+   "wallets": 399,
+   "amount": 22050.48
   },
   {
    "day": "2026-07-21",
-   "wallets": 390,
-   "amount": 20802.52
-  },
-  {
-   "day": "2026-07-22",
    "wallets": 391,
    "amount": 21302.52
   },
   {
+   "day": "2026-07-22",
+   "wallets": 392,
+   "amount": 21802.52
+  },
+  {
    "day": "2026-07-23",
-   "wallets": 388,
-   "amount": 21047.54
+   "wallets": 389,
+   "amount": 21547.54
   },
   {
    "day": "2026-07-24",
-   "wallets": 389,
-   "amount": 21146.34
+   "wallets": 390,
+   "amount": 21646.34
   },
   {
    "day": "2026-07-25",
-   "wallets": 389,
-   "amount": 21146.34
+   "wallets": 390,
+   "amount": 21646.34
   },
   {
    "day": "2026-07-26",
-   "wallets": 391,
-   "amount": 25206.75
+   "wallets": 392,
+   "amount": 25706.75
   },
   {
    "day": "2026-07-27",
-   "wallets": 391,
-   "amount": 24640.0
+   "wallets": 392,
+   "amount": 25140.0
   },
   {
    "day": "2026-07-28",
-   "wallets": 390,
-   "amount": 20679.56
+   "wallets": 391,
+   "amount": 21179.56
   },
   {
    "day": "2026-07-29",
-   "wallets": 390,
-   "amount": 20679.56
+   "wallets": 391,
+   "amount": 21179.56
   },
   {
    "day": "2026-07-30",
-   "wallets": 389,
-   "amount": 20620.56
+   "wallets": 390,
+   "amount": 21120.56
   },
   {
    "day": "2026-07-31",
-   "wallets": 389,
-   "amount": 20620.56
+   "wallets": 390,
+   "amount": 21120.56
   },
   {
    "day": "2026-08-01",
-   "wallets": 390,
-   "amount": 20820.56
+   "wallets": 391,
+   "amount": 21320.56
   },
   {
    "day": "2026-08-02",
-   "wallets": 387,
-   "amount": 20622.35
+   "wallets": 388,
+   "amount": 21122.35
   },
   {
    "day": "2026-08-03",
-   "wallets": 386,
-   "amount": 20608.33
+   "wallets": 387,
+   "amount": 21108.33
   },
   {
    "day": "2026-08-04",
-   "wallets": 386,
-   "amount": 20608.33
+   "wallets": 387,
+   "amount": 21108.33
   },
   {
    "day": "2026-08-05",
-   "wallets": 385,
-   "amount": 20119.13
+   "wallets": 386,
+   "amount": 20619.13
   },
   {
    "day": "2026-08-06",
-   "wallets": 383,
-   "amount": 19848.0
+   "wallets": 384,
+   "amount": 20348.0
   },
   {
    "day": "2026-08-07",
-   "wallets": 383,
-   "amount": 19848.0
+   "wallets": 384,
+   "amount": 20348.0
   },
   {
    "day": "2026-08-08",
-   "wallets": 382,
-   "amount": 19824.96
+   "wallets": 383,
+   "amount": 20324.96
   },
   {
    "day": "2026-08-09",
-   "wallets": 382,
-   "amount": 19824.96
+   "wallets": 383,
+   "amount": 20324.96
   },
   {
    "day": "2026-08-10",
-   "wallets": 381,
-   "amount": 19814.96
+   "wallets": 382,
+   "amount": 20314.96
   },
   {
    "day": "2026-08-11",
-   "wallets": 372,
-   "amount": 19724.96
+   "wallets": 373,
+   "amount": 20224.96
   },
   {
    "day": "2026-08-12",
-   "wallets": 368,
-   "amount": 16694.96
+   "wallets": 369,
+   "amount": 17194.96
   },
   {
    "day": "2026-08-13",
-   "wallets": 367,
-   "amount": 16684.96
+   "wallets": 368,
+   "amount": 17184.96
   },
   {
    "day": "2026-08-14",
-   "wallets": 366,
-   "amount": 16674.96
+   "wallets": 367,
+   "amount": 17174.96
   },
   {
    "day": "2026-08-15",
-   "wallets": 366,
-   "amount": 16674.96
+   "wallets": 367,
+   "amount": 17174.96
   },
   {
    "day": "2026-08-16",
-   "wallets": 367,
-   "amount": 16680.26
+   "wallets": 368,
+   "amount": 17180.26
   },
   {
    "day": "2026-08-17",
-   "wallets": 364,
-   "amount": 16350.86
+   "wallets": 365,
+   "amount": 16850.86
   },
   {
    "day": "2026-08-18",
-   "wallets": 364,
-   "amount": 17020.04
+   "wallets": 365,
+   "amount": 17520.04
   },
   {
    "day": "2026-08-19",
-   "wallets": 362,
-   "amount": 16253.34
+   "wallets": 363,
+   "amount": 16753.34
   },
   {
    "day": "2026-08-20",
-   "wallets": 365,
-   "amount": 16460.06
+   "wallets": 366,
+   "amount": 16960.06
   },
   {
    "day": "2026-08-21",
-   "wallets": 363,
-   "amount": 16393.34
+   "wallets": 364,
+   "amount": 16893.34
   },
   {
    "day": "2026-08-22",
-   "wallets": 364,
-   "amount": 16438.43
+   "wallets": 365,
+   "amount": 16938.43
   },
   {
    "day": "2026-08-23",
-   "wallets": 363,
-   "amount": 16393.34
+   "wallets": 364,
+   "amount": 16893.34
   },
   {
    "day": "2026-08-24",
-   "wallets": 363,
-   "amount": 16393.34
+   "wallets": 364,
+   "amount": 16893.34
   },
   {
    "day": "2026-08-25",
-   "wallets": 362,
-   "amount": 16388.35
+   "wallets": 363,
+   "amount": 16888.35
   },
   {
    "day": "2026-08-26",
-   "wallets": 360,
-   "amount": 16368.35
+   "wallets": 361,
+   "amount": 16868.35
   },
   {
    "day": "2026-08-27",
-   "wallets": 360,
-   "amount": 16368.35
+   "wallets": 361,
+   "amount": 16868.35
   },
   {
    "day": "2026-08-28",
-   "wallets": 361,
-   "amount": 16520.4
+   "wallets": 362,
+   "amount": 17020.4
   },
   {
    "day": "2026-08-29",
-   "wallets": 362,
-   "amount": 16570.4
+   "wallets": 363,
+   "amount": 17070.4
   },
   {
    "day": "2026-08-30",
-   "wallets": 362,
-   "amount": 16570.4
+   "wallets": 363,
+   "amount": 17070.4
   },
   {
    "day": "2026-08-31",
-   "wallets": 362,
-   "amount": 16548.66
+   "wallets": 363,
+   "amount": 17048.66
   },
   {
    "day": "2026-09-01",
-   "wallets": 362,
-   "amount": 16548.66
+   "wallets": 363,
+   "amount": 17048.66
   },
   {
    "day": "2026-09-02",
-   "wallets": 362,
-   "amount": 16548.66
+   "wallets": 363,
+   "amount": 17048.66
   },
   {
    "day": "2026-09-03",
-   "wallets": 360,
-   "amount": 16398.66
+   "wallets": 361,
+   "amount": 16898.66
   },
   {
    "day": "2026-09-04",
-   "wallets": 360,
-   "amount": 16398.66
+   "wallets": 361,
+   "amount": 16898.66
   },
   {
    "day": "2026-09-05",
-   "wallets": 361,
-   "amount": 16538.66
+   "wallets": 362,
+   "amount": 17038.66
   },
   {
    "day": "2026-09-06",
-   "wallets": 361,
-   "amount": 16538.66
+   "wallets": 362,
+   "amount": 17038.66
   },
   {
    "day": "2026-09-07",
-   "wallets": 361,
-   "amount": 16538.66
+   "wallets": 362,
+   "amount": 17038.66
   },
   {
    "day": "2026-09-08",
-   "wallets": 361,
-   "amount": 16538.66
+   "wallets": 362,
+   "amount": 17038.66
   },
   {
    "day": "2026-09-09",
-   "wallets": 361,
-   "amount": 16538.66
+   "wallets": 362,
+   "amount": 17038.66
   },
   {
    "day": "2026-09-10",
-   "wallets": 362,
-   "amount": 16797.67
+   "wallets": 363,
+   "amount": 17297.67
   },
   {
    "day": "2026-09-11",
-   "wallets": 360,
-   "amount": 16663.33
+   "wallets": 361,
+   "amount": 17163.33
   },
   {
    "day": "2026-09-12",
-   "wallets": 360,
-   "amount": 16580.66
+   "wallets": 361,
+   "amount": 17080.66
   },
   {
    "day": "2026-09-13",
-   "wallets": 361,
-   "amount": 16586.98
+   "wallets": 362,
+   "amount": 17086.98
   },
   {
    "day": "2026-09-14",
-   "wallets": 361,
-   "amount": 16586.98
+   "wallets": 362,
+   "amount": 17086.98
   },
   {
    "day": "2026-09-15",
-   "wallets": 362,
-   "amount": 16495.68
+   "wallets": 363,
+   "amount": 16995.68
   },
   {
    "day": "2026-09-16",
-   "wallets": 360,
-   "amount": 16491.68
+   "wallets": 361,
+   "amount": 16991.68
   },
   {
    "day": "2026-09-17",
-   "wallets": 360,
-   "amount": 16491.68
+   "wallets": 361,
+   "amount": 16991.68
   },
   {
    "day": "2026-09-18",
-   "wallets": 362,
-   "amount": 16512.27
+   "wallets": 363,
+   "amount": 17012.27
   },
   {
    "day": "2026-09-19",
-   "wallets": 361,
-   "amount": 16502.27
+   "wallets": 362,
+   "amount": 17002.27
   },
   {
    "day": "2026-09-20",
-   "wallets": 361,
-   "amount": 16502.27
+   "wallets": 362,
+   "amount": 17002.27
   },
   {
    "day": "2026-09-21",
-   "wallets": 360,
-   "amount": 16492.18
+   "wallets": 361,
+   "amount": 16992.18
   },
   {
    "day": "2026-09-22",
-   "wallets": 369,
-   "amount": 16700.41
+   "wallets": 370,
+   "amount": 17200.41
   },
   {
    "day": "2026-09-23",
-   "wallets": 369,
-   "amount": 16721.19
+   "wallets": 370,
+   "amount": 17221.19
   },
   {
    "day": "2026-09-24",
-   "wallets": 371,
-   "amount": 16770.72
+   "wallets": 372,
+   "amount": 17270.72
   },
   {
    "day": "2026-09-25",
-   "wallets": 358,
-   "amount": 16456.57
+   "wallets": 359,
+   "amount": 16956.57
   },
   {
    "day": "2026-09-26",
-   "wallets": 359,
-   "amount": 16684.22
+   "wallets": 360,
+   "amount": 17184.22
   },
   {
    "day": "2026-09-27",
-   "wallets": 359,
-   "amount": 17466.57
+   "wallets": 360,
+   "amount": 17966.57
   },
   {
    "day": "2026-09-28",
-   "wallets": 359,
-   "amount": 17466.57
+   "wallets": 360,
+   "amount": 17966.57
   },
   {
    "day": "2026-09-29",
-   "wallets": 359,
-   "amount": 17466.57
+   "wallets": 360,
+   "amount": 17966.57
   },
   {
    "day": "2026-09-30",
-   "wallets": 358,
-   "amount": 16456.57
+   "wallets": 359,
+   "amount": 16956.57
   },
   {
    "day": "2026-10-01",
-   "wallets": 358,
-   "amount": 16456.57
+   "wallets": 359,
+   "amount": 16956.57
   },
   {
    "day": "2026-10-02",
-   "wallets": 358,
-   "amount": 16456.57
+   "wallets": 359,
+   "amount": 16956.57
   },
   {
    "day": "2026-10-03",
-   "wallets": 359,
-   "amount": 16552.57
+   "wallets": 360,
+   "amount": 17052.57
   },
   {
    "day": "2026-10-04",
-   "wallets": 359,
-   "amount": 16552.57
+   "wallets": 360,
+   "amount": 17052.57
   },
   {
    "day": "2026-10-05",
-   "wallets": 359,
-   "amount": 16552.57
+   "wallets": 360,
+   "amount": 17052.57
   },
   {
    "day": "2026-10-06",
-   "wallets": 359,
-   "amount": 16552.57
+   "wallets": 360,
+   "amount": 17052.57
   },
   {
    "day": "2026-10-07",
-   "wallets": 358,
-   "amount": 16502.57
+   "wallets": 359,
+   "amount": 17002.57
   },
   {
    "day": "2026-10-08",
-   "wallets": 358,
-   "amount": 16502.57
+   "wallets": 359,
+   "amount": 17002.57
   },
   {
    "day": "2026-10-09",
-   "wallets": 358,
-   "amount": 16502.57
+   "wallets": 359,
+   "amount": 17002.57
   },
   {
    "day": "2026-10-10",
-   "wallets": 358,
-   "amount": 16502.57
+   "wallets": 359,
+   "amount": 17002.57
   },
   {
    "day": "2026-10-11",
-   "wallets": 359,
-   "amount": 16696.47
+   "wallets": 360,
+   "amount": 17196.47
   },
   {
    "day": "2026-10-12",
-   "wallets": 358,
-   "amount": 16502.57
+   "wallets": 359,
+   "amount": 17002.57
   },
   {
    "day": "2026-10-13",
-   "wallets": 358,
-   "amount": 16502.57
+   "wallets": 359,
+   "amount": 17002.57
   },
   {
    "day": "2026-10-14",
-   "wallets": 358,
-   "amount": 16502.57
+   "wallets": 359,
+   "amount": 17002.57
   },
   {
    "day": "2026-10-15",
-   "wallets": 360,
-   "amount": 16641.74
+   "wallets": 361,
+   "amount": 17141.74
   },
   {
    "day": "2026-10-16",
-   "wallets": 363,
-   "amount": 16891.54
+   "wallets": 364,
+   "amount": 17391.54
   },
   {
    "day": "2026-10-17",
-   "wallets": 362,
-   "amount": 16768.59
+   "wallets": 363,
+   "amount": 17268.59
   },
   {
    "day": "2026-10-18",
-   "wallets": 362,
-   "amount": 16768.59
+   "wallets": 363,
+   "amount": 17268.59
   },
   {
    "day": "2026-10-19",
-   "wallets": 361,
-   "amount": 16759.1
+   "wallets": 362,
+   "amount": 17259.1
   },
   {
    "day": "2026-10-20",
-   "wallets": 362,
-   "amount": 16787.33
+   "wallets": 363,
+   "amount": 17287.33
   },
   {
    "day": "2026-10-21",
-   "wallets": 364,
-   "amount": 16931.65
+   "wallets": 365,
+   "amount": 17431.65
   },
   {
    "day": "2026-10-22",
-   "wallets": 364,
-   "amount": 16845.55
+   "wallets": 365,
+   "amount": 17345.55
   },
   {
    "day": "2026-10-23",
-   "wallets": 366,
-   "amount": 16881.84
+   "wallets": 367,
+   "amount": 17381.84
   },
   {
    "day": "2026-10-24",
-   "wallets": 367,
-   "amount": 17915.91
+   "wallets": 368,
+   "amount": 18415.91
   },
   {
    "day": "2026-10-25",
-   "wallets": 370,
-   "amount": 18039.53
+   "wallets": 371,
+   "amount": 18539.53
   },
   {
    "day": "2026-10-26",
-   "wallets": 374,
-   "amount": 18090.09
+   "wallets": 375,
+   "amount": 18590.09
   },
   {
    "day": "2026-10-27",
-   "wallets": 376,
-   "amount": 18225.96
+   "wallets": 377,
+   "amount": 18725.96
   },
   {
    "day": "2026-10-28",
-   "wallets": 375,
-   "amount": 18126.3
+   "wallets": 376,
+   "amount": 18626.3
   },
   {
    "day": "2026-10-29",
-   "wallets": 375,
-   "amount": 18126.3
+   "wallets": 377,
+   "amount": 19167.26
+  },
+  {
+   "day": "2026-10-30",
+   "wallets": 377,
+   "amount": 19167.26
+  },
+  {
+   "day": "2026-10-31",
+   "wallets": 376,
+   "amount": 18792.12
+  },
+  {
+   "day": "2026-11-01",
+   "wallets": 376,
+   "amount": 18792.12
+  },
+  {
+   "day": "2026-11-02",
+   "wallets": 376,
+   "amount": 18792.12
+  },
+  {
+   "day": "2026-11-03",
+   "wallets": 377,
+   "amount": 18891.76
+  },
+  {
+   "day": "2026-11-04",
+   "wallets": 378,
+   "amount": 18901.76
   }
  ],
  "batch": {
@@ -12349,5 +12436,5 @@
   "gas_per_wallet": 144512,
   "block_gas_limit": 160000000
  },
- "stuck_funded_after_last_cleanup": 30
+ "stuck_funded_after_last_cleanup": 32
 }
