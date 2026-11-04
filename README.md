@@ -2,7 +2,7 @@
 
 Since June 29, 2026 (block 89,353,733), Polymarket's deposit wallet factory only creates new-type wallets on its normal path. Accounts created before then still show their old wallet address, and money sent there sits at an address with no contract until Polymarket calls `deployLegacy` on the factory. This repository measures that: who is stuck right now, and how long the people Polymarket has freed had to wait.
 
-`index.html` only shows what is in `data/`. Its "Check every wallet live" button re-reads every stuck wallet straight from a public Polygon node.
+`index.html` only shows what is in `data/`. Its address check and "Check them all live" button read straight from a public Polygon node.
 
 ## Data
 
