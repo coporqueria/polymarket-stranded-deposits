@@ -9539,5 +9539,101 @@
   "first_deposit_tx": "0x3c3aaa3f42f0b6a79ceb88ce70c01afc7150c4b5a60ed7279b2249d7ae6c599a",
   "first_deposit_at": "2026-10-29T18:58:40Z",
   "wait_days": 5.33
+ },
+ {
+  "wallet": "0xbf4ff414033832399745ee8fed64353a4cec21a2",
+  "created_tx": "0x14d5be5b2ec6e2f759601ad6e01544c2032439d85c2b6c11c37954e77c191298",
+  "created_at": "2026-11-04T16:55:00Z",
+  "rescuer": "0x9964ea78c4558475f8c0efadd04a4249778fae50",
+  "held_before": {
+   "pUSD": 10.0
+  },
+  "first_deposit_tx": "0x090dd56285b7b7e5b8196503f2d587e42bf9ce2700b9025f34c0dab0438d2856",
+  "first_deposit_at": "2026-06-28T10:36:07Z",
+  "wait_days": 128.19
+ },
+ {
+  "wallet": "0xd30271346af3a74a28b231b900dd40e3ccd5ad29",
+  "created_tx": "0x47af2ef3b3ff5847c4b5aea4a900625e511db700637062f9ba618b11e78a7e55",
+  "created_at": "2026-11-06T13:00:09Z",
+  "rescuer": "0x8f2d7b4b392b58535b4f6f91c866f0b66daa3abc",
+  "held_before": {
+   "pUSD": 23.433918
+  },
+  "first_deposit_tx": "0x2df71ba3c017a604eed1e2d5534ac4e937cf2d7d34280565115d444fc7e68e55",
+  "first_deposit_at": "2026-11-06T11:05:04Z",
+  "wait_days": 0.08
+ },
+ {
+  "wallet": "0x47d246f4921878cec96fb6bc94c7b124f988ae25",
+  "created_tx": "0x5ce3c58306e3cdb7bde4ddb8add19de2f259a9a6f719aef4bae9524f131bb910",
+  "created_at": "2026-11-07T20:43:33Z",
+  "rescuer": "0x32cbf267b5d06b2498b46fc64ef87a4efce43458",
+  "held_before": {
+   "pUSD": 14.978372
+  },
+  "first_deposit_tx": "0x307f06d0ac32f5cc15e3c5149af981cdcb8fb6344f4d193dce48bcc42c81afea",
+  "first_deposit_at": "2026-11-07T19:52:34Z",
+  "wait_days": 0.04
+ },
+ {
+  "wallet": "0x0e63b1b1041f34527eab0695268be550a009dc74",
+  "created_tx": "0xa964c38019cf4d667d37e52e7c8323a1ffca92a66fb5c912f56e788faede7878",
+  "created_at": "2026-11-08T10:11:27Z",
+  "rescuer": "0xbacf242f297b8ec7f14fe5ecf43dd33c3882de70",
+  "held_before": {
+   "pUSD": 1447.085506
+  },
+  "first_deposit_tx": "0x5b3049248b0e9e9900e8e6bd7d8b5f08f0c08e5981033c9bd7d2c1a21e47f477",
+  "first_deposit_at": "2026-11-07T17:31:33Z",
+  "wait_days": 0.69
+ },
+ {
+  "wallet": "0x32a7fcf3d839de784f735587132a457583849307",
+  "created_tx": "0x3efbe700c7aac562310a21aab546d5bce36eeb28141d9227269184472271c9a3",
+  "created_at": "2026-11-08T11:28:51Z",
+  "rescuer": "0xc6fd721918bf30610985c499fafa17197e95d5f2",
+  "held_before": {
+   "pUSD": 10.465425
+  },
+  "first_deposit_tx": "0xcdc200bfcf4295ec80c99d4518565c4fcb5b913bd8aa17d58aa7b9cfe1ddd303",
+  "first_deposit_at": "2026-11-08T11:23:07Z",
+  "wait_days": 0.0
+ },
+ {
+  "wallet": "0x7b6ca7bdd11b9bc3c06be85c112b66d8f2bbb26d",
+  "created_tx": "0xd9565d94dc17b4bde75983472e205b062e742bb18e89c686c599d22e428b8ab4",
+  "created_at": "2026-11-08T14:01:12Z",
+  "rescuer": "0xaee960d3e936aa7ffc6fe83c4ab2df7b22814381",
+  "held_before": {
+   "pUSD": 245.03
+  },
+  "first_deposit_tx": "0x21be3dd9714f9a40d2d26ee51a5e8b1488fd6fdc7eea6d429f4225710388c99d",
+  "first_deposit_at": "2026-11-08T11:48:22Z",
+  "wait_days": 0.09
+ },
+ {
+  "wallet": "0xfc8feb411791ab592733eb437b9c00c7ecc64a42",
+  "created_tx": "0x8c2107f9ae78e5e1aabd87c218d679cc244995c8488fe4fd8f82dc09527a9ce8",
+  "created_at": "2026-11-08T20:03:07Z",
+  "rescuer": "0x65f1bea4ffaded01f554370ac87a894d53633fc9",
+  "held_before": {
+   "pUSD": 553.35
+  },
+  "first_deposit_tx": "0x32f917d705ca6a46702a12c3ef43c0d48f050bb9ed330bf2dd50730aef438da1",
+  "first_deposit_at": "2026-05-17T12:05:37Z",
+  "wait_days": 132.32
+ },
+ {
+  "wallet": "0x1157ad1622c0549d6cf27ba327f5589ab4641f46",
+  "created_tx": "0x8cf9c383399aee9a61dba4e5e7655812dc9267c3cb49d3c6a1e2b6d5f044f74f",
+  "created_at": "2026-11-09T11:33:30Z",
+  "rescuer": "0x7dd559e16090ce1b53090de416278bccc48b4441",
+  "held_before": {
+   "pUSD": 1000.68
+  },
+  "first_deposit_tx": "0xc8b83baf372709da930ec27a2eee75d19bbe4e0f5e916a165f956a2694234d7a",
+  "first_deposit_at": "2026-10-24T20:34:35Z",
+  "wait_days": 15.62
  }
 ]

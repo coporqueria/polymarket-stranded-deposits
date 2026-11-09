@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Stuck Polymarket Deposits</title>
-<meta name="description" content="Money deposited into hundreds of older Polymarket accounts is stuck in wallets that were never created. Check if yours is one of them.">
+<meta name="description" content="Money deposited into hundreds of older Polymarket accounts is stuck in wallets that were never created. Polymarket's own recovery tool can free it. Check if yours is one of them and get it out.">
 <style>
 :root {
   --bg: #fbfaf8; --fg: #1b1b1a; --muted: #6b6a66; --line: #e4e2dd; --card: #ffffff;
@@ -69,15 +69,15 @@ footer { margin-top: 56px; color: var(--muted); font-size: 13px; }
 </head>
 <body>
 <main>
-  <h1 id="title">Money in hundreds of Polymarket accounts can't be withdrawn or traded</h1>
-  <p class="lede">On October 24 I deposited $1,000 into my Polymarket account. I can't withdraw it or trade with it, and only Polymarket can fix that. Support replied once, on October 25, to say my case had been passed on. I've heard nothing since, by email, on X or in the live chat.</p>
+  <h1 id="title">Money is stuck in hundreds of Polymarket accounts, and you can get yours out</h1>
+  <p class="lede">On October 24 I deposited $1,000 into my Polymarket account and couldn't withdraw it or trade with it. Support replied once and then went quiet for two weeks. On November 9 their support bot pointed me to Polymarket's own recovery tool, and I got all of it out in a few minutes. If your deposit is stuck the same way, here is how to do it.</p>
   <p class="lede" id="others"></p>
 
   <div class="stats" id="stats"></div>
   <p class="note" id="asof"></p>
 
   <h2>What happened</h2>
-  <p>On June 29 Polymarket switched to a new type of deposit wallet. Some older accounts were never moved over. They still show their old wallet address, but that wallet was never created. Deposits land at that address and just sit there, until Polymarket creates the wallet by hand.</p>
+  <p>On June 29 Polymarket switched to a new type of deposit wallet. Some older accounts were never moved over. They still show their old wallet address, but that wallet was never created. Deposits land at that address and just sit there until the wallet is created, which you can now do yourself.</p>
 
   <h2>Is your money stuck too?</h2>
   <p>Paste the wallet address from your Polymarket profile. This only reads public data, so there's nothing to connect or sign.</p>
@@ -86,9 +86,18 @@ footer { margin-top: 56px; color: var(--muted); font-size: 13px; }
     <button>Check</button>
   </form>
   <p id="check-result" aria-live="polite"></p>
-  <p>If it is, write to support with your account email, this address and the amount, and ask them to pass it to engineering. You can also add your case to <a href="https://github.com/Polymarket/py-builder-relayer-client/issues/27">this public thread</a>. Never share your private key or pay anyone to get it back, and treat strangers who message you offering help as scammers.</p>
+  
+  <h2>How to get it out yourself</h2>
+  <ol>
+    <li>Go to <a href="https://recovery.polymarket.com/">recovery.polymarket.com</a>. Check that the address bar says exactly that: it is Polymarket's own site.</li>
+    <li>Log in the same way you log in to Polymarket, with your email, Google or your wallet, and choose Polygon.</li>
+    <li>Open the "UUPS Deposit Wallet" tab. It should show your stuck address, marked "not deployed".</li>
+    <li>Press "Deploy UUPS Deposit Wallet". Polymarket pays the fee.</li>
+    <li>Go back to polymarket.com. Your balance should be there, and you can withdraw or trade as usual.</li>
+  </ol>
+  <p>You don't need "Select asset" for this. It sends the money somewhere else, and what sits in the wallet is pUSD, Polymarket's own token, which an exchange may not accept. Never share your private key or pay anyone to get your money back, and treat strangers who message you offering help as scammers.</p>
 
-  <h2>Polymarket knows how to fix this</h2>
+  <h2>Polymarket has been freeing them one by one</h2>
   <p id="rescued-intro"></p>
   <div class="chart" id="c-perday"><h4>Wallets freed each day</h4><p class="sub">Two days go off the scale, marked with their total.</p></div>
   <p id="reports" style="margin-top:16px"></p>
@@ -130,7 +139,7 @@ footer { margin-top: 56px; color: var(--muted); font-size: 13px; }
     <p><b>Check it yourself.</b> On <a href="https://polygonscan.com/">Polygonscan</a> a stuck wallet shows a balance and no contract. Where the owner is public, <span class="mono">predictLegacyWalletAddress(owner)</span> on the factory returns the stuck wallet. Scripts and raw data are in the <a href="https://github.com/coporqueria/polymarket-stranded-deposits">repository</a>.</p>
   </details>
 
-  <footer>Not affiliated with Polymarket. I have money stuck in one of these wallets.</footer>
+  <footer>Not affiliated with Polymarket. My own deposit was stuck in one of these wallets until November 9.</footer>
 </main>
 <script>
 const RPC = "https://polygon-bor-rpc.publicnode.com";
@@ -219,8 +228,8 @@ async function load() {
   const total = w.reduce((s, x) => s + x.balance, 0);
   const oldest = w.length ? w.reduce((m, x) => x.since < m ? x.since : m, w[0].since) : null;
 
-  document.getElementById("title").textContent = `${usd0(total)} in ${num(w.length)} Polymarket accounts can't be withdrawn or traded`;
-  document.getElementById("others").textContent = `I went looking and found I'm not alone. ${num(w.length)} accounts are in the same position.`;
+  document.getElementById("title").textContent = `${usd0(total)} is stuck in ${num(w.length)} Polymarket accounts, and you can get yours out`;
+  document.getElementById("others").textContent = `I went looking and found I wasn't alone. ${num(w.length)} accounts are still in the same position.`;
   document.getElementById("stats").append(...[
     [usd0(total), `stuck in ${plural(w.length, "account")}`, true],
     [oldest ? plural(daysBetween(oldest, now), "day") : "none", "the longest anyone has been stuck", true],
@@ -255,7 +264,7 @@ async function load() {
 
   const B = DATA.batch, gas = B.gas_per_wallet * w.length;
   document.getElementById("ask").textContent =
-    `Please create all ${num(w.length)} missing wallets at once and let the people affected know. I found them from public data, so Polymarket can too. It fits in a single transaction, about a third of one Polygon block, and the list and steps are below. I may be missing something, and if so I'd love to know what.`;
+    `Please create the ${num(w.length)} remaining wallets at once, or at least tell the people affected about the recovery tool. Most of them will never find it: I only did after two weeks, when a support bot linked it. I found these wallets from public data, so Polymarket can too. Creating all of them fits in a single transaction, about a third of one Polygon block, and the list and steps are below.`;
   if (B.calldata) {
     document.getElementById("batch-ready").textContent = `For the ${plural(B.known_owners, "owner")} who posted their address, here is the exact call. I simulated it from ${short(B.simulated_from)}, the account behind most past releases, and it goes through at ${num(B.simulated_gas)} gas.`;
     document.getElementById("batch-call").textContent = `to:   ${DATA.factory}\ndata: ${B.calldata}`;
@@ -286,7 +295,7 @@ document.getElementById("check").addEventListener("submit", async e => {
     const bal = parseInt(raw, 16) / 1e6;
     if (code !== "0x") say("This wallet exists, so this isn't your problem.");
     else if (parseInt(nonce, 16) > 0) say("This is an ordinary wallet, so this isn't your problem.");
-    else if (bal > 0) say(`Looks like the same problem. This address holds ${usd(bal)} but the wallet doesn't exist yet.`, true);
+    else if (bal > 0) say(`Looks like the same problem. This address holds ${usd(bal)} but the wallet doesn't exist yet. The steps below free it.`, true);
     else say("There's no pUSD at this address, so nothing is stuck here.");
   } catch {
     say("The public node didn't answer. Give it a minute and try again.");

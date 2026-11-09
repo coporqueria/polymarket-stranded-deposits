@@ -1,7 +1,7 @@
 {
- "checked_at_block": 96735193,
- "checked_at": "2026-11-04T16:04:06Z",
- "note": "Read from Polygon block 96735193 (2026-11-04T16:04:06Z). Wallets rescued after that time are still listed.",
+ "checked_at_block": 97012761,
+ "checked_at": "2026-11-09T11:43:18Z",
+ "note": "Read from Polygon block 97012761 (2026-11-09T11:43:18Z). Wallets rescued after that time are still listed.",
  "factory": "0x00000000000Fb5C9ADea0298D729A0CB3823Cc07",
  "fix": "deployLegacy(owners, ids) with ids[i] = bytes32(owners[i]); then check eth_getCode(wallet) != 0x",
  "wallets": [
@@ -17,19 +17,6 @@
    "first_deposit_at": "2026-06-12T09:07:49Z",
    "stuck_since": "2026-06-29T12:19:55Z",
    "first_deposit_tx": "0xb7e709ec4f6048a3e72bdd0f954e156d51df3c04bca5291dc9452ec2e7e5c8e1"
-  },
-  {
-   "wallet": "0x1157ad1622c0549d6cf27ba327f5589ab4641f46",
-   "balance": 1000.68,
-   "token": "pUSD",
-   "polymarket_user_ids": [
-    "8827588"
-   ],
-   "owner": "0x5568765deb05192655792450c14e69a593ea0732",
-   "account_created": "2026-06-21T11:05:21.03382Z",
-   "first_deposit_at": "2026-10-24T20:34:35Z",
-   "stuck_since": "2026-10-24T20:34:35Z",
-   "first_deposit_tx": "0xc8b83baf372709da930ec27a2eee75d19bbe4e0f5e916a165f956a2694234d7a"
   },
   {
    "wallet": "0x86fb529562097141e5c5f62f472f39a20964b80f",
@@ -69,19 +56,6 @@
    "first_deposit_at": "2026-06-11T16:27:12Z",
    "stuck_since": "2026-06-29T12:19:55Z",
    "first_deposit_tx": "0xfe9b4623092b657f1f13746db50efbea43684f452f135e585237efe1ebf3f845"
-  },
-  {
-   "wallet": "0xfc8feb411791ab592733eb437b9c00c7ecc64a42",
-   "balance": 553.35,
-   "token": "pUSD",
-   "polymarket_user_ids": [
-    "8161945"
-   ],
-   "owner": null,
-   "account_created": "2026-05-17T11:57:56.020178Z",
-   "first_deposit_at": "2026-05-17T12:05:37Z",
-   "stuck_since": "2026-06-29T12:19:55Z",
-   "first_deposit_tx": "0x32f917d705ca6a46702a12c3ef43c0d48f050bb9ed330bf2dd50730aef438da1"
   },
   {
    "wallet": "0xfdcb853878412037d2c6bc3aa9562b39eb1103b0",
